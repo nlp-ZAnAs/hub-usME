@@ -1,0 +1,141 @@
+{
+  "test_examples": 300,
+  "metric": "答案字符和 EOS 的 token 加权 PPL",
+  "models": {
+    "pretrained": {
+      "checkpoint_sha256": "4f72ef5d5ee6f4ad724ba5eeb4f0e7b08284fb4f9f5e20a2b90988e706d36c82",
+      "epoch": 1,
+      "score": {
+        "loss": 5.109429346030155,
+        "ppl": 165.57584139784532,
+        "tokens": 23369
+      },
+      "examples": [
+        {
+          "question": "命名一个位于美国西南地区的主要城市。",
+          "reference": "一个位于美国西南地区的主要城市是洛杉矶（Los Angeles）。",
+          "text": "会在哪里？",
+          "generated_tokens": 5,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "生成5个人工智能中使用的技术列表。",
+          "reference": "1.机器学习 (Machine Learning)\n2.自然语言处理 (Natural Language Processing)\n3.计算机视觉 (Computer Vision)\n4.深度学习 (Deep Learning)\n5.神经网络 (Neural Networks)",
+          "text": "利亚队在1998年，中国队在北京市场上，中国队在这里的一个人，不是一个人的人民族地区，但是一个人的。",
+          "generated_tokens": 50,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "标记以下句子的词性：一个律师正在买书。",
+          "reference": "一个(数词) 律师(名词) 正在(副词) 买(动词) 书(名词)。",
+          "text": "西",
+          "generated_tokens": 1,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "天气很可能晴朗。",
+          "reference": "您的留言表示天气很可能晴朗。如果您还有更多天气信息需要了解，可以让我为您查询。",
+          "text": "利亚队在1998年，中国队在北京市场上海南亚队的一场比赛。",
+          "generated_tokens": 29,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "谁创作了歌曲《草莓田》？",
+          "reference": "歌曲《草莓田》（Strawberry Fields Forever）是由披头士乐队的约翰·列侬创作，并由列侬-麦卡特尼名义发表。这首歌是披头士第九首英国单曲，于1967年首次发行。",
+          "text": "报道：“我们的一个人”，我们的人们不能在中国的一个人，是一个人的。",
+          "generated_tokens": 33,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "我认为...",
+          "reference": "不好意思，作为一个人工智能助手，我没有我的个人想法和观点，我只能根据您提供的信息和我已有的知识库为您提供建议和解答。您可以提出具体的问题，我将尽力为您解答。",
+          "text": "者是谁",
+          "generated_tokens": 3,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "生成一个独特且合适的抗议集会标签。",
+          "reference": "\"声援正义，决不妥协 - Unite for Justice, Never Compromise\"",
+          "text": "报告说，这是什么意思？",
+          "generated_tokens": 11,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "识别以下动词的正确形式：离开。",
+          "reference": "\"离开\" 是正确的简体中文形式。",
+          "text": "、《我们的人》，我们都是一个人的人，不是我们的人们的人们，他们在这里的人们的“我们”。",
+          "generated_tokens": 43,
+          "finish_reason": "eos"
+        }
+      ]
+    },
+    "sft": {
+      "checkpoint_sha256": "8afd940a484b153f70f2e1d91972a624de7c7d97b140f95547405a57b5e831ae",
+      "epoch": 8,
+      "score": {
+        "loss": 3.593567716993219,
+        "ppl": 36.36357973399347,
+        "tokens": 23369
+      },
+      "examples": [
+        {
+          "question": "命名一个位于美国西南地区的主要城市。",
+          "reference": "一个位于美国西南地区的主要城市是洛杉矶（Los Angeles）。",
+          "text": "1. 美国的 (Sine)\n2. 西班牙(Sing)\n3. 西班牙(Sand)\n3. 西班牙)\n4. 北美洲州 (Alis)\n4. 北美洲 (Sing)\n4. 西班牙)\n4. 西班牙)\n4. 西班牙(Sing)\n5. 巴西 (Sine)\n5. 西班牙)\n4",
+          "generated_tokens": 128,
+          "finish_reason": "length"
+        },
+        {
+          "question": "生成5个人工智能中使用的技术列表。",
+          "reference": "1.机器学习 (Machine Learning)\n2.自然语言处理 (Natural Language Processing)\n3.计算机视觉 (Computer Vision)\n4.深度学习 (Deep Learning)\n5.神经网络 (Neural Networks)",
+          "text": "1. 机器人工智能助手，我无法确定您想要我为您提供帮助。\n2. 您提供更多信息，我将尽力为您提供更多信息。\n3. 您可以提供更多的信息，以便我能够为您提供更多的信息。\n\n3. 您提供更多的信息，我将尽力为您提供帮助。\n\n5. 您提供更多信息，我将尽快乐。\n",
+          "generated_tokens": 128,
+          "finish_reason": "length"
+        },
+        {
+          "question": "标记以下句子的词性：一个律师正在买书。",
+          "reference": "一个(数词) 律师(名词) 正在(副词) 买(动词) 书(名词)。",
+          "text": "这个句子是一个简单的句子。",
+          "generated_tokens": 13,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "天气很可能晴朗。",
+          "reference": "您的留言表示天气很可能晴朗。如果您还有更多天气信息需要了解，可以让我为您查询。",
+          "text": "我是一个人工智能助手，我无法确定您想要我为您提供一个人工智能助手，我无法确定您提供帮助。",
+          "generated_tokens": 44,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "谁创作了歌曲《草莓田》？",
+          "reference": "歌曲《草莓田》（Strawberry Fields Forever）是由披头士乐队的约翰·列侬创作，并由列侬-麦卡特尼名义发表。这首歌是披头士第九首英国单曲，于1967年首次发行。",
+          "text": "《海洋的《海洋》是《海洋之旅》（The Arantertintertintintinte the the the the the the the the the the the the the the the the se sere the an the ",
+          "generated_tokens": 128,
+          "finish_reason": "length"
+        },
+        {
+          "question": "我认为...",
+          "reference": "不好意思，作为一个人工智能助手，我没有我的个人想法和观点，我只能根据您提供的信息和我已有的知识库为您提供建议和解答。您可以提出具体的问题，我将尽力为您解答。",
+          "text": "我是一个人工智能助手，我无法为您提供帮助。",
+          "generated_tokens": 21,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "生成一个独特且合适的抗议集会标签。",
+          "reference": "\"声援正义，决不妥协 - Unite for Justice, Never Compromise\"",
+          "text": "一个人工智能助手，我无法确定您的问题。",
+          "generated_tokens": 19,
+          "finish_reason": "eos"
+        },
+        {
+          "question": "识别以下动词的正确形式：离开。",
+          "reference": "\"离开\" 是正确的简体中文形式。",
+          "text": "这个句子是“我的句子，我无法为您提供一个语言模型，我无法为您提供帮助。”",
+          "generated_tokens": 36,
+          "finish_reason": "eos"
+        }
+      ]
+    }
+  },
+  "note": "测试集仅用于训练后评估。生成使用贪心选择和 1.1 重复惩罚，最多 128 token。答案 PPL 衡量参考答案概率，问答正确性需结合生成文本判断。"
+}
