@@ -1,0 +1,19 @@
+{
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "seed": 42,
+  "max_length": 192,
+  "epochs": 3,
+  "micro_batch": 8,
+  "accumulate": 4,
+  "lr": 0.0002,
+  "warmup_steps": 15,
+  "weight_decay": 0.01,
+  "lora": {
+    "r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "bias": "none",
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+  }
+}

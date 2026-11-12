@@ -1,0 +1,38 @@
+{
+  "split": "validation",
+  "data_sha256": "a375cea9883b2ad1101fa04a669ad78f4884742c86d822068ab7f5a8befd6742",
+  "decode": "greedy",
+  "max_new_tokens": 96,
+  "base": {
+    "teacher_forced": {
+      "nll": 2.44831388906241,
+      "ppl": 11.568823944478758,
+      "token_accuracy": 0.6187298665439485,
+      "answer_tokens": 4346,
+      "examples": 200
+    },
+    "generated": {
+      "examples": 200,
+      "rouge_l_f1": 0.2592410202101223,
+      "exact_match": 0.015,
+      "end_token_rate": 0.445,
+      "avg_new_tokens": 69.93
+    }
+  },
+  "sft": {
+    "teacher_forced": {
+      "nll": 1.5197027621596189,
+      "ppl": 4.570866358758219,
+      "token_accuracy": 0.6723423838011965,
+      "answer_tokens": 4346,
+      "examples": 200
+    },
+    "generated": {
+      "examples": 200,
+      "rouge_l_f1": 0.3133950221902313,
+      "exact_match": 0.0,
+      "end_token_rate": 0.42,
+      "avg_new_tokens": 66.615
+    }
+  }
+}

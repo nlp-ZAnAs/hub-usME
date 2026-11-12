@@ -1,0 +1,99 @@
+{
+  "config": {
+    "base_model": "Qwen/Qwen2.5-0.5B",
+    "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "seed": 42,
+    "max_length": 192,
+    "epochs": 3,
+    "micro_batch": 8,
+    "accumulate": 4,
+    "lr": 0.0002,
+    "warmup_steps": 15,
+    "weight_decay": 0.01,
+    "lora": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "bias": "none",
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ]
+    }
+  },
+  "train": {
+    "sha256": "1744a3101dc9761124ca9b0f2ad2e35d733c8b3cf270e560c6b468440a53ee4c",
+    "examples": 3000,
+    "max_sequence_tokens": 100,
+    "input_tokens": 155138,
+    "supervised_tokens": 61771
+  },
+  "val": {
+    "sha256": "a375cea9883b2ad1101fa04a669ad78f4884742c86d822068ab7f5a8befd6742",
+    "examples": 200,
+    "max_sequence_tokens": 91,
+    "input_tokens": 10650,
+    "supervised_tokens": 4346
+  },
+  "overlap": 0,
+  "torch": "2.7.1+cu126",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "base_dtype": "torch.bfloat16",
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 94,
+      "train_nll": 1.7294711446934228,
+      "val": {
+        "nll": 1.532730148182012,
+        "ppl": 4.630802356302491,
+        "token_accuracy": 0.670041417395306,
+        "answer_tokens": 4346,
+        "examples": 200
+      },
+      "elapsed_seconds": 89.44813739999881
+    },
+    {
+      "epoch": 2,
+      "updates": 188,
+      "train_nll": 1.3942284261141487,
+      "val": {
+        "nll": 1.5197027621596189,
+        "ppl": 4.570866358758219,
+        "token_accuracy": 0.6723423838011965,
+        "answer_tokens": 4346,
+        "examples": 200
+      },
+      "elapsed_seconds": 144.76392000000124
+    },
+    {
+      "epoch": 3,
+      "updates": 282,
+      "train_nll": 1.2170589927664324,
+      "val": {
+        "nll": 1.5527833569066294,
+        "ppl": 4.724602152665774,
+        "token_accuracy": 0.6725724804417855,
+        "answer_tokens": 4346,
+        "examples": 200
+      },
+      "elapsed_seconds": 200.0956253000004
+    }
+  ],
+  "base_val": {
+    "nll": 2.44831388906241,
+    "ppl": 11.568823944478758,
+    "token_accuracy": 0.6187298665439485,
+    "answer_tokens": 4346,
+    "examples": 200
+  },
+  "trainable_parameters": 4399104,
+  "total_parameters": 498431872,
+  "best_epoch": 2,
+  "peak_allocated_mib": 3469.96044921875
+}
