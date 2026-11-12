@@ -61,6 +61,7 @@ THREADS = 8
 IGNORE = -100
 MAX_NEW = 40
 REP_PENALTY = 1.0
+TOP_P = 0.8          # 生成时按核采样，累积概率到 0.8 为止；None 表示仍取概率最高的字
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TRAIN_PATH = os.path.join(HERE, "data", "sft_train.jsonl")
@@ -314,6 +315,24 @@ def run_epoch(model, loader, optimizer, train):
     return avg, acc
 
 
+def sample_token(logits, top_p):
+    """top_p 为 None 时取概率最高的字。否则在累积概率达到 top_p 的字里按概率抽样。"""
+    if top_p is None:
+        return int(torch.argmax(logits))
+    probs = torch.softmax(logits, dim=-1)
+    sorted_probs, sorted_idx = torch.sort(probs, descending=True)
+    cumulative = torch.cumsum(sorted_probs, dim=-1)
+    remove = cumulative > top_p
+    remove[1:] = remove[:-1].clone()
+    remove[0] = False
+    sorted_probs = sorted_probs.masked_fill(remove, 0)
+    total = sorted_probs.sum()
+    if float(total) <= 0:
+        return int(sorted_idx[0])
+    choice = int(torch.multinomial(sorted_probs / total, 1))
+    return int(sorted_idx[choice])
+
+
 def _penalize_repeats(logits, generated, penalty):
     """压低刚生成过的字，并禁止把已经出现过的 8 字片段再接一遍。"""
     if penalty != 1.0:
@@ -333,8 +352,8 @@ def _penalize_repeats(logits, generated, penalty):
 
 @torch.no_grad()
 def generate_answer(model, char2idx, idx2char, instruction, max_len, max_new=MAX_NEW,
-                    repetition_penalty=REP_PENALTY, finish_early=True):
-    """从「回答：」后面逐字生成。只惩罚已生成的字，指令里的数字仍可照抄。"""
+                    repetition_penalty=REP_PENALTY, finish_early=True, top_p=TOP_P):
+    """从「回答：」后面逐字生成。默认 top-p=0.8，不再只取概率最高的字。"""
     model.eval()
     prompt = f"指令：{instruction}\n回答："
     ids = encode(prompt, char2idx)
@@ -351,7 +370,7 @@ def generate_answer(model, char2idx, idx2char, instruction, max_len, max_new=MAX
         _penalize_repeats(logits, generated, repetition_penalty)
         if newline is not None and len(pieces) < 4:
             logits[newline] = -1e9
-        nxt = int(logits.argmax())
+        nxt = sample_token(logits, top_p)
         ch = idx2char[nxt]
         if ch == "\n":
             break
@@ -374,7 +393,7 @@ def opening_rates(model, rows, char2idx, idx2char, max_len, n=80, seed=1):
     for instruction, gold in pick:
         pred = generate_answer(
             model, char2idx, idx2char, instruction, max_len,
-            max_new=8, repetition_penalty=1.0, finish_early=False,
+            max_new=8, repetition_penalty=1.0, finish_early=False, top_p=None,
         )
         for k in hits:
             if pred[:k] == gold[:k]:
@@ -544,6 +563,7 @@ def main():
 
     demo_rows = val_rows[:4]
     train_demos = find_demos(train_rows)
+    torch.manual_seed(SEED)
     before = [generate_answer(model, char2idx, idx2char, ins, args.max_len) for ins, _ in demo_rows]
     train_before = [generate_answer(model, char2idx, idx2char, ins, args.max_len) for ins, _ in train_demos]
 
@@ -624,6 +644,7 @@ def main():
     elapsed = time.time() - t0
     model.load_state_dict(best_state)
     save_ckpt(best_prefix_epoch, best_prefix, best_rates)
+    torch.manual_seed(SEED)
     after = [generate_answer(model, char2idx, idx2char, ins, args.max_len) for ins, _ in demo_rows]
     train_after = [generate_answer(model, char2idx, idx2char, ins, args.max_len) for ins, _ in train_demos]
 
@@ -657,6 +678,7 @@ def main():
         f"词表：第四周 {base_vocab} 字，补充 {added} 个新字，合计 {vocab_size}，训练集覆盖 {cover:.1%}",
         "位置编码：由 32 插值到当前长度，避免 0/32/64 共用同一个位置向量",
         f"dropout：{args.dropout}    权重衰减：0    回答前 {HEAD_CHARS} 个字损失权重 {HEAD_BOOST:g}",
+        f"生成：top-p = {TOP_P}（开头重合仍按概率最高的字统计）",
         f"样本：训练 {len(train_pairs)}    验证 {len(val_pairs)}",
         "损失：只计算「回答」部分；指令部分标签为 -100",
         f"训练耗时：{elapsed:.0f} 秒（CPU，{args.epochs} 个 epoch，学习率 {args.lr}）",
