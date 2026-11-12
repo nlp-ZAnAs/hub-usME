@@ -10,12 +10,15 @@ train_sft.py — 作业：基于语言模型做 SFT（监督微调）
     只在回答的字上算交叉熵，指令部分的标签写成 -100，不产生损失
     模型学的是按指令作答，而不是把指令再抄一遍
 
-原模型上下文只有 32 个字，这里把位置编码扩到 96，多出来的位置用已学到的
-位置向量循环填上，微调时继续更新。
+原模型上下文只有 32 个字。这里把位置编码插值扩到 96：新位置是相邻旧位置的
+加权平均，而不是把 32 个位置向量复制三份。微调时这些位置继续更新。
+
+第四周词表只有 2000 字，指令里的空格和一部分汉字会被静默丢掉。这里先把
+训练集和验证集中没见过的字补进词表，新字的向量用旧词向量的均值加小噪声。
 
 用法：
     python train_sft.py
-    python train_sft.py --epochs 6 --lr 3e-4
+    python train_sft.py --epochs 16 --lr 3e-4
 """
 
 import os
@@ -49,10 +52,12 @@ SEED = 42
 MAX_LEN = 96          # 输入序列长度。指令+回答的中位长度约 64，96 能盖住大部分样本
 BATCH_SIZE = 16
 LR = 3e-4
-EPOCHS = 6
+EPOCHS = 16
+DROPOUT = 0.0      # 监督微调样本少，沿用预训练的 0.1 会让回答分布更平
 THREADS = 8
 IGNORE = -100
 MAX_NEW = 40
+REP_PENALTY = 1.3  # 只压已经生成出来的字，不压指令里的字，避免妨碍照抄数字
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TRAIN_PATH = os.path.join(HERE, "data", "sft_train.jsonl")
@@ -192,15 +197,49 @@ class TransformerLM(nn.Module):
         return F.linear(h, self.embed.weight)
 
 
+def extend_vocab(char2idx, idx2char, texts):
+    """把指令数据里词表没有的字补进去。空格和生僻字否则会在编码时被删掉。"""
+    counts = {}
+    for text in texts:
+        for ch in text:
+            if ch not in char2idx:
+                counts[ch] = counts.get(ch, 0) + 1
+    for ch, _ in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])):
+        idx = len(char2idx)
+        char2idx[ch] = idx
+        idx2char[idx] = ch
+    return len(counts)
+
+
+def interpolate_pos(old_pos, new_len):
+    """按顺序把位置向量插值拉长。复制粘贴会让位置 0、32、64 用同一个向量。"""
+    old_len = old_pos.shape[0]
+    if old_len == new_len:
+        return old_pos.contiguous()
+    if new_len < old_len:
+        return old_pos[:new_len].contiguous()
+    coord = torch.linspace(0, old_len - 1, new_len)
+    left = coord.floor().long()
+    right = (left + 1).clamp(max=old_len - 1)
+    alpha = (coord - left.to(coord.dtype)).unsqueeze(1)
+    mixed = old_pos[left] * (1 - alpha) + old_pos[right] * alpha
+    return mixed.contiguous()
+
+
 def load_base(model, path):
-    """加载第四周权重。位置编码比原来长时，用已有位置循环补齐。"""
+    """加载第四周权重。词表变大时，新字用已有字向量的均值加小噪声。"""
     ckpt = torch.load(path, map_location="cpu", weights_only=False)
     state = dict(ckpt["model_state"])
-    old_pos = state["pos.weight"]
-    new_len = model.pos.weight.shape[0]
-    if old_pos.shape[0] != new_len:
-        reps = (new_len + old_pos.shape[0] - 1) // old_pos.shape[0]
-        state["pos.weight"] = old_pos.repeat(reps, 1)[:new_len].contiguous()
+    old_embed = state["embed.weight"]
+    new_vocab, dim = model.embed.weight.shape
+    if old_embed.shape[0] < new_vocab:
+        extra = new_vocab - old_embed.shape[0]
+        center = old_embed.mean(dim=0, keepdim=True)
+        noise = torch.randn(extra, dim) * 0.02
+        state["embed.weight"] = torch.cat([old_embed, center + noise], dim=0)
+    elif old_embed.shape[0] > new_vocab:
+        state["embed.weight"] = old_embed[:new_vocab]
+    state["pos.weight"] = interpolate_pos(state["pos.weight"], model.pos.weight.shape[0])
     model.load_state_dict(state)
     return ckpt
 
@@ -230,25 +269,52 @@ def run_epoch(model, loader, criterion, optimizer, train):
     return avg, acc
 
 
+def _penalize_repeats(logits, generated, penalty):
+    """压低刚生成过的字，并禁止把已经出现过的 8 字片段再接一遍。"""
+    if penalty != 1.0:
+        for prev in set(generated[-12:]):
+            if logits[prev] > 0:
+                logits[prev] /= penalty
+            else:
+                logits[prev] *= penalty
+    n = 8
+    if len(generated) < n - 1:
+        return
+    tail = tuple(generated[-(n - 1):])
+    for i in range(len(generated) - n + 1):
+        if tuple(generated[i:i + n - 1]) == tail:
+            logits[generated[i + n - 1]] = -1e9
+
+
 @torch.no_grad()
-def generate_answer(model, char2idx, idx2char, instruction, max_len, max_new=MAX_NEW):
-    """从「回答：」后面逐字生成，遇到换行或到达长度就停。"""
+def generate_answer(model, char2idx, idx2char, instruction, max_len, max_new=MAX_NEW,
+                    repetition_penalty=REP_PENALTY):
+    """从「回答：」后面逐字生成。只惩罚已生成的字，指令里的数字仍可照抄。"""
     model.eval()
     prompt = f"指令：{instruction}\n回答："
     ids = encode(prompt, char2idx)
     if not ids:
         return ""
+    prompt_len = len(ids)
+    newline = char2idx.get("\n")
     pieces = []
     for _ in range(max_new):
         window = ids[-max_len:]
         x = torch.tensor(window, dtype=torch.long).unsqueeze(0)
-        nxt = int(model(x)[0, -1].argmax())
+        logits = model(x)[0, -1].clone()
+        generated = ids[prompt_len:]
+        _penalize_repeats(logits, generated, repetition_penalty)
+        if newline is not None and len(pieces) < 4:
+            logits[newline] = -1e9
+        nxt = int(logits.argmax())
         ch = idx2char[nxt]
         if ch == "\n":
             break
         pieces.append(ch)
         ids.append(nxt)
         if len(pieces) >= 4 and len(set(pieces[-4:])) == 1:
+            break
+        if ch == "。" and len(pieces) >= 8:
             break
     return "".join(pieces)
 
@@ -271,7 +337,8 @@ def plot_curve(history, path, base_loss, base_acc):
     axes[1].axhline(base_acc, color="gray", ls="--", label=f"微调前 {base_acc:.3f}")
     axes[1].set_xlabel("epoch")
     axes[1].set_ylabel("token accuracy")
-    axes[1].set_ylim(0, 0.45)
+    hi = max(history["train_acc"] + history["val_acc"] + [base_acc])
+    axes[1].set_ylim(0, min(1.0, max(0.45, hi + 0.08)))
     axes[1].set_title("回答部分的字准确率")
     axes[1].legend()
     axes[1].grid(True, alpha=0.3)
@@ -297,6 +364,7 @@ def main():
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE)
     parser.add_argument("--max-len", type=int, default=MAX_LEN)
     parser.add_argument("--lr", type=float, default=LR)
+    parser.add_argument("--dropout", type=float, default=DROPOUT)
     parser.add_argument("--threads", type=int, default=THREADS)
     parser.add_argument("--save", default=os.path.join(HERE, "sft_lm.pt"))
     parser.add_argument("--curve", default=os.path.join(HERE, "train_curve.png"))
@@ -312,12 +380,15 @@ def main():
             raise FileNotFoundError(f"找不到文件：{path}")
 
     base = torch.load(args.base, map_location="cpu", weights_only=False)
-    char2idx = base["char2idx"]
+    char2idx = dict(base["char2idx"])
     idx2char = {int(k): v for k, v in base["idx2char"].items()}
-    vocab_size = len(char2idx)
+    base_vocab = len(char2idx)
 
     train_rows = load_jsonl(args.train)
     val_rows = load_jsonl(args.val)
+    vocab_text = [f"指令：{ins}\n回答：{out}" for ins, out in train_rows + val_rows]
+    added = extend_vocab(char2idx, idx2char, vocab_text)
+    vocab_size = len(char2idx)
     train_pairs, train_raw, train_kept, train_sup = make_pairs(train_rows, char2idx, args.max_len)
     val_pairs, _, _, val_sup = make_pairs(val_rows, char2idx, args.max_len)
     if not train_pairs or not val_pairs:
@@ -335,18 +406,24 @@ def main():
         n_layers=base["n_layers"],
         d_ff=base["d_ff"],
         max_len=args.max_len,
-        dropout=base["dropout"],
+        dropout=args.dropout,
     )
     load_base(model, args.base)
     n_params = sum(p.numel() for p in model.parameters())
+    pos_cos = 1.0
+    if model.pos.weight.shape[0] > 32:
+        pos_cos = F.cosine_similarity(
+            model.pos.weight[0], model.pos.weight[32], dim=0).item()
 
     print(f"device: cpu   threads: {args.threads}")
     print(f"基座模型: {args.base}")
-    print(f"词表: {vocab_size}    参数量: {n_params:,}    上下文: {args.max_len}")
+    print(f"词表: {vocab_size}（第四周 {base_vocab}，补充 {added}）    "
+          f"参数量: {n_params:,}    上下文: {args.max_len}")
+    print(f"位置编码: 插值扩展，位置 0 与 32 的余弦相似度 {pos_cos:.3f}")
     print(f"训练样本: {len(train_pairs):,} / {len(train_rows):,}    "
           f"验证样本: {len(val_pairs):,} / {len(val_rows):,}")
     cover = train_kept / max(1, train_raw)
-    print(f"训练集汉字覆盖（在第四周词表内）: {cover:.1%}")
+    print(f"训练集字符覆盖: {cover:.1%}")
     print(f"计入损失的回答字数: 训练 {train_sup:,}    验证 {val_sup:,}")
 
     criterion = nn.CrossEntropyLoss(ignore_index=IGNORE)
@@ -358,7 +435,8 @@ def main():
     before = [generate_answer(model, char2idx, idx2char, ins, args.max_len) for ins, _ in demo_rows]
 
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
+        optimizer, T_max=args.epochs, eta_min=args.lr * 0.1)
     history = {"train_loss": [], "val_loss": [], "train_acc": [], "val_acc": []}
     best_loss = float("inf")
     best_epoch = 0
@@ -391,7 +469,7 @@ def main():
                 "n_heads": base["n_heads"],
                 "n_layers": base["n_layers"],
                 "d_ff": base["d_ff"],
-                "dropout": base["dropout"],
+                "dropout": args.dropout,
                 "max_len": args.max_len,
                 "base_val_loss": base_loss,
                 "base_val_acc": base_acc,
@@ -425,7 +503,9 @@ def main():
         f"结构：d_model={base['d_model']}  heads={base['n_heads']}  layers={base['n_layers']}  "
         f"ff={base['d_ff']}  max_len={args.max_len}",
         f"参数量：{n_params:,}",
-        f"词表：沿用第四周的 {vocab_size} 字，训练集覆盖 {cover:.1%}",
+        f"词表：第四周 {base_vocab} 字，补充 {added} 个新字，合计 {vocab_size}，训练集覆盖 {cover:.1%}",
+        "位置编码：由 32 插值到当前长度，避免 0/32/64 共用同一个位置向量",
+        f"dropout：{args.dropout}    生成：贪心 + 重复惩罚 {REP_PENALTY}",
         f"样本：训练 {len(train_pairs)}    验证 {len(val_pairs)}",
         "损失：只计算「回答」部分；指令部分标签为 -100",
         f"训练耗时：{elapsed:.0f} 秒（CPU，{args.epochs} 个 epoch，学习率 {args.lr}）",
