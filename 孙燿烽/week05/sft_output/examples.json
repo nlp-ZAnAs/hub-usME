@@ -1,0 +1,72 @@
+[
+  {
+    "instruction": "提供一个分类任务，让GPT确定一个人是否已经完成大学教育。 年龄：28 学位：硕士 工作：没有",
+    "output": "基于提供的年龄和学位，GPT可以确定这个人已经完成大学教育。",
+    "before": {
+      "text": "怎么才能让自己的手指甲联合快过好学好友过一个性生学别人才能力分手机关注销子去鼻子的手机会计算机\n这个性别人生日本学霸解手机会死人生活动画面膜好看不",
+      "stop_reason": "context_limit",
+      "unknown_prompt_tokens": 0
+    },
+    "after": {
+      "text": "这组学习的平方是一个学习。",
+      "stop_reason": "eos",
+      "unknown_prompt_tokens": 0
+    }
+  },
+  {
+    "instruction": "将以下句子转换为被动语态。 句子： Tom 发现了一份工作。",
+    "output": "一份工作被Tom发现了。",
+    "before": {
+      "text": "这是什么动漫里的人物？\n怎么才能让自己的手机变小\n怎么样的女人的自己的变得快速度挡的女生意思想要下载手机力号码\n这个人生存战斗争\n怎么才能的手表达模型号码\n什么",
+      "stop_reason": "max_new_tokens",
+      "unknown_prompt_tokens": 0
+    },
+    "after": {
+      "text": "我推荐一个人类的电影，《我推荐一部电影《我推荐《我推荐《我推荐《《盗》的《我》，》。",
+      "stop_reason": "eos",
+      "unknown_prompt_tokens": 0
+    }
+  },
+  {
+    "instruction": "创建一个简单的待办事项清单。 1. 水果店购买水果。 2. 向朋友回复电子邮件。 3. 洗衣服",
+    "output": "待办事项清单：，1. 购买水果，2. 回复朋友的邮件，3. 洗衣服",
+    "before": {
+      "text": "怎么才能让自己的手指甲联合适合理学好友过一个性生育的鼻子能用手机用手机银行政府\n这个性格格式\n这个性别人的手机构网络\n怎么发钱一个人才能看直心静的",
+      "stop_reason": "context_limit",
+      "unknown_prompt_tokens": 0
+    },
+    "after": {
+      "text": "这个数字的平均值是 1. 1. - 1. 1. 1. 1. 1. 1. 1. 1. 1. ",
+      "stop_reason": "eos",
+      "unknown_prompt_tokens": 0
+    }
+  },
+  {
+    "instruction": "给定两个数，判断它们是否互质。 数字1：12，数字2：25",
+    "output": "数字1和数字2不互质，因为它们都可以被5整除。",
+    "before": {
+      "text": "这是什么动漫里的人物？\n怎么才能让自己的手机变得快\n怎么样的女人的自己的变得快速度挡的女生意思想要的小肚子\n这个人死的头发起一个人生动画眉毛\n这个人的钱人睡觉得",
+      "stop_reason": "max_new_tokens",
+      "unknown_prompt_tokens": 0
+    },
+    "after": {
+      "text": "数字1和数字1和数字2的乘积是 15。",
+      "stop_reason": "eos",
+      "unknown_prompt_tokens": 0
+    }
+  },
+  {
+    "instruction": "给定一组数据，判断其中是否存在异常值。 数据组：1,2,3,4,5,6,1000",
+    "output": "是，数据组中的1000是异常值。",
+    "before": {
+      "text": "怎么才能让自己的手机变白\n怎么才能让自己喜像自己在网上快速度知道皮鞋子能用电脑筋急转移动物主要开通快速升级抓到自己的人的手机面膜钱包皮带好看到付宝里传自己的斑用",
+      "stop_reason": "max_new_tokens",
+      "unknown_prompt_tokens": 0
+    },
+    "after": {
+      "text": "这组数的平均值为10。",
+      "stop_reason": "eos",
+      "unknown_prompt_tokens": 0
+    }
+  }
+]
