@@ -1,0 +1,207 @@
+{
+  "base_checkpoint": "/home/flmae/Projects/learn/hub-usME/孙燿烽/week04/best_transformer.pt",
+  "settings": {
+    "command": "train",
+    "device": "auto",
+    "seed": 42,
+    "base_checkpoint": "/home/flmae/Projects/learn/hub-usME/孙燿烽/week04/best_transformer.pt",
+    "train_file": "/home/flmae/Projects/learn/hub-usME/孙燿烽/week05/sft_train/sft_train.jsonl",
+    "val_file": "/home/flmae/Projects/learn/hub-usME/孙燿烽/week05/sft_train/sft_val.jsonl",
+    "output_dir": "/home/flmae/Projects/learn/hub-usME/孙燿烽/week05/sft_output",
+    "max_length": 128,
+    "batch_size": 32,
+    "lr": 0.0001,
+    "epochs": 10,
+    "patience": 3,
+    "train_limit": 0,
+    "val_limit": 0,
+    "examples": 5
+  },
+  "model_config": {
+    "embed_dim": 128,
+    "num_layers": 2,
+    "nhead": 4,
+    "ffn_dim": 512,
+    "dropout": 0.1,
+    "vocab_size": 4106,
+    "max_seq_len": 128
+  },
+  "train_data": {
+    "samples": 3000,
+    "max_input_tokens": 120,
+    "answer_tokens_including_eos": 84412,
+    "unknown_prompt_tokens": 0,
+    "unknown_answer_tokens": 0
+  },
+  "val_data": {
+    "samples": 200,
+    "max_input_tokens": 114,
+    "answer_tokens_including_eos": 5792,
+    "unknown_prompt_tokens": 1,
+    "unknown_answer_tokens": 4
+  },
+  "baseline_note": "与 SFT 使用同一扩展字表、位置长度和答案 loss；新增参数尚未训练。",
+  "baseline": {
+    "loss": 5.564144282051213,
+    "ppl": 260.90184976369295,
+    "answer_tokens": 5792
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train": {
+        "loss": 5.073591733291772,
+        "ppl": 159.74706702237663,
+        "answer_tokens": 84412
+      },
+      "validation": {
+        "loss": 4.504846446421924,
+        "ppl": 90.45445337744626,
+        "answer_tokens": 5792
+      },
+      "seconds": 0.773,
+      "improved": true
+    },
+    {
+      "epoch": 2,
+      "train": {
+        "loss": 4.465686664509897,
+        "ppl": 86.98073562257908,
+        "answer_tokens": 84412
+      },
+      "validation": {
+        "loss": 4.09548657243423,
+        "ppl": 60.0685597532457,
+        "answer_tokens": 5792
+      },
+      "seconds": 0.64,
+      "improved": true
+    },
+    {
+      "epoch": 3,
+      "train": {
+        "loss": 4.174347442987038,
+        "ppl": 64.99741130249132,
+        "answer_tokens": 84412
+      },
+      "validation": {
+        "loss": 3.917767793434101,
+        "ppl": 50.28806604724096,
+        "answer_tokens": 5792
+      },
+      "seconds": 0.61,
+      "improved": true
+    },
+    {
+      "epoch": 4,
+      "train": {
+        "loss": 4.016014230356947,
+        "ppl": 55.479535906765435,
+        "answer_tokens": 84412
+      },
+      "validation": {
+        "loss": 3.803492920174783,
+        "ppl": 44.85759516843163,
+        "answer_tokens": 5792
+      },
+      "seconds": 0.621,
+      "improved": true
+    },
+    {
+      "epoch": 5,
+      "train": {
+        "loss": 3.9008842395593932,
+        "ppl": 49.44615202443754,
+        "answer_tokens": 84412
+      },
+      "validation": {
+        "loss": 3.7183485926844138,
+        "ppl": 41.196306022362315,
+        "answer_tokens": 5792
+      },
+      "seconds": 0.625,
+      "improved": true
+    },
+    {
+      "epoch": 6,
+      "train": {
+        "loss": 3.810751805388859,
+        "ppl": 45.18439597253607,
+        "answer_tokens": 84412
+      },
+      "validation": {
+        "loss": 3.652101379731742,
+        "ppl": 38.55560094014032,
+        "answer_tokens": 5792
+      },
+      "seconds": 0.611,
+      "improved": true
+    },
+    {
+      "epoch": 7,
+      "train": {
+        "loss": 3.7299303055623017,
+        "ppl": 41.67620346324395,
+        "answer_tokens": 84412
+      },
+      "validation": {
+        "loss": 3.591902864572093,
+        "ppl": 36.30309010735496,
+        "answer_tokens": 5792
+      },
+      "seconds": 0.623,
+      "improved": true
+    },
+    {
+      "epoch": 8,
+      "train": {
+        "loss": 3.663691152426121,
+        "ppl": 39.005051072628305,
+        "answer_tokens": 84412
+      },
+      "validation": {
+        "loss": 3.5423379761079397,
+        "ppl": 34.547596298265375,
+        "answer_tokens": 5792
+      },
+      "seconds": 0.618,
+      "improved": true
+    },
+    {
+      "epoch": 9,
+      "train": {
+        "loss": 3.604190294422742,
+        "ppl": 36.75191357689155,
+        "answer_tokens": 84412
+      },
+      "validation": {
+        "loss": 3.499654506451517,
+        "ppl": 33.10401275988397,
+        "answer_tokens": 5792
+      },
+      "seconds": 0.615,
+      "improved": true
+    },
+    {
+      "epoch": 10,
+      "train": {
+        "loss": 3.547410714153497,
+        "ppl": 34.72329245792613,
+        "answer_tokens": 84412
+      },
+      "validation": {
+        "loss": 3.4577728819451936,
+        "ppl": 31.746195200250764,
+        "answer_tokens": 5792
+      },
+      "seconds": 0.624,
+      "improved": true
+    }
+  ],
+  "best_epoch": 10,
+  "best_validation": {
+    "loss": 3.4577728819451936,
+    "ppl": 31.746195200250764,
+    "answer_tokens": 5792
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "data": {
+    "samples": 200,
+    "max_input_tokens": 114,
+    "answer_tokens_including_eos": 5792,
+    "unknown_prompt_tokens": 1,
+    "unknown_answer_tokens": 4
+  },
+  "loss": 3.4577630606804104,
+  "ppl": 31.74588341399291,
+  "answer_tokens": 5792
+}
