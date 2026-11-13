@@ -1,0 +1,3 @@
+__pycache__/
+*.pyc
+data/alpaca_gpt4_data_zh.json
