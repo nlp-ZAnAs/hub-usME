@@ -1,0 +1,26 @@
+==============================================================================
+Week05 SFT  2026-11-11 22:34:29
+model=D:\Env\models\Qwen2-0.5B
+mask_prompt=False  lora=True  epochs=1 batch=8 grad_accum=2
+tokenizer: vocab=151646 pad='<|endoftext|>'(151643) eos='<|endoftext|>'(151643)
+train: {'n': 3000, 'tokens_mean': 62.712666666666664, 'tokens_max': 111, 'prompt_mean': 41.12233333333333, 'resp_mean': 21.590333333333334, 'resp_share': 0.3442738840638255}
+val  : {'n': 200, 'tokens_mean': 64.25, 'tokens_max': 102, 'prompt_mean': 41.52, 'resp_mean': 22.73, 'resp_share': 0.35377431906614787}
+device=cuda dtype=torch.bfloat16
+LoRA r=16 alpha=32 dropout=0.05
+trainable 8,798,208 / total 494,032,768 = 1.78%
+lr=0.0002 total_steps=188 warmup=5
+[step 0 / base] val_loss=1.5826 ppl=4.87 acc=0.6546
+epoch 1 step 1/188 loss=2.2876 lr=4.00e-05
+epoch 1 step 20/188 loss=1.2077 lr=1.97e-04
+epoch 1 step 40/188 loss=1.0822 lr=1.82e-04
+epoch 1 step 60/188 loss=1.1085 lr=1.59e-04
+epoch 1 step 80/188 loss=1.0760 lr=1.28e-04
+epoch 1 step 100/188 loss=1.2009 lr=9.40e-05
+epoch 1 step 120/188 loss=1.1398 lr=6.07e-05
+epoch 1 step 140/188 loss=1.0910 lr=3.21e-05
+epoch 1 step 160/188 loss=1.0301 lr=1.13e-05
+epoch 1 step 180/188 loss=1.2211 lr=9.42e-07
+[epoch 1] train_loss=1.1017 | val_loss=1.1119 ppl=3.04 acc=0.7187 | 83.6s
+  -> new best (val_loss=1.1119) saved to outputs\ablation_nomask\best
+done in 86.4s, best epoch=1 val_loss=1.1119
+saved: outputs\ablation_nomask\metrics.json , loss_curve.png

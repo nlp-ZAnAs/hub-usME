@@ -1,0 +1,43 @@
+{
+  "model": "D:\\Env\\models\\Qwen2-0.5B",
+  "train": "D:\\Study\\Ba_Dou_Xue_Yuan\\nlp_study\\黎如祥\\week05\\data\\sft_train.jsonl",
+  "val": "D:\\Study\\Ba_Dou_Xue_Yuan\\nlp_study\\黎如祥\\week05\\data\\sft_val.jsonl",
+  "output": "outputs\\lora_r16",
+  "epochs": 3,
+  "batch_size": 8,
+  "grad_accum": 2,
+  "lr": null,
+  "max_len": 512,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "no_lora": false,
+  "no_mask": false,
+  "seed": 42,
+  "limit": 0,
+  "save_last": false,
+  "n_all_params": 494032768,
+  "n_trainable_params": 8798208,
+  "train_stats": {
+    "n": 3000,
+    "tokens_mean": 62.712666666666664,
+    "tokens_max": 111,
+    "prompt_mean": 41.12233333333333,
+    "resp_mean": 21.590333333333334,
+    "resp_share": 0.3442738840638255
+  },
+  "val_stats": {
+    "n": 200,
+    "tokens_mean": 64.25,
+    "tokens_max": 102,
+    "prompt_mean": 41.52,
+    "resp_mean": 22.73,
+    "resp_share": 0.35377431906614787
+  },
+  "device": "cuda",
+  "dtype": "torch.bfloat16",
+  "elapsed_sec": 534.7,
+  "best_epoch": 1,
+  "best_val_loss": 1.0948901338116797,
+  "torch": "2.13.0+cu132"
+}

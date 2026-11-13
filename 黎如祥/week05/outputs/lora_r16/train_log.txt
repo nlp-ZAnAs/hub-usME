@@ -1,0 +1,47 @@
+==============================================================================
+Week05 SFT  2026-11-11 22:22:45
+model=D:\Env\models\Qwen2-0.5B
+mask_prompt=True  lora=True  epochs=3 batch=8 grad_accum=2
+tokenizer: vocab=151646 pad='<|endoftext|>'(151643) eos='<|endoftext|>'(151643)
+train: {'n': 3000, 'tokens_mean': 62.712666666666664, 'tokens_max': 111, 'prompt_mean': 41.12233333333333, 'resp_mean': 21.590333333333334, 'resp_share': 0.3442738840638255}
+val  : {'n': 200, 'tokens_mean': 64.25, 'tokens_max': 102, 'prompt_mean': 41.52, 'resp_mean': 22.73, 'resp_share': 0.35377431906614787}
+device=cuda dtype=torch.bfloat16
+LoRA r=16 alpha=32 dropout=0.05
+trainable 8,798,208 / total 494,032,768 = 1.78%
+lr=0.0002 total_steps=564 warmup=16
+[step 0 / base] val_loss=1.5826 ppl=4.87 acc=0.6546
+epoch 1 step 1/564 loss=1.6756 lr=1.25e-05
+epoch 1 step 20/564 loss=1.3275 lr=2.00e-04
+epoch 1 step 40/564 loss=1.3035 lr=1.99e-04
+epoch 1 step 60/564 loss=1.0702 lr=1.97e-04
+epoch 1 step 80/564 loss=0.9975 lr=1.93e-04
+epoch 1 step 100/564 loss=1.3215 lr=1.89e-04
+epoch 1 step 120/564 loss=1.2024 lr=1.83e-04
+epoch 1 step 140/564 loss=1.4177 lr=1.76e-04
+epoch 1 step 160/564 loss=1.5295 lr=1.68e-04
+epoch 1 step 180/564 loss=1.5065 lr=1.59e-04
+[epoch 1] train_loss=1.1849 | val_loss=1.0949 ppl=2.99 acc=0.7202 | 128.3s
+  -> new best (val_loss=1.0949) saved to outputs\lora_r16\best
+epoch 2 step 200/564 loss=0.7131 lr=1.49e-04
+epoch 2 step 220/564 loss=0.8191 lr=1.39e-04
+epoch 2 step 240/564 loss=0.9456 lr=1.28e-04
+epoch 2 step 260/564 loss=0.8587 lr=1.17e-04
+epoch 2 step 280/564 loss=0.7489 lr=1.06e-04
+epoch 2 step 300/564 loss=0.8290 lr=9.43e-05
+epoch 2 step 320/564 loss=0.8600 lr=8.29e-05
+epoch 2 step 340/564 loss=0.5905 lr=7.17e-05
+epoch 2 step 360/564 loss=0.8933 lr=6.09e-05
+[epoch 2] train_loss=0.8050 | val_loss=1.1302 ppl=3.10 acc=0.7248 | 176.4s
+epoch 3 step 380/564 loss=0.3995 lr=5.07e-05
+epoch 3 step 400/564 loss=0.8279 lr=4.10e-05
+epoch 3 step 420/564 loss=0.7075 lr=3.22e-05
+epoch 3 step 440/564 loss=0.4679 lr=2.42e-05
+epoch 3 step 460/564 loss=0.3226 lr=1.73e-05
+epoch 3 step 480/564 loss=0.3002 lr=1.14e-05
+epoch 3 step 500/564 loss=0.5376 lr=6.66e-06
+epoch 3 step 520/564 loss=0.3928 lr=3.16e-06
+epoch 3 step 540/564 loss=0.4635 lr=9.45e-07
+epoch 3 step 560/564 loss=0.5989 lr=2.63e-08
+[epoch 3] train_loss=0.5352 | val_loss=1.2510 ppl=3.49 acc=0.7217 | 225.6s
+done in 534.7s, best epoch=1 val_loss=1.0949
+saved: outputs\lora_r16\metrics.json , loss_curve.png

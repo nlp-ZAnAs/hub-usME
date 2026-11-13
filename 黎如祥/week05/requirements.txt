@@ -1,0 +1,6 @@
+# Week05 SFT 作业依赖（在 AgentStudy 环境中已验证）
+torch>=2.4
+transformers>=4.44
+peft>=0.12
+accelerate>=0.30
+matplotlib>=3.8
