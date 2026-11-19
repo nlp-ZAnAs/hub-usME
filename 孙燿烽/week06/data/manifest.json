@@ -1,0 +1,58 @@
+{
+  "raw_rows": 7766,
+  "empty_rows_removed": 1,
+  "invalid_labels_removed": 0,
+  "conflicting_rows_removed": 0,
+  "duplicate_input_rows_removed": 2,
+  "unique_full_texts": 7765,
+  "raw_rows_over_character_limit": 1308,
+  "clean_rows": 7763,
+  "unused_rows": 4163,
+  "cross_split_duplicate_inputs": 0,
+  "split_counts": {
+    "train": {
+      "total": 2400,
+      "labels": {
+        "1": 1645,
+        "0": 755
+      }
+    },
+    "val": {
+      "total": 400,
+      "labels": {
+        "0": 126,
+        "1": 274
+      }
+    },
+    "test": {
+      "total": 800,
+      "labels": {
+        "0": 252,
+        "1": 548
+      }
+    }
+  },
+  "split_config": {
+    "seed": 42,
+    "train_size": 2400,
+    "val_size": 400,
+    "test_size": 800,
+    "max_chars": 200
+  },
+  "split_sha256": {
+    "train": "7d434022cb98bb8de16a238a568f149d9580064334b5aa844b3687873f090389",
+    "val": "a0140c0cc6936b9b1f1e03b8c90086b7ef5a5a42406b084726f95145adf01450",
+    "test": "b1ce0978eeaac8fb3e6ee5adb7cc350c46f43433eb49f1c47a505848d088cc78"
+  },
+  "source": {
+    "repo": "SophonPlus/ChineseNlpCorpus",
+    "revision": "4ef366aa97c927f5bd69e1d97dc88461590174fd",
+    "url": "https://raw.githubusercontent.com/SophonPlus/ChineseNlpCorpus/4ef366aa97c927f5bd69e1d97dc88461590174fd/datasets/ChnSentiCorp_htl_all/ChnSentiCorp_htl_all.csv",
+    "sha256": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0"
+  },
+  "limitations": [
+    "未做语义近重复聚类或按酒店分组；无可靠酒店 ID。",
+    "公开数据可能出现在预训练语料中，无法排除预训练污染。",
+    "这是自建固定子集，不是原数据集官方 benchmark 切分。"
+  ]
+}

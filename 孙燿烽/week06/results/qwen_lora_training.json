@@ -1,0 +1,20 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.15245626981864915,
+    "val_macro_f1": 0.8930566294050913,
+    "val_accuracy": 0.9075,
+    "val_invalid": 0,
+    "optimizer_steps": 150,
+    "elapsed_seconds": 66.10350964400004
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.09821949964899734,
+    "val_macro_f1": 0.88910924871516,
+    "val_accuracy": 0.9025,
+    "val_invalid": 0,
+    "optimizer_steps": 300,
+    "elapsed_seconds": 130.75315565999972
+  }
+]
