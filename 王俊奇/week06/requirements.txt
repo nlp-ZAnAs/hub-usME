@@ -1,0 +1,20 @@
+# 项目运行依赖（纯 PyPI，不含 conda 本地构建路径）
+# 安装：pip install -r requirements.txt
+
+# 深度学习框架（BERT 微调 / LLM 本地推理）
+torch==2.15.0
+
+# 预训练模型加载与分词
+transformers==5.14.1
+# transformers 5.x 要求 huggingface-hub <2.0，装 2.4.0 会在 import 时版本冲突
+huggingface-hub>=1.5.0,<2.0
+
+# LoRA 微调
+peft==0.20.0
+
+# 传统机器学习与评测指标
+scikit-learn==1.9.0
+numpy==2.5.4
+
+# LLM API 零样本分类
+openai==2.54.0
