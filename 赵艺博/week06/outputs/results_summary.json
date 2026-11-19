@@ -1,0 +1,11 @@
+{
+  "task": "TNEWS clean_val n=500 seed=42",
+  "train": "stratified 12000 seed=42, epochs=2, batch=16, device=cpu, class_weight=on",
+  "methods": [
+    {"name": "rule", "acc": 0.126, "macro_f1": 0.0716, "pred": "rule_pred.json"},
+    {"name": "tfidf", "acc": 0.512, "macro_f1": 0.4721, "pred": "tfidf_pred.json"},
+    {"name": "bert-base-chinese", "acc": 0.554, "macro_f1": 0.5388, "pred": "bert_base_pred.json"},
+    {"name": "chinese-roberta-wwm-ext", "acc": 0.532, "macro_f1": 0.5206, "pred": "roberta_pred.json"}
+  ],
+  "top_confusion_bert": {"true": "科技", "pred": "财经", "note": "short title boundary overlap"}
+}
