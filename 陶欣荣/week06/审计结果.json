@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "manifest_hash": "c086c7c9f6b03781b836aa4ac3e9fe006f3a2019619a1bfe949df8b6125f2961",
+  "checked": [
+    {
+      "name": "rule",
+      "n": 1000,
+      "recomputed_macro_f1": 0.07391035699542206,
+      "checks": "passed"
+    },
+    {
+      "name": "tfidf_baseline",
+      "n": 1000,
+      "recomputed_macro_f1": 0.4709286547159707,
+      "checks": "passed"
+    },
+    {
+      "name": "tfidf_best",
+      "n": 1000,
+      "recomputed_macro_f1": 0.4755119883062894,
+      "checks": "passed"
+    },
+    {
+      "name": "bert_cls",
+      "n": 1000,
+      "recomputed_macro_f1": 0.5179139849767286,
+      "checks": "passed"
+    },
+    {
+      "name": "bert_mean",
+      "n": 1000,
+      "recomputed_macro_f1": 0.5148136158062653,
+      "checks": "passed"
+    },
+    {
+      "name": "bert_unweighted",
+      "n": 1000,
+      "recomputed_macro_f1": 0.5187613561598537,
+      "checks": "passed"
+    },
+    {
+      "name": "bert_len32",
+      "n": 1000,
+      "recomputed_macro_f1": 0.5224337074270974,
+      "checks": "passed"
+    },
+    {
+      "name": "minicpm_zero",
+      "n": 1000,
+      "recomputed_macro_f1": 0.024440197483675746,
+      "checks": "passed"
+    },
+    {
+      "name": "minicpm_lora",
+      "n": 1000,
+      "recomputed_macro_f1": 0.4853923769254368,
+      "checks": "passed"
+    }
+  ],
+  "paired_intervals": {
+    "bert_len32 minus tfidf_baseline": {
+      "difference": 0.05150505271112671,
+      "paired_bootstrap_95_percentile": [
+        0.017363342333829444,
+        0.08509138483293359
+      ],
+      "replicates": 2000,
+      "seed": 20261119,
+      "limitation": "test-sampling uncertainty only; does not cover training-seed variance; post-hoc exploratory"
+    },
+    "bert_len32 minus tfidf_best": {
+      "difference": 0.046921719120808,
+      "paired_bootstrap_95_percentile": [
+        0.014069977834219758,
+        0.07849060920742526
+      ],
+      "replicates": 2000,
+      "seed": 20261119,
+      "limitation": "test-sampling uncertainty only; does not cover training-seed variance; post-hoc exploratory"
+    },
+    "bert_len32 minus bert_cls": {
+      "difference": 0.004519722450368802,
+      "paired_bootstrap_95_percentile": [
+        -0.013141219171867587,
+        0.020724842266349148
+      ],
+      "replicates": 2000,
+      "seed": 20261119,
+      "limitation": "test-sampling uncertainty only; does not cover training-seed variance; post-hoc exploratory"
+    },
+    "minicpm_lora minus tfidf_best": {
+      "difference": 0.009880388619147418,
+      "paired_bootstrap_95_percentile": [
+        -0.03193608639559055,
+        0.05037003120195859
+      ],
+      "replicates": 2000,
+      "seed": 20261119,
+      "limitation": "test-sampling uncertainty only; does not cover training-seed variance; post-hoc exploratory"
+    },
+    "minicpm_lora minus minicpm_zero": {
+      "difference": 0.46095217944176103,
+      "paired_bootstrap_95_percentile": [
+        0.42641866170937087,
+        0.48963250383159657
+      ],
+      "replicates": 2000,
+      "seed": 20261119,
+      "limitation": "test-sampling uncertainty only; does not cover training-seed variance; post-hoc exploratory"
+    }
+  },
+  "bootstrap_status": {
+    "state": "completed",
+    "started_unix": 1795069538.5088468,
+    "elapsed_seconds": 1805.9
+  },
+  "limits": [
+    "BERT weight files not present in returned archive; predictions verified but inference not rerun.",
+    "Raw calibration/policy logits not saved; test routing and saved policy sweep selection verified.",
+    "No real-domain human labels; no multiple training seeds."
+  ]
+}
