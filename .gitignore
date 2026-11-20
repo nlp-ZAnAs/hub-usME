@@ -1,0 +1,22 @@
+庄群新/week02/深度学习基本原理.pptx
+庄群新/week02/CrossEntropy.py
+庄群新/week02/DNNforward.py
+庄群新/week02/gradient_descent_lab.html
+庄群新/week02/GradientDescent.py
+庄群新/week02/model.bin
+庄群新/week02/Softmax.py
+庄群新/week02/TorchDemo.py
+庄群新/week02/TorchSoftmaxDemo.bin
+庄群新/week02/TorchSoftmaxDemo.py
+庄群新/week02/TorchSoftmaxDemo.py
+庄群新/week02/TorchSoftmaxDemo.py
+庄群新/week02/TorchSoftmaxDemo.py
+
+# ---- 第6周补充：模型权重/数据不进仓库 ----
+庄群新/**/models/
+庄群新/**/data/
+*.pt
+*.pth
+*.joblib
+*.bin
+__pycache__/

@@ -1,0 +1,33 @@
+[cfg] pool=cls bs=32 epochs=3 lr=2e-05 head×5.0 max_len=64 class_weight=off device=cuda
+  epoch 1 step 200/1668 loss=1.6473
+  epoch 1 step 400/1668 loss=1.3027
+  epoch 1 step 600/1668 loss=1.8740
+  epoch 1 step 800/1668 loss=1.1634
+  epoch 1 step 1000/1668 loss=0.9168
+  epoch 1 step 1200/1668 loss=1.1044
+  epoch 1 step 1400/1668 loss=1.4754
+  epoch 1 step 1600/1668 loss=1.1016
+epoch 1: val_acc=0.534 val_f1=0.5182 (312.2s)
+  epoch 2 step 200/1668 loss=0.9129
+  epoch 2 step 400/1668 loss=1.0308
+  epoch 2 step 600/1668 loss=0.8046
+  epoch 2 step 800/1668 loss=1.0062
+  epoch 2 step 1000/1668 loss=1.0732
+  epoch 2 step 1200/1668 loss=0.6904
+  epoch 2 step 1400/1668 loss=1.0360
+  epoch 2 step 1600/1668 loss=1.1609
+epoch 2: val_acc=0.552 val_f1=0.5309 (296.0s)
+  epoch 3 step 200/1668 loss=0.5368
+  epoch 3 step 400/1668 loss=0.7846
+  epoch 3 step 600/1668 loss=1.0318
+  epoch 3 step 800/1668 loss=1.0509
+  epoch 3 step 1000/1668 loss=0.7118
+  epoch 3 step 1200/1668 loss=0.7309
+  epoch 3 step 1400/1668 loss=0.7041
+  epoch 3 step 1600/1668 loss=0.6812
+epoch 3: val_acc=0.56 val_f1=0.5547 (300.9s)
+评测 500 条（干净集）| BERT 微调（cls 池化）
+| BERT 微调（cls 池化） | acc=0.558 | macro-F1=0.5532 | 覆盖 15/15 | ECE=0.1368 |
+训练 909.65s | 单条 10.173 ms | batch32 1.244 ms/条 | 显存峰值 2217.1 MB | 模型 390.2 MB
+→ 模型 D:\BaiduNetdiskDownload\AILearningSpace\Python\hub-usME\庄群新\week06\models\bert_ckpt_nw.pt
+→ 指标 D:\BaiduNetdiskDownload\AILearningSpace\Python\hub-usME\庄群新\week06\outputs\bert_nw_metrics.json
