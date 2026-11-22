@@ -1,0 +1,104 @@
+{
+  "trials": [
+    {
+      "config": {
+        "name": "baseline",
+        "ngram": [
+          1,
+          2
+        ],
+        "C": 1.0,
+        "weight": null,
+        "sublinear": false
+      },
+      "dev_macro_f1": 0.4688510949220471,
+      "fit_seconds": 0.24960040010046214
+    },
+    {
+      "config": {
+        "name": "C05",
+        "ngram": [
+          1,
+          2
+        ],
+        "C": 0.5,
+        "weight": null,
+        "sublinear": false
+      },
+      "dev_macro_f1": 0.4519217580372625,
+      "fit_seconds": 0.28458340000361204
+    },
+    {
+      "config": {
+        "name": "C2",
+        "ngram": [
+          1,
+          2
+        ],
+        "C": 2.0,
+        "weight": null,
+        "sublinear": false
+      },
+      "dev_macro_f1": 0.4668883538418995,
+      "fit_seconds": 0.29353849997278303
+    },
+    {
+      "config": {
+        "name": "ngram13",
+        "ngram": [
+          1,
+          3
+        ],
+        "C": 1.0,
+        "weight": null,
+        "sublinear": false
+      },
+      "dev_macro_f1": 0.4518464027844627,
+      "fit_seconds": 0.4463654999854043
+    },
+    {
+      "config": {
+        "name": "balanced",
+        "ngram": [
+          1,
+          2
+        ],
+        "C": 1.0,
+        "weight": "balanced",
+        "sublinear": false
+      },
+      "dev_macro_f1": 0.46894252396265496,
+      "fit_seconds": 0.26000650005880743
+    },
+    {
+      "config": {
+        "name": "sublinear",
+        "ngram": [
+          1,
+          2
+        ],
+        "C": 1.0,
+        "weight": null,
+        "sublinear": true
+      },
+      "dev_macro_f1": 0.4640673690744206,
+      "fit_seconds": 0.26204870000947267
+    }
+  ],
+  "best": {
+    "config": {
+      "name": "balanced",
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 1.0,
+      "weight": "balanced",
+      "sublinear": false
+    },
+    "dev_macro_f1": 0.46894252396265496,
+    "fit_seconds": 0.26000650005880743
+  },
+  "selected_on": "dev only",
+  "manifest_hash": "c086c7c9f6b03781b836aa4ac3e9fe006f3a2019619a1bfe949df8b6125f2961"
+}
