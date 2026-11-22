@@ -1,0 +1,17 @@
+﻿backbone,config,group,seed,pool,loss,class_weight,fgm,best_epoch,best_macro_f1,acc,weighted_f1,train_seconds
+bert,pool=cls,pool,42,cls,CE,True,False,2,0.5525,0.5582,0.5573,292.0
+bert,pool=mean,pool,42,mean,CE,True,False,2,0.549,0.5554,0.5538,276.0
+bert,pool=max,pool,42,max,CE,True,False,2,0.543,0.5509,0.5495,312.3
+bert,baseline,tech,42,cls,CE,True,False,2,0.5525,0.5582,0.5573,292.0
+bert,no_class_weight,tech,42,cls,CE,False,False,3,0.5472,0.5608,0.5613,317.6
+bert,label_smoothing,tech,42,cls,CE+LS(0.1),True,False,2,0.5433,0.5529,0.5522,308.7
+bert,focal_gamma=2,tech,42,cls,Focal(gamma=2.0),True,False,3,0.5484,0.5564,0.5555,310.3
+bert,fgm,tech,42,cls,CE,True,True,3,0.5506,0.5587,0.558,477.3
+roberta,pool=cls,pool,42,cls,CE,True,False,2,0.5691,0.5782,0.5774,307.1
+roberta,pool=mean,pool,42,mean,CE,True,False,2,0.5669,0.576,0.5743,312.6
+roberta,pool=max,pool,42,max,CE,True,False,2,0.5654,0.5751,0.5722,310.8
+roberta,baseline,tech,42,cls,CE,True,False,2,0.5691,0.5782,0.5774,307.1
+roberta,no_class_weight,tech,42,cls,CE,False,False,3,0.5728,0.5855,0.5857,291.7
+roberta,label_smoothing,tech,42,cls,CE+LS(0.1),True,False,2,0.5644,0.5752,0.5745,275.0
+roberta,focal_gamma=2,tech,42,cls,Focal(gamma=2.0),True,False,2,0.5645,0.573,0.5719,293.9
+roberta,fgm,tech,42,cls,CE,True,True,2,0.5674,0.5756,0.5748,436.4
