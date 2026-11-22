@@ -1,0 +1,478 @@
+{
+    "baike": {
+        "description": "Human ChatGPT Comparison Corpus (HC3) Chinese Version\n",
+        "citation": "\n",
+        "homepage": "https://github.com/Hello-SimpleAI/chatgpt-comparison-detection",
+        "license": "",
+        "features": {
+            "id": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "question": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "human_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            },
+            "chatgpt_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            }
+        },
+        "post_processed": null,
+        "supervised_keys": null,
+        "task_templates": null,
+        "builder_name": "hc3-chinese",
+        "config_name": "baike",
+        "version": {
+            "version_str": "1.1.0",
+            "description": null,
+            "major": 1,
+            "minor": 1,
+            "patch": 0
+        },
+        "splits": {
+            "train": {
+                "name": "train",
+                "num_bytes": 4849168,
+                "num_examples": 4617,
+                "dataset_name": "hc3-chinese"
+            }
+        },
+        "download_checksums": {
+            "https://www.modelscope.cn/api/v1/datasets/simpleai/HC3-Chinese/repo?Revision=master&FilePath=baike.jsonl": {
+                "num_bytes": 5005244,
+                "checksum": "04eb6995caef39b32afe05e369de49ae6ad1ddded973f31e3f91be938a0c9d5c"
+            }
+        },
+        "download_size": 5005244,
+        "post_processing_size": null,
+        "dataset_size": 4849168,
+        "size_in_bytes": 9854412
+    },
+    "open_qa": {
+        "description": "Human ChatGPT Comparison Corpus (HC3) Chinese Version\n",
+        "citation": "\n",
+        "homepage": "https://github.com/Hello-SimpleAI/chatgpt-comparison-detection",
+        "license": "",
+        "features": {
+            "id": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "question": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "human_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            },
+            "chatgpt_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            }
+        },
+        "post_processed": null,
+        "supervised_keys": null,
+        "task_templates": null,
+        "builder_name": "hc3-chinese",
+        "config_name": "open_qa",
+        "version": {
+            "version_str": "1.1.0",
+            "description": null,
+            "major": 1,
+            "minor": 1,
+            "patch": 0
+        },
+        "splits": {
+            "train": {
+                "name": "train",
+                "num_bytes": 6406971,
+                "num_examples": 3293,
+                "dataset_name": "hc3-chinese"
+            }
+        },
+        "download_checksums": {
+            "https://www.modelscope.cn/api/v1/datasets/simpleai/HC3-Chinese/repo?Revision=master&FilePath=open_qa.jsonl": {
+                "num_bytes": 6529129,
+                "checksum": "ccac1bec153b57646ace3dbd4fdb677e7d66a789127119ffeab9ac56aa01df83"
+            }
+        },
+        "download_size": 6529129,
+        "post_processing_size": null,
+        "dataset_size": 6406971,
+        "size_in_bytes": 12936100
+    },
+    "nlpcc_dbqa": {
+        "description": "Human ChatGPT Comparison Corpus (HC3) Chinese Version\n",
+        "citation": "\n",
+        "homepage": "https://github.com/Hello-SimpleAI/chatgpt-comparison-detection",
+        "license": "",
+        "features": {
+            "id": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "question": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "human_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            },
+            "chatgpt_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            }
+        },
+        "post_processed": null,
+        "supervised_keys": null,
+        "task_templates": null,
+        "builder_name": "hc3-chinese",
+        "config_name": "nlpcc_dbqa",
+        "version": {
+            "version_str": "1.1.0",
+            "description": null,
+            "major": 1,
+            "minor": 1,
+            "patch": 0
+        },
+        "splits": {
+            "train": {
+                "name": "train",
+                "num_bytes": 1963238,
+                "num_examples": 1709,
+                "dataset_name": "hc3-chinese"
+            }
+        },
+        "download_checksums": {
+            "https://www.modelscope.cn/api/v1/datasets/simpleai/HC3-Chinese/repo?Revision=master&FilePath=nlpcc_dbqa.jsonl": {
+                "num_bytes": 2024303,
+                "checksum": "fb8255b9409acd89da1bbf7f818290e3f6df5141a00aab81e320133773c76e53"
+            }
+        },
+        "download_size": 2024303,
+        "post_processing_size": null,
+        "dataset_size": 1963238,
+        "size_in_bytes": 3987541
+    },
+    "finance": {
+        "description": "Human ChatGPT Comparison Corpus (HC3) Chinese Version\n",
+        "citation": "\n",
+        "homepage": "https://github.com/Hello-SimpleAI/chatgpt-comparison-detection",
+        "license": "",
+        "features": {
+            "id": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "question": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "human_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            },
+            "chatgpt_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            }
+        },
+        "post_processed": null,
+        "supervised_keys": null,
+        "task_templates": null,
+        "builder_name": "hc3-chinese",
+        "config_name": "finance",
+        "version": {
+            "version_str": "1.1.0",
+            "description": null,
+            "major": 1,
+            "minor": 1,
+            "patch": 0
+        },
+        "splits": {
+            "train": {
+                "name": "train",
+                "num_bytes": 1608297,
+                "num_examples": 689,
+                "dataset_name": "hc3-chinese"
+            }
+        },
+        "download_checksums": {
+            "https://www.modelscope.cn/api/v1/datasets/simpleai/HC3-Chinese/repo?Revision=master&FilePath=finance.jsonl": {
+                "num_bytes": 1629320,
+                "checksum": "91251b749d645543f834012384554c753c2950db475e052508a469688fe82699"
+            }
+        },
+        "download_size": 1629320,
+        "post_processing_size": null,
+        "dataset_size": 1608297,
+        "size_in_bytes": 3237617
+    },
+    "medicine": {
+        "description": "Human ChatGPT Comparison Corpus (HC3) Chinese Version\n",
+        "citation": "\n",
+        "homepage": "https://github.com/Hello-SimpleAI/chatgpt-comparison-detection",
+        "license": "",
+        "features": {
+            "id": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "question": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "human_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            },
+            "chatgpt_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            }
+        },
+        "post_processed": null,
+        "supervised_keys": null,
+        "task_templates": null,
+        "builder_name": "hc3-chinese",
+        "config_name": "medicine",
+        "version": {
+            "version_str": "1.1.0",
+            "description": null,
+            "major": 1,
+            "minor": 1,
+            "patch": 0
+        },
+        "splits": {
+            "train": {
+                "name": "train",
+                "num_bytes": 1565783,
+                "num_examples": 1074,
+                "dataset_name": "hc3-chinese"
+            }
+        },
+        "download_checksums": {
+            "https://www.modelscope.cn/api/v1/datasets/simpleai/HC3-Chinese/repo?Revision=master&FilePath=medicine.jsonl": {
+                "num_bytes": 1609192,
+                "checksum": "f125aa6787298773905109fcf81d303b40a33f3e4f9cfa836cead0723aeab9bc"
+            }
+        },
+        "download_size": 1609192,
+        "post_processing_size": null,
+        "dataset_size": 1565783,
+        "size_in_bytes": 3174975
+    },
+    "law": {
+        "description": "Human ChatGPT Comparison Corpus (HC3) Chinese Version\n",
+        "citation": "\n",
+        "homepage": "https://github.com/Hello-SimpleAI/chatgpt-comparison-detection",
+        "license": "",
+        "features": {
+            "id": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "question": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "human_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            },
+            "chatgpt_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            }
+        },
+        "post_processed": null,
+        "supervised_keys": null,
+        "task_templates": null,
+        "builder_name": "hc3-chinese",
+        "config_name": "law",
+        "version": {
+            "version_str": "1.1.0",
+            "description": null,
+            "major": 1,
+            "minor": 1,
+            "patch": 0
+        },
+        "splits": {
+            "train": {
+                "name": "train",
+                "num_bytes": 506008,
+                "num_examples": 372,
+                "dataset_name": "hc3-chinese"
+            }
+        },
+        "download_checksums": {
+            "https://www.modelscope.cn/api/v1/datasets/simpleai/HC3-Chinese/repo?Revision=master&FilePath=law.jsonl": {
+                "num_bytes": 520324,
+                "checksum": "03993cd7d9e1c1e277927f599760c85083d928f65cec7d9c99cc3641b557309c"
+            }
+        },
+        "download_size": 520324,
+        "post_processing_size": null,
+        "dataset_size": 506008,
+        "size_in_bytes": 1026332
+    },
+    "psychology": {
+        "description": "Human ChatGPT Comparison Corpus (HC3) Chinese Version\n",
+        "citation": "\n",
+        "homepage": "https://github.com/Hello-SimpleAI/chatgpt-comparison-detection",
+        "license": "",
+        "features": {
+            "id": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "question": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "human_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            },
+            "chatgpt_answers": {
+                "feature": {
+                    "dtype": "string",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "length": -1,
+                "id": null,
+                "_type": "Sequence"
+            }
+        },
+        "post_processed": null,
+        "supervised_keys": null,
+        "task_templates": null,
+        "builder_name": "hc3-chinese",
+        "config_name": "psychology",
+        "version": {
+            "version_str": "1.1.0",
+            "description": null,
+            "major": 1,
+            "minor": 1,
+            "patch": 0
+        },
+        "splits": {
+            "train": {
+                "name": "train",
+                "num_bytes": 4117772,
+                "num_examples": 1099,
+                "dataset_name": "hc3-chinese"
+            }
+        },
+        "download_checksums": {
+            "https://www.modelscope.cn/api/v1/datasets/simpleai/HC3-Chinese/repo?Revision=master&FilePath=psychology.jsonl": {
+                "num_bytes": 4166284,
+                "checksum": "c8cd18b06c419f04ea1a7116896f2066c2fc9d9bf4ef6f9fe73f490498200963"
+            }
+        },
+        "download_size": 4166284,
+        "post_processing_size": null,
+        "dataset_size": 4117772,
+        "size_in_bytes": 8284056
+    }
+}
