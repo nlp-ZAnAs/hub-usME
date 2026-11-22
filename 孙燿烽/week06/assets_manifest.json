@@ -1,0 +1,36 @@
+{
+  "models": {
+    "hfl/rbt3": {
+      "revision": "0aa0527ff4170f29e1dfd3eb6ef60dc67e1bf75c",
+      "files_sha256": {
+        "README.md": "6883298edbf066053d51effe74dcea29f1911d5ddd68d0dc63e3cd7bbe699bd7",
+        "added_tokens.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "config.json": "e27980144e165b5842a6cebd327d0cbf197e5ea26ebe27a85352d0c02d02f406",
+        "pytorch_model.bin": "3e04f7477f55dffce2a2fbc4d0ba35068415162a9e92e3d5cc74a49781ba4eb0",
+        "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+        "tokenizer.json": "53ff61207898738bbdc000f38abebef01041c8d23b6270c11855fc692d0a3ad6",
+        "tokenizer_config.json": "61785aeaba176fba6d6489f27dccfd2ddee6aee2af0e590451cab7d8b57e0874",
+        "vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c"
+      }
+    },
+    "Qwen/Qwen2.5-0.5B-Instruct": {
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "files_sha256": {
+        "README.md": "b19c806a904db6dc878a0462e70b551f6b7ac78dfbb88c2eb966ca2b9109ae15",
+        "config.json": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+        "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+        "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "model.safetensors": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    }
+  },
+  "dataset": {
+    "repo": "SophonPlus/ChineseNlpCorpus",
+    "revision": "4ef366aa97c927f5bd69e1d97dc88461590174fd",
+    "url": "https://raw.githubusercontent.com/SophonPlus/ChineseNlpCorpus/4ef366aa97c927f5bd69e1d97dc88461590174fd/datasets/ChnSentiCorp_htl_all/ChnSentiCorp_htl_all.csv",
+    "sha256": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0"
+  }
+}
