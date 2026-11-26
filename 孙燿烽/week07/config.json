@@ -1,0 +1,67 @@
+{
+  "seed": 42,
+  "dataset": "CLUENER2020",
+  "val_size": 1000,
+  "api_subset_size": 300,
+  "hf_endpoint": "https://hf-mirror.com",
+  "encoder_model": "hfl/chinese-roberta-wwm-ext",
+  "llm_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "rule": {
+    "min_count_candidates": [
+      1,
+      2,
+      3
+    ],
+    "min_label_ratio_candidates": [
+      0.0,
+      0.1,
+      0.3,
+      0.5,
+      0.7
+    ]
+  },
+  "bilstm": {
+    "embed_dim": 128,
+    "hidden_dim": 256,
+    "dropout": 0.3,
+    "epochs": 20,
+    "batch_size": 64,
+    "lr": 0.001
+  },
+  "encoder": {
+    "epochs": 4,
+    "batch_size": 32,
+    "lr": 3e-05,
+    "head_lr": 0.001,
+    "dropout": 0.1,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1
+  },
+  "llm": {
+    "few_shot_k": 5,
+    "max_new_tokens": 160,
+    "eval_batch_size": 32,
+    "epochs": 2,
+    "batch_size": 8,
+    "grad_accum": 2,
+    "lora_lr": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.05
+  },
+  "api": {
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "max_tokens": 256,
+    "workers": 4,
+    "timeout_seconds": 60,
+    "retries": 4,
+    "extra_body": {
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

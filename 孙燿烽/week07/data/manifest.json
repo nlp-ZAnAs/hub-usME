@@ -1,0 +1,144 @@
+{
+  "source": {
+    "dataset": "CLUENER2020",
+    "url": "https://storage.googleapis.com/cluebenchmark/tasks/cluener_public.zip",
+    "sha256": "6dcc30e233034ecd91675182db690be187e61c5a3b5e96bf9f6b971ba8f132fa",
+    "files_sha256": {
+      "README.md": "4cb12d79c22db60012167cd71c0a573f2c076137db488efd2a159352bcb26492",
+      "dev.json": "90036b59832e007c45d11eafe5ed80549f58a18a29aaa7fe8b1229622c69ec38",
+      "train.json": "60299d202779dc84f3c3bd81f4dc08f5323d0dbf762cb50cd62dd51aa9a871f8"
+    }
+  },
+  "split_config": {
+    "seed": 42,
+    "val_size": 1000,
+    "api_subset_size": 300
+  },
+  "split_rule": "官方 train 按 seed 打乱后取 val_size 条作验证集；官方 dev 全部作测试集",
+  "split_sha256": {
+    "train": "e6aee711735cf7407ea5090a45281e7a52b7e958c625947d118b803e99f62d21",
+    "val": "d221aa9a292683f7c20ffa5af88cba30a69a697af1701ac76949d21109676841",
+    "test": "b317f470759aa0668fcf8fcb82e05136b646b00a5d81307431400429d3dda421"
+  },
+  "stats": {
+    "train": {
+      "sentences": 9748,
+      "entities": 21725,
+      "sentences_without_entity": 0,
+      "per_type": {
+        "company": 2691,
+        "name": 3413,
+        "game": 2180,
+        "organization": 2928,
+        "movie": 1007,
+        "position": 2837,
+        "address": 2610,
+        "government": 1654,
+        "scene": 1386,
+        "book": 1019
+      },
+      "max_chars": 50,
+      "mean_chars": 37.38807960607304
+    },
+    "val": {
+      "sentences": 1000,
+      "entities": 2244,
+      "sentences_without_entity": 0,
+      "per_type": {
+        "game": 196,
+        "scene": 135,
+        "position": 304,
+        "address": 281,
+        "name": 342,
+        "organization": 282,
+        "book": 120,
+        "company": 287,
+        "movie": 116,
+        "government": 181
+      },
+      "max_chars": 50,
+      "mean_chars": 37.305
+    },
+    "test": {
+      "sentences": 1343,
+      "entities": 3072,
+      "sentences_without_entity": 0,
+      "per_type": {
+        "name": 465,
+        "address": 373,
+        "organization": 367,
+        "game": 295,
+        "scene": 209,
+        "book": 154,
+        "company": 378,
+        "position": 433,
+        "government": 247,
+        "movie": 151
+      },
+      "max_chars": 50,
+      "mean_chars": 37.42367833209233
+    }
+  },
+  "audit": {
+    "overlap_dropped": [
+      {
+        "id": "train-01506",
+        "entity": {
+          "type": "company",
+          "start": 16,
+          "end": 20,
+          "text": "招商银行"
+        }
+      },
+      {
+        "id": "train-01506",
+        "entity": {
+          "type": "company",
+          "start": 23,
+          "end": 27,
+          "text": "永隆银行"
+        }
+      }
+    ],
+    "mentions_with_unlabeled_repeats": 584,
+    "cross_split_text_overlap": 0
+  },
+  "llm_span_policy": {
+    "selected": "all",
+    "selected_by": "validation ceiling F1",
+    "ceilings": {
+      "first": {
+        "val": {
+          "precision": 0.9977137631458619,
+          "recall": 0.9723707664884136,
+          "f1": 0.9848792597607764,
+          "fp": 5,
+          "fn": 62
+        },
+        "test": {
+          "precision": 0.9983232729711603,
+          "recall": 0.9690755208333334,
+          "f1": 0.9834819953749587,
+          "fp": 5,
+          "fn": 95
+        }
+      },
+      "all": {
+        "val": {
+          "precision": 0.9933598937583001,
+          "recall": 1.0,
+          "f1": 0.9966688874083944,
+          "fp": 15,
+          "fn": 0
+        },
+        "test": {
+          "precision": 0.9935254127549369,
+          "recall": 0.9990234375,
+          "f1": 0.996266839798734,
+          "fp": 20,
+          "fn": 3
+        }
+      }
+    }
+  }
+}

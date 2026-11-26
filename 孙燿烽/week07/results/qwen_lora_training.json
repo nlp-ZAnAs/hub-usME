@@ -1,0 +1,18 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.2218632556884587,
+    "val_strict_f1": 0.7766508902411541,
+    "val_json_valid_rate": 1.0,
+    "optimizer_steps": 610,
+    "elapsed_seconds": 2673.390759116999
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.09346176949500558,
+    "val_strict_f1": 0.7843924191750278,
+    "val_json_valid_rate": 1.0,
+    "optimizer_steps": 1220,
+    "elapsed_seconds": 5347.152564323002
+  }
+]
