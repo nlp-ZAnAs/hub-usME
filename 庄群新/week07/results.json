@@ -1,0 +1,7762 @@
+[
+ {
+  "id": "news_000",
+  "title": "中触媒：控股股东增持计划实施完毕 累计增持约8000万元",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "股东增持",
+    "trigger": {
+     "text": "增持",
+     "start": 9,
+     "end": 11
+    },
+    "args": [
+     {
+      "role": "股票简称",
+      "text": "中触媒",
+      "start": 1,
+      "end": 4,
+      "source": "model"
+     },
+     {
+      "role": "交易完成时间",
+      "text": "2025年12月16日至2026年11月20日",
+      "start": 58,
+      "end": 81,
+      "source": "model"
+     },
+     {
+      "role": "交易股票/股份数量",
+      "text": "368.78万",
+      "start": 107,
+      "end": 114,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "7997.40万元",
+      "start": 135,
+      "end": 144,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "4200万元-8000万元",
+      "start": 152,
+      "end": 165,
+      "source": "model"
+     },
+     {
+      "role": "增持部分占总股本比例",
+      "text": "1.8078%",
+      "start": 123,
+      "end": 130,
+      "source": "regex"
+     },
+     {
+      "role": "披露时间",
+      "text": "2025年12月16日",
+      "start": 58,
+      "end": 69,
+      "source": "regex"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "8000万元",
+      "start": 23,
+      "end": 29,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9857
+   },
+   {
+    "type": "股东增持",
+    "trigger": {
+     "text": "增持",
+     "start": 174,
+     "end": 176
+    },
+    "args": [
+     {
+      "role": "交易完成时间",
+      "text": "6个月内",
+      "start": 232,
+      "end": 236,
+      "source": "model"
+     },
+     {
+      "role": "交易股票/股份数量",
+      "text": "8827.32万股",
+      "start": 200,
+      "end": 209,
+      "source": "regex"
+     },
+     {
+      "role": "增持部分占总股本比例",
+      "text": "38.69%",
+      "start": 215,
+      "end": 221,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9418
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【中触媒：控股股东增持计划实施完毕 累计增持约8000万元】中触媒公告称，公司控股股东中触媒集团增持计划已实施完毕。2025年12月16日至2026年11月20日期间，中触媒集团通过集中竞价交易方式累计增持公司股份368.78万股，占公司总股本的1.8078%，成交总额7997.40万元，达到此前披露的4200万元-8000万元增持金额区间。",
+    "events": [
+     {
+      "type": "股东增持",
+      "trigger": {
+       "text": "增持",
+       "start": 9,
+       "end": 11
+      },
+      "args": [
+       {
+        "role": "股票简称",
+        "text": "中触媒",
+        "start": 1,
+        "end": 4,
+        "source": "model"
+       },
+       {
+        "role": "交易完成时间",
+        "text": "2025年12月16日至2026年11月20日",
+        "start": 58,
+        "end": 81,
+        "source": "model"
+       },
+       {
+        "role": "交易股票/股份数量",
+        "text": "368.78万",
+        "start": 107,
+        "end": 114,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "7997.40万元",
+        "start": 135,
+        "end": 144,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "4200万元-8000万元",
+        "start": 152,
+        "end": 165,
+        "source": "model"
+       },
+       {
+        "role": "增持部分占总股本比例",
+        "text": "1.8078%",
+        "start": 123,
+        "end": 130,
+        "source": "regex"
+       },
+       {
+        "role": "披露时间",
+        "text": "2025年12月16日",
+        "start": 58,
+        "end": 69,
+        "source": "regex"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "8000万元",
+        "start": 23,
+        "end": 29,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9857,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:增持方",
+     "role_not_in_type:股东增持.减持方",
+     "role_not_in_type:股东增持.减持部分占总股本比例"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 172,
+    "text": "本次增持完成后，中触媒集团及其一致行动人合计持有公司股份8827.32万股，占总股本的38.69%。中触媒集团承诺增持后6个月内不减持所持公司股份。",
+    "events": [
+     {
+      "type": "股东增持",
+      "trigger": {
+       "text": "增持",
+       "start": 174,
+       "end": 176
+      },
+      "args": [
+       {
+        "role": "交易完成时间",
+        "text": "6个月内",
+        "start": 232,
+        "end": 236,
+        "source": "model"
+       },
+       {
+        "role": "交易股票/股份数量",
+        "text": "8827.32万股",
+        "start": 200,
+        "end": 209,
+        "source": "regex"
+       },
+       {
+        "role": "增持部分占总股本比例",
+        "text": "38.69%",
+        "start": 215,
+        "end": 221,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9418,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:增持方",
+     "role_not_in_type:股东增持.减持方",
+     "role_not_in_type:股东增持.减持方",
+     "role_not_in_type:股东增持.减持部分占总股本比例"
+    ]
+   }
+  ],
+  "latency_ms": 1920.2,
+  "text": "【中触媒：控股股东增持计划实施完毕 累计增持约8000万元】中触媒公告称，公司控股股东中触媒集团增持计划已实施完毕。2025年12月16日至2026年11月20日期间，中触媒集团通过集中竞价交易方式累计增持公司股份368.78万股，占公司总股本的1.8078%，成交总额7997.40万元，达到此前披露的4200万元-8000万元增持金额区间。本次增持完成后，中触媒集团及其一致行动人合计持有公司股份8827.32万股，占总股本的38.69%。中触媒集团承诺增持后6个月内不减持所持公司股份。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqta7693640.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:10:37",
+  "type_hint": "股东减持",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 4,
+    "kind": "arg",
+    "label": "股东增持·股票简称",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 9,
+    "end": 11,
+    "kind": "trigger",
+    "label": "股东增持·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 23,
+    "end": 29,
+    "kind": "arg",
+    "label": "股东增持·每股交易价格",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 58,
+    "end": 81,
+    "kind": "arg",
+    "label": "股东增持·交易完成时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 107,
+    "end": 114,
+    "kind": "arg",
+    "label": "股东增持·交易股票/股份数量",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 123,
+    "end": 130,
+    "kind": "arg",
+    "label": "股东增持·增持部分占总股本比例",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 135,
+    "end": 144,
+    "kind": "arg",
+    "label": "股东增持·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 152,
+    "end": 165,
+    "kind": "arg",
+    "label": "股东增持·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 174,
+    "end": 176,
+    "kind": "trigger",
+    "label": "股东增持·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 200,
+    "end": 209,
+    "kind": "arg",
+    "label": "股东增持·交易股票/股份数量",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 215,
+    "end": 221,
+    "kind": "arg",
+    "label": "股东增持·增持部分占总股本比例",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 232,
+    "end": 236,
+    "kind": "arg",
+    "label": "股东增持·交易完成时间",
+    "event_idx": 1,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_001",
+  "title": "浙江：开展省属国有控股上市公司市值管理专项行动",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 172,
+     "end": 174
+    },
+    "args": [],
+    "sent_idx": 1,
+    "confidence": 0.9971
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【浙江：开展省属国有控股上市公司市值管理专项行动】浙江省人民政府印发《助推创新浙江建设“凤凰行动”计划（2026—2030年）》。其中提到，提升上市公司市值规范管理能力。",
+    "events": [],
+    "confidence": 0.9867,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 85,
+    "text": "引导上市公司聚焦提升内在价值，依法依规加强市值管理。支持优质龙头企业提升产业整合能力，壮大千亿市值上市公司队伍。开展省属国有控股上市公司市值管理专项行动。支持上市公司用好股票回购增持再贷款等政策，建立健全常态化现金分红机制，优化投资者关系管理，稳定市值预期。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 172,
+       "end": 174
+      },
+      "args": []
+     }
+    ],
+    "confidence": 0.9971,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   }
+  ],
+  "latency_ms": 73.9,
+  "text": "【浙江：开展省属国有控股上市公司市值管理专项行动】浙江省人民政府印发《助推创新浙江建设“凤凰行动”计划（2026—2030年）》。其中提到，提升上市公司市值规范管理能力。引导上市公司聚焦提升内在价值，依法依规加强市值管理。支持优质龙头企业提升产业整合能力，壮大千亿市值上市公司队伍。开展省属国有控股上市公司市值管理专项行动。支持上市公司用好股票回购增持再贷款等政策，建立健全常态化现金分红机制，优化投资者关系管理，稳定市值预期。",
+  "url": "https://finance.eastmoney.com/a/202611243938342686.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 13:28:00",
+  "type_hint": "股份回购",
+  "highlight": [
+   {
+    "start": 172,
+    "end": 174,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_002",
+  "title": "浙江：推动上市公司开展科创导向并购重组",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "企业收购",
+    "trigger": {
+     "text": "并购",
+     "start": 16,
+     "end": 18
+    },
+    "args": [],
+    "sent_idx": 0,
+    "confidence": 0.9946
+   },
+   {
+    "type": "企业收购",
+    "trigger": {
+     "text": "收",
+     "start": 163,
+     "end": 164
+    },
+    "args": [],
+    "sent_idx": 1,
+    "confidence": 0.9842
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【浙江：推动上市公司开展科创导向并购重组】浙江省人民政府印发《助推创新浙江建设“凤凰行动”计划（2026—2030年）》。其中提到，推动上市公司开展科创导向并购重组。",
+    "events": [
+     {
+      "type": "企业收购",
+      "trigger": {
+       "text": "并购",
+       "start": 16,
+       "end": 18
+      },
+      "args": []
+     }
+    ],
+    "confidence": 0.9946,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:收购方,被收购方"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 83,
+    "text": "鼓励上市公司用好并购重组小额快速审核、简易审核、绿色通道等机制，实现技术迭代、产业升级。支持上市公司聚焦主业，在保障持续经营能力、设置中小投资者保护机制前提下，收购有助于补链强链、提升关键技术水平的优质未盈利资产。",
+    "events": [
+     {
+      "type": "企业收购",
+      "trigger": {
+       "text": "收",
+       "start": 163,
+       "end": 164
+      },
+      "args": []
+     }
+    ],
+    "confidence": 0.9842,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:收购方,被收购方"
+    ]
+   }
+  ],
+  "latency_ms": 63.2,
+  "text": "【浙江：推动上市公司开展科创导向并购重组】浙江省人民政府印发《助推创新浙江建设“凤凰行动”计划（2026—2030年）》。其中提到，推动上市公司开展科创导向并购重组。鼓励上市公司用好并购重组小额快速审核、简易审核、绿色通道等机制，实现技术迭代、产业升级。支持上市公司聚焦主业，在保障持续经营能力、设置中小投资者保护机制前提下，收购有助于补链强链、提升关键技术水平的优质未盈利资产。",
+  "url": "https://finance.eastmoney.com/a/202611243938341963.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 13:26:37",
+  "type_hint": "企业收购",
+  "highlight": [
+   {
+    "start": 16,
+    "end": 18,
+    "kind": "trigger",
+    "label": "企业收购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 163,
+    "end": 164,
+    "kind": "trigger",
+    "label": "企业收购·触发词",
+    "event_idx": 1,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_003",
+  "title": "深圳召开辖区上市公司座谈会 引导上市公司稳定市场预期",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 91,
+     "end": 93
+    },
+    "args": [
+     {
+      "role": "披露时间",
+      "text": "11月24日",
+      "start": 28,
+      "end": 34,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9884
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【深圳召开辖区上市公司座谈会 引导上市公司稳定市场预期】11月24日，深圳市委金融办联合深圳证监局、中国人民银行深圳市分行和深圳金融监管局组织召开辖区上市公司座谈会，引导上市公司用好回购、增持等市场化工具，稳定市场预期、增强投资者信心。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 91,
+       "end": 93
+      },
+      "args": [
+       {
+        "role": "披露时间",
+        "text": "11月24日",
+        "start": 28,
+        "end": 34,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9884,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 118,
+    "text": "工业富联、立讯精密、中兴通讯、汇川技术等40家上市公司负责人，以及平安集团、招商银行、中信证券、国信证券等多家金融机构代表参加会议。",
+    "events": [],
+    "confidence": 0.9154,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 62.9,
+  "text": "【深圳召开辖区上市公司座谈会 引导上市公司稳定市场预期】11月24日，深圳市委金融办联合深圳证监局、中国人民银行深圳市分行和深圳金融监管局组织召开辖区上市公司座谈会，引导上市公司用好回购、增持等市场化工具，稳定市场预期、增强投资者信心。工业富联、立讯精密、中兴通讯、汇川技术等40家上市公司负责人，以及平安集团、招商银行、中信证券、国信证券等多家金融机构代表参加会议。",
+  "url": "https://finance.eastmoney.com/a/202611243938348232.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 13:37:00",
+  "type_hint": "股份回购",
+  "highlight": [
+   {
+    "start": 28,
+    "end": 34,
+    "kind": "arg",
+    "label": "股份回购·披露时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 91,
+    "end": 93,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_004",
+  "title": "天亿马：53.76万股限制性股票11月26日解禁上市",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "公司上市",
+    "trigger": {
+     "text": "上市",
+     "start": 25,
+     "end": 27
+    },
+    "args": [
+     {
+      "role": "上市公司",
+      "text": "天亿马",
+      "start": 1,
+      "end": 4,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "11月26日",
+      "start": 17,
+      "end": 23,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "2026年11月26日",
+      "start": 122,
+      "end": 133,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9775
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【天亿马：53.76万股限制性股票11月26日解禁上市】天亿马公告称，公司2023年限制性股票激励计划第一类限制性股票第三个解除限售期条件已成就，涉及2名激励对象，可解除限售股份数量为53.76万股，占公司总股本的0.5774%，该部分股份将于2026年11月26日上市流通。",
+    "events": [
+     {
+      "type": "公司上市",
+      "trigger": {
+       "text": "上市",
+       "start": 25,
+       "end": 27
+      },
+      "args": [
+       {
+        "role": "上市公司",
+        "text": "天亿马",
+        "start": 1,
+        "end": 4,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "11月26日",
+        "start": 17,
+        "end": 23,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "2026年11月26日",
+        "start": 122,
+        "end": 133,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9775,
+    "needs_review": true,
+    "review_reasons": [
+     "role_not_in_type:公司上市.占公司总股本比例"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 138,
+    "text": "本次解除限售的激励对象为董事长林明玲、副董事长兼总经理马学沛，二人本次各解锁26.88万股。",
+    "events": [],
+    "confidence": 0.9609,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 65.5,
+  "text": "【天亿马：53.76万股限制性股票11月26日解禁上市】天亿马公告称，公司2023年限制性股票激励计划第一类限制性股票第三个解除限售期条件已成就，涉及2名激励对象，可解除限售股份数量为53.76万股，占公司总股本的0.5774%，该部分股份将于2026年11月26日上市流通。本次解除限售的激励对象为董事长林明玲、副董事长兼总经理马学沛，二人本次各解锁26.88万股。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqtf2204064.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:33:31",
+  "type_hint": "高管变动",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 4,
+    "kind": "arg",
+    "label": "公司上市·上市公司",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 17,
+    "end": 23,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 25,
+    "end": 27,
+    "kind": "trigger",
+    "label": "公司上市·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 122,
+    "end": 133,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_005",
+  "title": "游族网络：董事长提议回购2亿元至4亿元股份",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 11,
+     "end": 13
+    },
+    "args": [
+     {
+      "role": "回购方",
+      "text": "游族网络",
+      "start": 1,
+      "end": 5,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "2亿元至4亿元",
+      "start": 13,
+      "end": 20,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "不低于2亿元",
+      "start": 64,
+      "end": 70,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "不超过4亿元",
+      "start": 71,
+      "end": 77,
+      "source": "model"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "2亿元",
+      "start": 13,
+      "end": 16,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9815
+   },
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 120,
+     "end": 122
+    },
+    "args": [],
+    "sent_idx": 1,
+    "confidence": 0.9534
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【游族网络：董事长提议回购2亿元至4亿元股份】游族网络(002174.SZ)公告称，公司董事长宛正提议回购公司股份，回购资金总额不低于2亿元且不超过4亿元，回购股份将用于员工持股计划或股权激励。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 11,
+       "end": 13
+      },
+      "args": [
+       {
+        "role": "回购方",
+        "text": "游族网络",
+        "start": 1,
+        "end": 5,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "2亿元至4亿元",
+        "start": 13,
+        "end": 20,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "不低于2亿元",
+        "start": 64,
+        "end": 70,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "不超过4亿元",
+        "start": 71,
+        "end": 77,
+        "source": "model"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "2亿元",
+        "start": 13,
+        "end": 16,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9815,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 97,
+    "text": "提议人在提议前六个月内不存在买卖公司股份情况，回购期间暂无增减持计划。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 120,
+       "end": 122
+      },
+      "args": []
+     }
+    ],
+    "confidence": 0.9534,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   }
+  ],
+  "latency_ms": 51.6,
+  "text": "【游族网络：董事长提议回购2亿元至4亿元股份】游族网络(002174.SZ)公告称，公司董事长宛正提议回购公司股份，回购资金总额不低于2亿元且不超过4亿元，回购股份将用于员工持股计划或股权激励。提议人在提议前六个月内不存在买卖公司股份情况，回购期间暂无增减持计划。",
+  "url": "https://finance.eastmoney.com/a/202611243938453950.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 16:21:12",
+  "type_hint": "股份回购",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 5,
+    "kind": "arg",
+    "label": "股份回购·回购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 11,
+    "end": 13,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 13,
+    "end": 20,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 64,
+    "end": 70,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 71,
+    "end": 77,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 120,
+    "end": 122,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 1,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_006",
+  "title": "猪价大降 明年或迎猪价拐点",
+  "n_sentences": 5,
+  "events": [
+   {
+    "type": "亏损",
+    "trigger": {
+     "text": "亏损",
+     "start": 44,
+     "end": 46
+    },
+    "args": [
+     {
+      "role": "财报周期",
+      "text": "10月份",
+      "start": 24,
+      "end": 28,
+      "source": "model"
+     },
+     {
+      "role": "财报周期",
+      "text": "10",
+      "start": 49,
+      "end": 51,
+      "source": "model"
+     },
+     {
+      "role": "净亏损",
+      "text": "10.77元",
+      "start": 63,
+      "end": 69,
+      "source": "regex"
+     },
+     {
+      "role": "亏损变化",
+      "text": "200元",
+      "start": 112,
+      "end": 116,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9719
+   },
+   {
+    "type": "亏损",
+    "trigger": {
+     "text": "亏损",
+     "start": 152,
+     "end": 154
+    },
+    "args": [
+     {
+      "role": "财报周期",
+      "text": "今年三季度末",
+      "start": 180,
+      "end": 186,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9923
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【猪价大降 明年或迎猪价拐点】据农业农村部监测，10月份以来，全国生猪价格走低，养殖处于亏损区间。10月份全国生猪价格为每公斤10.77元，环比下降5.7%，同比下降14.3%，10月份全国自繁自养养殖户出栏一头生猪平均亏损200元左右。",
+    "events": [
+     {
+      "type": "亏损",
+      "trigger": {
+       "text": "亏损",
+       "start": 44,
+       "end": 46
+      },
+      "args": [
+       {
+        "role": "财报周期",
+        "text": "10月份",
+        "start": 24,
+        "end": 28,
+        "source": "model"
+       },
+       {
+        "role": "财报周期",
+        "text": "10",
+        "start": 49,
+        "end": 51,
+        "source": "model"
+       },
+       {
+        "role": "净亏损",
+        "text": "10.77元",
+        "start": 63,
+        "end": 69,
+        "source": "regex"
+       },
+       {
+        "role": "亏损变化",
+        "text": "200元",
+        "start": 112,
+        "end": 116,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9719,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 119,
+    "text": "生猪价格下降重要原因是供应充裕、产能较高，而加快去产能既可以减少亏损，也利于生猪整体供需形势的改善。国家统计局数据显示，今年三季度末，全国能繁母猪存栏3602万头，同比减少433万头，下降10.7%，降幅比二季度扩大4.2个百分点。",
+    "events": [
+     {
+      "type": "亏损",
+      "trigger": {
+       "text": "亏损",
+       "start": 152,
+       "end": 154
+      },
+      "args": [
+       {
+        "role": "财报周期",
+        "text": "今年三季度末",
+        "start": 180,
+        "end": 186,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9923,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 2,
+    "offset": 236,
+    "text": "专家表示，从消费端看，腌腊、灌肠等需求启动，叠加元旦、春节备货需求，猪肉消费进入传统旺季。从生产端看，前期能繁母猪产能调减效果将逐渐显现，出栏同比增幅将收窄，市场供大于求状况有所缓解。",
+    "events": [],
+    "confidence": 0.999,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 3,
+    "offset": 329,
+    "text": "农业农村部数据显示，11月第三周全国生猪价格为每公斤9.95元，环比上涨1.4%，也结束了10月份以来连续6周下降的走势。中国农业科学院北京畜牧兽医研究所研究员朱增勇表示，随着今年二季度以来能繁母猪集中去化效果逐渐释放，2027年二季度前后供需关系将会明显改善，猪价有望稳步、温和回升。",
+    "events": [],
+    "confidence": 0.9873,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 4,
+    "offset": 473,
+    "text": "以往猪周期是快速去产能、价格急涨急跌，本轮周期则是底部磨底时间更长，上涨更平缓，波动幅度变小。希望养殖场户合理安排出栏节奏，顺时顺势出栏。 （央视财经）",
+    "events": [],
+    "confidence": 0.9997,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 180.0,
+  "text": "【猪价大降 明年或迎猪价拐点】据农业农村部监测，10月份以来，全国生猪价格走低，养殖处于亏损区间。10月份全国生猪价格为每公斤10.77元，环比下降5.7%，同比下降14.3%，10月份全国自繁自养养殖户出栏一头生猪平均亏损200元左右。 生猪价格下降重要原因是供应充裕、产能较高，而加快去产能既可以减少亏损，也利于生猪整体供需形势的改善。国家统计局数据显示，今年三季度末，全国能繁母猪存栏3602万头，同比减少433万头，下降10.7%，降幅比二季度扩大4.2个百分点。 专家表示，从消费端看，腌腊、灌肠等需求启动，叠加元旦、春节备货需求，猪肉消费进入传统旺季。从生产端看，前期能繁母猪产能调减效果将逐渐显现，出栏同比增幅将收窄，市场供大于求状况有所缓解。 农业农村部数据显示，11月第三周全国生猪价格为每公斤9.95元，环比上涨1.4%，也结束了10月份以来连续6周下降的走势。中国农业科学院北京畜牧兽医研究所研究员朱增勇表示，随着今年二季度以来能繁母猪集中去化效果逐渐释放，2027年二季度前后供需关系将会明显改善，猪价有望稳步、温和回升。以往猪周期是快速去产能、价格急涨急跌，本轮周期则是底部磨底时间更长，上涨更平缓，波动幅度变小。希望养殖场户合理安排出栏节奏，顺时顺势出栏。 （央视财经）",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqth8956696.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:12:06",
+  "type_hint": "亏损",
+  "highlight": [
+   {
+    "start": 24,
+    "end": 28,
+    "kind": "arg",
+    "label": "亏损·财报周期",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 44,
+    "end": 46,
+    "kind": "trigger",
+    "label": "亏损·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 49,
+    "end": 51,
+    "kind": "arg",
+    "label": "亏损·财报周期",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 63,
+    "end": 69,
+    "kind": "arg",
+    "label": "亏损·净亏损",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 112,
+    "end": 116,
+    "kind": "arg",
+    "label": "亏损·亏损变化",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 152,
+    "end": 154,
+    "kind": "trigger",
+    "label": "亏损·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 180,
+    "end": 186,
+    "kind": "arg",
+    "label": "亏损·财报周期",
+    "event_idx": 1,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_007",
+  "title": "“木头姐”错失英伟达31%大涨行情：在黄仁勋回归前抛售持仓",
+  "n_sentences": 5,
+  "events": [
+   {
+    "type": "股东减持",
+    "trigger": {
+     "text": "减持",
+     "start": 57,
+     "end": 59
+    },
+    "args": [
+     {
+      "role": "股票简称",
+      "text": "英伟达",
+      "start": 8,
+      "end": 11,
+      "source": "model"
+     },
+     {
+      "role": "减持方",
+      "text": "黄仁勋",
+      "start": 20,
+      "end": 23,
+      "source": "model"
+     },
+     {
+      "role": "减持方",
+      "text": "凯西・伍德",
+      "start": 50,
+      "end": 55,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "近",
+      "start": 62,
+      "end": 63,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "1.07",
+      "start": 64,
+      "end": 68,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "亿美元",
+      "start": 69,
+      "end": 72,
+      "source": "model"
+     },
+     {
+      "role": "减持部分占总股本比例",
+      "text": "31%",
+      "start": 11,
+      "end": 14,
+      "source": "regex"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "1.07 亿美元",
+      "start": 64,
+      "end": 72,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9836
+   },
+   {
+    "type": "股东减持",
+    "trigger": {
+     "text": "减持",
+     "start": 291,
+     "end": 293
+    },
+    "args": [
+     {
+      "role": "交易金额",
+      "text": "约",
+      "start": 265,
+      "end": 266,
+      "source": "model"
+     },
+     {
+      "role": "减持方",
+      "text": "方舟",
+      "start": 294,
+      "end": 296,
+      "source": "model"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "165.05 美元",
+      "start": 244,
+      "end": 253,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 2,
+    "confidence": 0.9592
+   },
+   {
+    "type": "高管变动",
+    "trigger": {
+     "text": "恢复",
+     "start": 473,
+     "end": 475
+    },
+    "args": [
+     {
+      "role": "事件时间",
+      "text": "周一",
+      "start": 440,
+      "end": 442,
+      "source": "model"
+     },
+     {
+      "role": "任职公司",
+      "text": "英伟达",
+      "start": 443,
+      "end": 446,
+      "source": "model"
+     },
+     {
+      "role": "变动后职位",
+      "text": "总裁",
+      "start": 476,
+      "end": 478,
+      "source": "model"
+     },
+     {
+      "role": "高管职位",
+      "text": "CEO",
+      "start": 480,
+      "end": 483,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 4,
+    "confidence": 0.8479
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【“木头姐”错失英伟达31%大涨行情：在黄仁勋回归前抛售持仓】由于担心黄仁勋离职会冲击英伟达管理层，凯西・伍德此前减持了价值近 1.07 亿美元的英伟达股票。而这家芯片巨头随后宣布恢复黄仁勋职务，股价迎来多年最强单日涨幅，这次卖出操作也因此踏空、事与愿违。",
+    "events": [
+     {
+      "type": "股东减持",
+      "trigger": {
+       "text": "减持",
+       "start": 57,
+       "end": 59
+      },
+      "args": [
+       {
+        "role": "股票简称",
+        "text": "英伟达",
+        "start": 8,
+        "end": 11,
+        "source": "model"
+       },
+       {
+        "role": "减持方",
+        "text": "黄仁勋",
+        "start": 20,
+        "end": 23,
+        "source": "model"
+       },
+       {
+        "role": "减持方",
+        "text": "凯西・伍德",
+        "start": 50,
+        "end": 55,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "近",
+        "start": 62,
+        "end": 63,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "1.07",
+        "start": 64,
+        "end": 68,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "亿美元",
+        "start": 69,
+        "end": 72,
+        "source": "model"
+       },
+       {
+        "role": "减持部分占总股本比例",
+        "text": "31%",
+        "start": 11,
+        "end": 14,
+        "source": "regex"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "1.07 亿美元",
+        "start": 64,
+        "end": 72,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9836,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 128,
+    "text": "根据每日交易披露文件，伍德创立的方舟投资，在 11 月 16 日至 11 月 20 日期间，通过旗下 ETF 合计卖出 712282 股英伟达股票，按当日基准股价估算，卖出总金额约 1.069 亿美元。",
+    "events": [],
+    "confidence": 0.9369,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 229,
+    "text": "如果这些股票留到周一收盘，按 165.05 美元的收盘价计算，市值将达到约 1.176 亿美元。对比当初卖出金额，意味着这次减持让方舟错失约 1070 万美元的收益。",
+    "events": [
+     {
+      "type": "股东减持",
+      "trigger": {
+       "text": "减持",
+       "start": 291,
+       "end": 293
+      },
+      "args": [
+       {
+        "role": "交易金额",
+        "text": "约",
+        "start": 265,
+        "end": 266,
+        "source": "model"
+       },
+       {
+        "role": "减持方",
+        "text": "方舟",
+        "start": 294,
+        "end": 296,
+        "source": "model"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "165.05 美元",
+        "start": 244,
+        "end": 253,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9592,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 3,
+    "offset": 312,
+    "text": "伍德之后在播客采访中证实，方舟是在英伟达财报发布前一天开始卖出该股，卖出所得资金转而投向 SpaceX。她解释，卖出逻辑是担忧黄仁勋会加入埃隆・马斯克计划推进的 Terafab 芯片项目，凭借其管理能力与行业影响力入局，或将重塑 AI 芯片赛道竞争格局。",
+    "events": [],
+    "confidence": 0.9677,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 4,
+    "offset": 439,
+    "text": "但周一，英伟达董事会在与黄仁勋沟通、听取美国政府高层意见后，一致同意恢复其总裁兼 CEO 职务。",
+    "events": [
+     {
+      "type": "高管变动",
+      "trigger": {
+       "text": "恢复",
+       "start": 473,
+       "end": 475
+      },
+      "args": [
+       {
+        "role": "事件时间",
+        "text": "周一",
+        "start": 440,
+        "end": 442,
+        "source": "model"
+       },
+       {
+        "role": "任职公司",
+        "text": "英伟达",
+        "start": 443,
+        "end": 446,
+        "source": "model"
+       },
+       {
+        "role": "变动后职位",
+        "text": "总裁",
+        "start": 476,
+        "end": 478,
+        "source": "model"
+       },
+       {
+        "role": "高管职位",
+        "text": "CEO",
+        "start": 480,
+        "end": 483,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.8479,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:高管姓名"
+    ]
+   }
+  ],
+  "latency_ms": 156.1,
+  "text": "【“木头姐”错失英伟达31%大涨行情：在黄仁勋回归前抛售持仓】由于担心黄仁勋离职会冲击英伟达管理层，凯西・伍德此前减持了价值近 1.07 亿美元的英伟达股票。而这家芯片巨头随后宣布恢复黄仁勋职务，股价迎来多年最强单日涨幅，这次卖出操作也因此踏空、事与愿违。根据每日交易披露文件，伍德创立的方舟投资，在 11 月 16 日至 11 月 20 日期间，通过旗下 ETF 合计卖出 712282 股英伟达股票，按当日基准股价估算，卖出总金额约 1.069 亿美元。如果这些股票留到周一收盘，按 165.05 美元的收盘价计算，市值将达到约 1.176 亿美元。对比当初卖出金额，意味着这次减持让方舟错失约 1070 万美元的收益。伍德之后在播客采访中证实，方舟是在英伟达财报发布前一天开始卖出该股，卖出所得资金转而投向 SpaceX。她解释，卖出逻辑是担忧黄仁勋会加入埃隆・马斯克计划推进的 Terafab 芯片项目，凭借其管理能力与行业影响力入局，或将重塑 AI 芯片赛道竞争格局。但周一，英伟达董事会在与黄仁勋沟通、听取美国政府高层意见后，一致同意恢复其总裁兼 CEO 职务。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmk9037203.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:21:53",
+  "type_hint": "股东减持",
+  "highlight": [
+   {
+    "start": 8,
+    "end": 11,
+    "kind": "arg",
+    "label": "股东减持·股票简称",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 11,
+    "end": 14,
+    "kind": "arg",
+    "label": "股东减持·减持部分占总股本比例",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 20,
+    "end": 23,
+    "kind": "arg",
+    "label": "股东减持·减持方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 50,
+    "end": 55,
+    "kind": "arg",
+    "label": "股东减持·减持方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 57,
+    "end": 59,
+    "kind": "trigger",
+    "label": "股东减持·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 62,
+    "end": 63,
+    "kind": "arg",
+    "label": "股东减持·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 64,
+    "end": 68,
+    "kind": "arg",
+    "label": "股东减持·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 69,
+    "end": 72,
+    "kind": "arg",
+    "label": "股东减持·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 244,
+    "end": 253,
+    "kind": "arg",
+    "label": "股东减持·每股交易价格",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 265,
+    "end": 266,
+    "kind": "arg",
+    "label": "股东减持·交易金额",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 291,
+    "end": 293,
+    "kind": "trigger",
+    "label": "股东减持·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 294,
+    "end": 296,
+    "kind": "arg",
+    "label": "股东减持·减持方",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 440,
+    "end": 442,
+    "kind": "arg",
+    "label": "高管变动·事件时间",
+    "event_idx": 2,
+    "priority": 1
+   },
+   {
+    "start": 443,
+    "end": 446,
+    "kind": "arg",
+    "label": "高管变动·任职公司",
+    "event_idx": 2,
+    "priority": 1
+   },
+   {
+    "start": 473,
+    "end": 475,
+    "kind": "trigger",
+    "label": "高管变动·触发词",
+    "event_idx": 2,
+    "priority": 0
+   },
+   {
+    "start": 476,
+    "end": 478,
+    "kind": "arg",
+    "label": "高管变动·变动后职位",
+    "event_idx": 2,
+    "priority": 1
+   },
+   {
+    "start": 480,
+    "end": 483,
+    "kind": "arg",
+    "label": "高管变动·高管职位",
+    "event_idx": 2,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_008",
+  "title": "华友钴业：拟斥10亿元-15亿元回购股份",
+  "n_sentences": 3,
+  "events": [
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 17,
+     "end": 19
+    },
+    "args": [
+     {
+      "role": "回购方",
+      "text": "华友钴业",
+      "start": 1,
+      "end": 5,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "10亿元-15亿元",
+      "start": 8,
+      "end": 17,
+      "source": "model"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "10亿元",
+      "start": 8,
+      "end": 12,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9926
+   },
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 82,
+     "end": 84
+    },
+    "args": [
+     {
+      "role": "交易金额",
+      "text": "不低于10.00亿元",
+      "start": 86,
+      "end": 96,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "不超过15.00亿元",
+      "start": 100,
+      "end": 110,
+      "source": "model"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "不超过45元",
+      "start": 118,
+      "end": 124,
+      "source": "model"
+     },
+     {
+      "role": "回购股份数量",
+      "text": "2222.22万股-3333.33万",
+      "start": 142,
+      "end": 160,
+      "source": "model"
+     },
+     {
+      "role": "占公司总股本比例",
+      "text": "1.17%-1.76%",
+      "start": 168,
+      "end": 179,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9792
+   },
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 180,
+     "end": 182
+    },
+    "args": [
+     {
+      "role": "回购完成时间",
+      "text": "董事会审议通过方案之日起3个月内",
+      "start": 185,
+      "end": 201,
+      "source": "model"
+     },
+     {
+      "role": "回购完成时间",
+      "text": "截至董",
+      "start": 202,
+      "end": 205,
+      "source": "model"
+     },
+     {
+      "role": "占公司总股本比例",
+      "text": "5%",
+      "start": 237,
+      "end": 239,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 2,
+    "confidence": 0.9482
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【华友钴业：拟斥10亿元-15亿元回购股份】华友钴业公告称，公司拟以自有资金及自筹资金（含股票回购贷款），通过集中竞价交易方式回购股份，用于维护公司价值及股东权益。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 17,
+       "end": 19
+      },
+      "args": [
+       {
+        "role": "回购方",
+        "text": "华友钴业",
+        "start": 1,
+        "end": 5,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "10亿元-15亿元",
+        "start": 8,
+        "end": 17,
+        "source": "model"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "10亿元",
+        "start": 8,
+        "end": 12,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9926,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 82,
+    "text": "回购金额不低于10.00亿元（含）且不超过15.00亿元（含），回购价格不超过45元/股（含），按价格上限测算回购数量为2222.22万股-3333.33万股，占总股本比例1.17%-1.76%。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 82,
+       "end": 84
+      },
+      "args": [
+       {
+        "role": "交易金额",
+        "text": "不低于10.00亿元",
+        "start": 86,
+        "end": 96,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "不超过15.00亿元",
+        "start": 100,
+        "end": 110,
+        "source": "model"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "不超过45元",
+        "start": 118,
+        "end": 124,
+        "source": "model"
+       },
+       {
+        "role": "回购股份数量",
+        "text": "2222.22万股-3333.33万",
+        "start": 142,
+        "end": 160,
+        "source": "model"
+       },
+       {
+        "role": "占公司总股本比例",
+        "text": "1.17%-1.76%",
+        "start": 168,
+        "end": 179,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9792,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 180,
+    "text": "回购期限为董事会审议通过方案之日起3个月内。截至董事会审议通过回购方案之日，公司董事、高管、控股股东、实控人及持股5%以上股东未来3个月、6个月均无减持计划。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 180,
+       "end": 182
+      },
+      "args": [
+       {
+        "role": "回购完成时间",
+        "text": "董事会审议通过方案之日起3个月内",
+        "start": 185,
+        "end": 201,
+        "source": "model"
+       },
+       {
+        "role": "回购完成时间",
+        "text": "截至董",
+        "start": 202,
+        "end": 205,
+        "source": "model"
+       },
+       {
+        "role": "占公司总股本比例",
+        "text": "5%",
+        "start": 237,
+        "end": 239,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9482,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方",
+     "role_not_in_type:股份回购.交易完成时间"
+    ]
+   }
+  ],
+  "latency_ms": 84.6,
+  "text": "【华友钴业：拟斥10亿元-15亿元回购股份】华友钴业公告称，公司拟以自有资金及自筹资金（含股票回购贷款），通过集中竞价交易方式回购股份，用于维护公司价值及股东权益。回购金额不低于10.00亿元（含）且不超过15.00亿元（含），回购价格不超过45元/股（含），按价格上限测算回购数量为2222.22万股-3333.33万股，占总股本比例1.17%-1.76%。回购期限为董事会审议通过方案之日起3个月内。截至董事会审议通过回购方案之日，公司董事、高管、控股股东、实控人及持股5%以上股东未来3个月、6个月均无减持计划。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqte0039529.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:27:27",
+  "type_hint": "股份回购",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 5,
+    "kind": "arg",
+    "label": "股份回购·回购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 8,
+    "end": 17,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 17,
+    "end": 19,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 82,
+    "end": 84,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 86,
+    "end": 96,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 100,
+    "end": 110,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 118,
+    "end": 124,
+    "kind": "arg",
+    "label": "股份回购·每股交易价格",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 142,
+    "end": 160,
+    "kind": "arg",
+    "label": "股份回购·回购股份数量",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 168,
+    "end": 179,
+    "kind": "arg",
+    "label": "股份回购·占公司总股本比例",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 180,
+    "end": 182,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 2,
+    "priority": 0
+   },
+   {
+    "start": 185,
+    "end": 201,
+    "kind": "arg",
+    "label": "股份回购·回购完成时间",
+    "event_idx": 2,
+    "priority": 1
+   },
+   {
+    "start": 202,
+    "end": 205,
+    "kind": "arg",
+    "label": "股份回购·回购完成时间",
+    "event_idx": 2,
+    "priority": 1
+   },
+   {
+    "start": 237,
+    "end": 239,
+    "kind": "arg",
+    "label": "股份回购·占公司总股本比例",
+    "event_idx": 2,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_009",
+  "title": "温氏股份：首次回购股份 成交金额约1.00亿元",
+  "n_sentences": 3,
+  "events": [
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 8,
+     "end": 10
+    },
+    "args": [
+     {
+      "role": "回购方",
+      "text": "温氏股份",
+      "start": 1,
+      "end": 5,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "约1.00亿元",
+      "start": 17,
+      "end": 24,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "5000万元-1亿元",
+      "start": 42,
+      "end": 52,
+      "source": "model"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "不超过22.21元",
+      "start": 61,
+      "end": 70,
+      "source": "model"
+     },
+     {
+      "role": "回购完成时间",
+      "text": "董事会审议通过方案之日起6个月内",
+      "start": 93,
+      "end": 109,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9857
+   },
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 136,
+     "end": 138
+    },
+    "args": [
+     {
+      "role": "回购完成时间",
+      "text": "2026年11月23日",
+      "start": 110,
+      "end": 121,
+      "source": "model"
+     },
+     {
+      "role": "回购股份数量",
+      "text": "570.9万",
+      "start": 143,
+      "end": 149,
+      "source": "model"
+     },
+     {
+      "role": "占公司总股本比例",
+      "text": "0.0858%",
+      "start": 156,
+      "end": 163,
+      "source": "model"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "17.41元/股-17.65元",
+      "start": 172,
+      "end": 187,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "9994.33万元",
+      "start": 196,
+      "end": 205,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9838
+   },
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 226,
+     "end": 228
+    },
+    "args": [],
+    "sent_idx": 2,
+    "confidence": 0.9981
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【温氏股份：首次回购股份 成交金额约1.00亿元】温氏股份公告称，公司此前披露拟使用5000万元-1亿元自有或自筹资金，以不超过22.21元/股的价格回购A股股份用于股权激励，回购期限为董事会审议通过方案之日起6个月内。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 8,
+       "end": 10
+      },
+      "args": [
+       {
+        "role": "回购方",
+        "text": "温氏股份",
+        "start": 1,
+        "end": 5,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "约1.00亿元",
+        "start": 17,
+        "end": 24,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "5000万元-1亿元",
+        "start": 42,
+        "end": 52,
+        "source": "model"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "不超过22.21元",
+        "start": 61,
+        "end": 70,
+        "source": "model"
+       },
+       {
+        "role": "回购完成时间",
+        "text": "董事会审议通过方案之日起6个月内",
+        "start": 93,
+        "end": 109,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9857,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 110,
+    "text": "2026年11月23日，公司首次通过集中竞价方式实施回购，回购股份570.9万股，占总股本的0.0858%，回购成交价区间为17.41元/股-17.65元/股，成交总金额为9994.33万元（不含交易费用）。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 136,
+       "end": 138
+      },
+      "args": [
+       {
+        "role": "回购完成时间",
+        "text": "2026年11月23日",
+        "start": 110,
+        "end": 121,
+        "source": "model"
+       },
+       {
+        "role": "回购股份数量",
+        "text": "570.9万",
+        "start": 143,
+        "end": 149,
+        "source": "model"
+       },
+       {
+        "role": "占公司总股本比例",
+        "text": "0.0858%",
+        "start": 156,
+        "end": 163,
+        "source": "model"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "17.41元/股-17.65元",
+        "start": 172,
+        "end": 187,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "9994.33万元",
+        "start": 196,
+        "end": 205,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9838,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 214,
+    "text": "后续公司将根据市场情况在回购期限内继续推进回购计划。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 226,
+       "end": 228
+      },
+      "args": []
+     }
+    ],
+    "confidence": 0.9981,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   }
+  ],
+  "latency_ms": 85.3,
+  "text": "【温氏股份：首次回购股份 成交金额约1.00亿元】温氏股份公告称，公司此前披露拟使用5000万元-1亿元自有或自筹资金，以不超过22.21元/股的价格回购A股股份用于股权激励，回购期限为董事会审议通过方案之日起6个月内。2026年11月23日，公司首次通过集中竞价方式实施回购，回购股份570.9万股，占总股本的0.0858%，回购成交价区间为17.41元/股-17.65元/股，成交总金额为9994.33万元（不含交易费用）。后续公司将根据市场情况在回购期限内继续推进回购计划。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqtf2197030.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:25:52",
+  "type_hint": "股份回购",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 5,
+    "kind": "arg",
+    "label": "股份回购·回购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 8,
+    "end": 10,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 17,
+    "end": 24,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 42,
+    "end": 52,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 61,
+    "end": 70,
+    "kind": "arg",
+    "label": "股份回购·每股交易价格",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 93,
+    "end": 109,
+    "kind": "arg",
+    "label": "股份回购·回购完成时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 110,
+    "end": 121,
+    "kind": "arg",
+    "label": "股份回购·回购完成时间",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 136,
+    "end": 138,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 143,
+    "end": 149,
+    "kind": "arg",
+    "label": "股份回购·回购股份数量",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 156,
+    "end": 163,
+    "kind": "arg",
+    "label": "股份回购·占公司总股本比例",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 172,
+    "end": 187,
+    "kind": "arg",
+    "label": "股份回购·每股交易价格",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 196,
+    "end": 205,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 226,
+    "end": 228,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 2,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_010",
+  "title": "通合科技：累计回购股份比例达1.13%",
+  "n_sentences": 3,
+  "events": [
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 8,
+     "end": 10
+    },
+    "args": [
+     {
+      "role": "回购方",
+      "text": "通合科技",
+      "start": 1,
+      "end": 5,
+      "source": "model"
+     },
+     {
+      "role": "占公司总股本比例",
+      "text": "1.13%",
+      "start": 15,
+      "end": 20,
+      "source": "model"
+     },
+     {
+      "role": "回购完成时间",
+      "text": "2026年7月14日",
+      "start": 31,
+      "end": 41,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "3500万元-7000万元",
+      "start": 55,
+      "end": 68,
+      "source": "model"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "不超过45元",
+      "start": 77,
+      "end": 83,
+      "source": "model"
+     },
+     {
+      "role": "回购完成时间",
+      "text": "董事会审议通过之日起12个月内",
+      "start": 120,
+      "end": 135,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9916
+   },
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 154,
+     "end": 156
+    },
+    "args": [
+     {
+      "role": "回购完成时间",
+      "text": "截至2026年11月24日",
+      "start": 136,
+      "end": 149,
+      "source": "model"
+     },
+     {
+      "role": "回购股份数量",
+      "text": "201.17万",
+      "start": 158,
+      "end": 165,
+      "source": "model"
+     },
+     {
+      "role": "占公司总股本比例",
+      "text": "1.13%",
+      "start": 172,
+      "end": 177,
+      "source": "model"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "最高成交价32.81元",
+      "start": 178,
+      "end": 189,
+      "source": "model"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "最低成交价17.00元",
+      "start": 192,
+      "end": 203,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "4938.94万元",
+      "start": 210,
+      "end": 219,
+      "source": "model"
+     },
+     {
+      "role": "披露时间",
+      "text": "2026年11月24日",
+      "start": 138,
+      "end": 149,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9982
+   },
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 235,
+     "end": 237
+    },
+    "args": [],
+    "sent_idx": 2,
+    "confidence": 0.9994
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【通合科技：累计回购股份比例达1.13%】通合科技公告称，公司2026年7月14日审议通过回购股份方案，拟使用3500万元-7000万元自有或自筹资金，以不超过45元/股的价格集中竞价回购A股股份，用于员工持股计划或股权激励计划，回购期限为董事会审议通过之日起12个月内。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 8,
+       "end": 10
+      },
+      "args": [
+       {
+        "role": "回购方",
+        "text": "通合科技",
+        "start": 1,
+        "end": 5,
+        "source": "model"
+       },
+       {
+        "role": "占公司总股本比例",
+        "text": "1.13%",
+        "start": 15,
+        "end": 20,
+        "source": "model"
+       },
+       {
+        "role": "回购完成时间",
+        "text": "2026年7月14日",
+        "start": 31,
+        "end": 41,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "3500万元-7000万元",
+        "start": 55,
+        "end": 68,
+        "source": "model"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "不超过45元",
+        "start": 77,
+        "end": 83,
+        "source": "model"
+       },
+       {
+        "role": "回购完成时间",
+        "text": "董事会审议通过之日起12个月内",
+        "start": 120,
+        "end": 135,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9916,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 136,
+    "text": "截至2026年11月24日，公司累计回购股份201.17万股，占总股本的1.13%，最高成交价32.81元/股，最低成交价17.00元/股，成交金额4938.94万元。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 154,
+       "end": 156
+      },
+      "args": [
+       {
+        "role": "回购完成时间",
+        "text": "截至2026年11月24日",
+        "start": 136,
+        "end": 149,
+        "source": "model"
+       },
+       {
+        "role": "回购股份数量",
+        "text": "201.17万",
+        "start": 158,
+        "end": 165,
+        "source": "model"
+       },
+       {
+        "role": "占公司总股本比例",
+        "text": "1.13%",
+        "start": 172,
+        "end": 177,
+        "source": "model"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "最高成交价32.81元",
+        "start": 178,
+        "end": 189,
+        "source": "model"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "最低成交价17.00元",
+        "start": 192,
+        "end": 203,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "4938.94万元",
+        "start": 210,
+        "end": 219,
+        "source": "model"
+       },
+       {
+        "role": "披露时间",
+        "text": "2026年11月24日",
+        "start": 138,
+        "end": 149,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9982,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 220,
+    "text": "后续公司将结合市场情况继续推进回购计划。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 235,
+       "end": 237
+      },
+      "args": []
+     }
+    ],
+    "confidence": 0.9994,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   }
+  ],
+  "latency_ms": 83.9,
+  "text": "【通合科技：累计回购股份比例达1.13%】通合科技公告称，公司2026年7月14日审议通过回购股份方案，拟使用3500万元-7000万元自有或自筹资金，以不超过45元/股的价格集中竞价回购A股股份，用于员工持股计划或股权激励计划，回购期限为董事会审议通过之日起12个月内。截至2026年11月24日，公司累计回购股份201.17万股，占总股本的1.13%，最高成交价32.81元/股，最低成交价17.00元/股，成交金额4938.94万元。后续公司将结合市场情况继续推进回购计划。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqth8969430.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:22:21",
+  "type_hint": "股份回购",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 5,
+    "kind": "arg",
+    "label": "股份回购·回购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 8,
+    "end": 10,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 15,
+    "end": 20,
+    "kind": "arg",
+    "label": "股份回购·占公司总股本比例",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 31,
+    "end": 41,
+    "kind": "arg",
+    "label": "股份回购·回购完成时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 55,
+    "end": 68,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 77,
+    "end": 83,
+    "kind": "arg",
+    "label": "股份回购·每股交易价格",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 120,
+    "end": 135,
+    "kind": "arg",
+    "label": "股份回购·回购完成时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 136,
+    "end": 149,
+    "kind": "arg",
+    "label": "股份回购·回购完成时间",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 154,
+    "end": 156,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 158,
+    "end": 165,
+    "kind": "arg",
+    "label": "股份回购·回购股份数量",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 172,
+    "end": 177,
+    "kind": "arg",
+    "label": "股份回购·占公司总股本比例",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 178,
+    "end": 189,
+    "kind": "arg",
+    "label": "股份回购·每股交易价格",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 192,
+    "end": 203,
+    "kind": "arg",
+    "label": "股份回购·每股交易价格",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 210,
+    "end": 219,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 235,
+    "end": 237,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 2,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_011",
+  "title": "东方证券：购买上海证券100%股权标的资产过户完成",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "企业收购",
+    "trigger": {
+     "text": "购买",
+     "start": 6,
+     "end": 8
+    },
+    "args": [
+     {
+      "role": "收购标的",
+      "text": "100%股权",
+      "start": 12,
+      "end": 18,
+      "source": "model"
+     },
+     {
+      "role": "被收购方",
+      "text": "上海证券有限责任公司",
+      "start": 59,
+      "end": 69,
+      "source": "model"
+     },
+     {
+      "role": "披露时间",
+      "text": "2026年11月24日",
+      "start": 119,
+      "end": 130,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9766
+   },
+   {
+    "type": "公司上市",
+    "trigger": {
+     "text": "上市",
+     "start": 233,
+     "end": 235
+    },
+    "args": [],
+    "sent_idx": 1,
+    "confidence": 0.9917
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【东方证券：购买上海证券100%股权标的资产过户完成】东方证券公告，公司此前披露拟通过发行A股股份及支付现金的方式购买上海证券有限责任公司100%股权。截至本公告披露日，本次交易涉及标的资产的过户手续已经办理完毕，上海市市场监督管理局已于2026年11月24日核准标的公司本次交易涉及的工商变更相关事项，标的公司100%股权已经变更登记至公司名下，标的公司成为公司直接持股的全资子公司。",
+    "events": [
+     {
+      "type": "企业收购",
+      "trigger": {
+       "text": "购买",
+       "start": 6,
+       "end": 8
+      },
+      "args": [
+       {
+        "role": "收购标的",
+        "text": "100%股权",
+        "start": 12,
+        "end": 18,
+        "source": "model"
+       },
+       {
+        "role": "被收购方",
+        "text": "上海证券有限责任公司",
+        "start": 59,
+        "end": 69,
+        "source": "model"
+       },
+       {
+        "role": "披露时间",
+        "text": "2026年11月24日",
+        "start": 119,
+        "end": 130,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9766,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:收购方"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 193,
+    "text": "公司尚需按照协议约定向相关交易对方发行股份及支付现金，并办理新增股份的相关登记、上市手续。",
+    "events": [
+     {
+      "type": "公司上市",
+      "trigger": {
+       "text": "上市",
+       "start": 233,
+       "end": 235
+      },
+      "args": []
+     }
+    ],
+    "confidence": 0.9917,
+    "needs_review": false,
+    "review_reasons": []
+   }
+  ],
+  "latency_ms": 82.8,
+  "text": "【东方证券：购买上海证券100%股权标的资产过户完成】东方证券公告，公司此前披露拟通过发行A股股份及支付现金的方式购买上海证券有限责任公司100%股权。截至本公告披露日，本次交易涉及标的资产的过户手续已经办理完毕，上海市市场监督管理局已于2026年11月24日核准标的公司本次交易涉及的工商变更相关事项，标的公司100%股权已经变更登记至公司名下，标的公司成为公司直接持股的全资子公司。公司尚需按照协议约定向相关交易对方发行股份及支付现金，并办理新增股份的相关登记、上市手续。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqta7702821.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:18:47",
+  "type_hint": "企业融资",
+  "highlight": [
+   {
+    "start": 6,
+    "end": 8,
+    "kind": "trigger",
+    "label": "企业收购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 12,
+    "end": 18,
+    "kind": "arg",
+    "label": "企业收购·收购标的",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 59,
+    "end": 69,
+    "kind": "arg",
+    "label": "企业收购·被收购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 119,
+    "end": 130,
+    "kind": "arg",
+    "label": "企业收购·披露时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 233,
+    "end": 235,
+    "kind": "trigger",
+    "label": "公司上市·触发词",
+    "event_idx": 1,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_012",
+  "title": "中信建投：硬科技主线的共振与分化",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "公司上市",
+    "trigger": {
+     "text": "上市",
+     "start": 76,
+     "end": 78
+    },
+    "args": [
+     {
+      "role": "上市公司",
+      "text": "粤芯半导体",
+      "start": 68,
+      "end": 73,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9882
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【中信建投：硬科技主线的共振与分化】中信建投发布研报表示，硬科技正成为一二级市场共同的定价主线，但两端的定价逻辑已然分化，发行端以未盈利粤芯半导体的快速上市给技术壁垒投票，投资端以长江存储等大单重仓给产业地位投票；",
+    "events": [
+     {
+      "type": "公司上市",
+      "trigger": {
+       "text": "上市",
+       "start": 76,
+       "end": 78
+      },
+      "args": [
+       {
+        "role": "上市公司",
+        "text": "粤芯半导体",
+        "start": 68,
+        "end": 73,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9882,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 107,
+    "text": "撤否项目的行业分布是赛道拥挤度的镜像，信息技术撤否居首，中小募资体量成为退出主力，发行链条正从宽进转向精选；券商直投策略分化为概率生意与认知生意，头部项目主导组合收益的特征，决定其业绩弹性显著高于传统业务，头部项目的兑现能力成为检验券商硬科技布局成色的核心变量。",
+    "events": [],
+    "confidence": 0.9907,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 74.0,
+  "text": "【中信建投：硬科技主线的共振与分化】中信建投发布研报表示，硬科技正成为一二级市场共同的定价主线，但两端的定价逻辑已然分化，发行端以未盈利粤芯半导体的快速上市给技术壁垒投票，投资端以长江存储等大单重仓给产业地位投票；撤否项目的行业分布是赛道拥挤度的镜像，信息技术撤否居首，中小募资体量成为退出主力，发行链条正从宽进转向精选；券商直投策略分化为概率生意与认知生意，头部项目主导组合收益的特征，决定其业绩弹性显著高于传统业务，头部项目的兑现能力成为检验券商硬科技布局成色的核心变量。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmi2279029.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:38:06",
+  "type_hint": "企业融资",
+  "highlight": [
+   {
+    "start": 68,
+    "end": 73,
+    "kind": "arg",
+    "label": "公司上市·上市公司",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 76,
+    "end": 78,
+    "kind": "trigger",
+    "label": "公司上市·触发词",
+    "event_idx": 0,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_013",
+  "title": "晶泰控股：董事会主席温书豪进一步增持130万股 总代价约600万港元",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "股东增持",
+    "trigger": {
+     "text": "增持",
+     "start": 17,
+     "end": 19
+    },
+    "args": [
+     {
+      "role": "股票简称",
+      "text": "晶泰控股",
+      "start": 1,
+      "end": 5,
+      "source": "model"
+     },
+     {
+      "role": "交易股票/股份数量",
+      "text": "130万",
+      "start": 19,
+      "end": 23,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "约600万港元",
+      "start": 28,
+      "end": 35,
+      "source": "model"
+     },
+     {
+      "role": "交易完成时间",
+      "text": "2026年11月24日",
+      "start": 81,
+      "end": 92,
+      "source": "model"
+     },
+     {
+      "role": "交易股票/股份数量",
+      "text": "130",
+      "start": 113,
+      "end": 116,
+      "source": "model"
+     },
+     {
+      "role": "增持部分占总股本比例",
+      "text": "0.03%",
+      "start": 128,
+      "end": 133,
+      "source": "regex"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "600万港元",
+      "start": 29,
+      "end": 35,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9475
+   },
+   {
+    "type": "股东增持",
+    "trigger": {
+     "text": "增持",
+     "start": 158,
+     "end": 160
+    },
+    "args": [
+     {
+      "role": "交易股票/股份数量",
+      "text": "509.3万",
+      "start": 178,
+      "end": 184,
+      "source": "model"
+     },
+     {
+      "role": "增持部分占总股本比例",
+      "text": "0.12%",
+      "start": 199,
+      "end": 204,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.965
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【晶泰控股：董事会主席温书豪进一步增持130万股 总代价约600万港元】晶泰控股（02228.HK）发布自愿公告，公司董事会主席、执行董事兼联合创始人温书豪博士于2026年11月24日动用个人资金通过公开市场进一步购买公司合计130万股股份，占总发行股份约0.03%，总代价约600万港元。",
+    "events": [
+     {
+      "type": "股东增持",
+      "trigger": {
+       "text": "增持",
+       "start": 17,
+       "end": 19
+      },
+      "args": [
+       {
+        "role": "股票简称",
+        "text": "晶泰控股",
+        "start": 1,
+        "end": 5,
+        "source": "model"
+       },
+       {
+        "role": "交易股票/股份数量",
+        "text": "130万",
+        "start": 19,
+        "end": 23,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "约600万港元",
+        "start": 28,
+        "end": 35,
+        "source": "model"
+       },
+       {
+        "role": "交易完成时间",
+        "text": "2026年11月24日",
+        "start": 81,
+        "end": 92,
+        "source": "model"
+       },
+       {
+        "role": "交易股票/股份数量",
+        "text": "130",
+        "start": 113,
+        "end": 116,
+        "source": "model"
+       },
+       {
+        "role": "增持部分占总股本比例",
+        "text": "0.03%",
+        "start": 128,
+        "end": 133,
+        "source": "regex"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "600万港元",
+        "start": 29,
+        "end": 35,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9475,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:增持方",
+     "role_not_in_type:股东增持.减持方",
+     "role_not_in_type:股东增持.减持部分占总股本比例"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 145,
+    "text": "紧随本次购买后，温书豪根据增持股份计划已在公开市场累计购买公司合计509.3万股股份，占全部已发行股份总数约0.12%。",
+    "events": [
+     {
+      "type": "股东增持",
+      "trigger": {
+       "text": "增持",
+       "start": 158,
+       "end": 160
+      },
+      "args": [
+       {
+        "role": "交易股票/股份数量",
+        "text": "509.3万",
+        "start": 178,
+        "end": 184,
+        "source": "model"
+       },
+       {
+        "role": "增持部分占总股本比例",
+        "text": "0.12%",
+        "start": 199,
+        "end": 204,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.965,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:增持方",
+     "role_not_in_type:股东增持.减持方",
+     "role_not_in_type:股东增持.减持部分占总股本比例"
+    ]
+   }
+  ],
+  "latency_ms": 67.5,
+  "text": "【晶泰控股：董事会主席温书豪进一步增持130万股 总代价约600万港元】晶泰控股（02228.HK）发布自愿公告，公司董事会主席、执行董事兼联合创始人温书豪博士于2026年11月24日动用个人资金通过公开市场进一步购买公司合计130万股股份，占总发行股份约0.03%，总代价约600万港元。紧随本次购买后，温书豪根据增持股份计划已在公开市场累计购买公司合计509.3万股股份，占全部已发行股份总数约0.12%。",
+  "url": "https://finance.eastmoney.com/a/202611243938317277.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 12:18:00",
+  "type_hint": "股东增持",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 5,
+    "kind": "arg",
+    "label": "股东增持·股票简称",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 17,
+    "end": 19,
+    "kind": "trigger",
+    "label": "股东增持·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 19,
+    "end": 23,
+    "kind": "arg",
+    "label": "股东增持·交易股票/股份数量",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 28,
+    "end": 35,
+    "kind": "arg",
+    "label": "股东增持·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 81,
+    "end": 92,
+    "kind": "arg",
+    "label": "股东增持·交易完成时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 113,
+    "end": 116,
+    "kind": "arg",
+    "label": "股东增持·交易股票/股份数量",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 128,
+    "end": 133,
+    "kind": "arg",
+    "label": "股东增持·增持部分占总股本比例",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 158,
+    "end": 160,
+    "kind": "trigger",
+    "label": "股东增持·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 178,
+    "end": 184,
+    "kind": "arg",
+    "label": "股东增持·交易股票/股份数量",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 199,
+    "end": 204,
+    "kind": "arg",
+    "label": "股东增持·增持部分占总股本比例",
+    "event_idx": 1,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_014",
+  "title": "德国商业银行考虑缩减美债交易业务",
+  "n_sentences": 2,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【德国商业银行考虑缩减美债交易业务】据知情人士透露，因美国即将出台新的美债清算规则，德国商业银行正考虑缩减美债交易业务。一名不愿具名的知情人士称，该行正在评估多种方案，包括退出美国回购市场，或是与经纪交易商合作开展现券美债交易。",
+    "events": [],
+    "confidence": 0.9931,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 114,
+    "text": "相关信息属于未公开内容。该人士表示，此番潜在调整，至少部分是受新规带来的成本上升影响。相关事项仍在评估中，尚未做出最终决定。德国商业银行一名发言人拒绝置评。",
+    "events": [],
+    "confidence": 0.9846,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 67.4,
+  "text": "【德国商业银行考虑缩减美债交易业务】据知情人士透露，因美国即将出台新的美债清算规则，德国商业银行正考虑缩减美债交易业务。一名不愿具名的知情人士称，该行正在评估多种方案，包括退出美国回购市场，或是与经纪交易商合作开展现券美债交易。相关信息属于未公开内容。该人士表示，此番潜在调整，至少部分是受新规带来的成本上升影响。相关事项仍在评估中，尚未做出最终决定。德国商业银行一名发言人拒绝置评。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmh0129411.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:36:52",
+  "type_hint": "股份回购",
+  "highlight": []
+ },
+ {
+  "id": "news_015",
+  "title": "减持茅台、增持科技股 有主动ETF从价值切向成长赛道",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "股东减持",
+    "trigger": {
+     "text": "减持",
+     "start": 1,
+     "end": 3
+    },
+    "args": [
+     {
+      "role": "股票简称",
+      "text": "茅台",
+      "start": 3,
+      "end": 5,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9822
+   },
+   {
+    "type": "股东减持",
+    "trigger": {
+     "text": "减持",
+     "start": 154,
+     "end": 156
+    },
+    "args": [
+     {
+      "role": "股票简称",
+      "text": "贵州茅台",
+      "start": 127,
+      "end": 131,
+      "source": "model"
+     },
+     {
+      "role": "减持方",
+      "text": "片仔癀",
+      "start": 142,
+      "end": 145,
+      "source": "model"
+     },
+     {
+      "role": "减持方",
+      "text": "工商银行",
+      "start": 146,
+      "end": 150,
+      "source": "model"
+     },
+     {
+      "role": "减持方",
+      "text": "中微公司",
+      "start": 157,
+      "end": 161,
+      "source": "model"
+     },
+     {
+      "role": "减持方",
+      "text": "中际旭创",
+      "start": 162,
+      "end": 166,
+      "source": "model"
+     },
+     {
+      "role": "减持方",
+      "text": "宁德时代",
+      "start": 167,
+      "end": 171,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9338
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【减持茅台、增持科技股 有主动ETF从价值切向成长赛道】经历昨日的反弹后，首批主动ETF的调仓动作分化。18只产品的前十大重仓股来看，贵州茅台依旧是第一大重仓股，但被减持，持有ETF数量减少1只。",
+    "events": [
+     {
+      "type": "股东减持",
+      "trigger": {
+       "text": "减持",
+       "start": 1,
+       "end": 3
+      },
+      "args": [
+       {
+        "role": "股票简称",
+        "text": "茅台",
+        "start": 3,
+        "end": 5,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9822,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:减持方"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 98,
+    "text": "主要是均衡量化主动ETF天弘呈现从价值切向成长风格的情况，贵州茅台在该ETF中清仓退出，片仔癀、工商银行等个股被减持；中微公司、中际旭创、宁德时代等被增持。",
+    "events": [
+     {
+      "type": "股东减持",
+      "trigger": {
+       "text": "减持",
+       "start": 154,
+       "end": 156
+      },
+      "args": [
+       {
+        "role": "股票简称",
+        "text": "贵州茅台",
+        "start": 127,
+        "end": 131,
+        "source": "model"
+       },
+       {
+        "role": "减持方",
+        "text": "片仔癀",
+        "start": 142,
+        "end": 145,
+        "source": "model"
+       },
+       {
+        "role": "减持方",
+        "text": "工商银行",
+        "start": 146,
+        "end": 150,
+        "source": "model"
+       },
+       {
+        "role": "减持方",
+        "text": "中微公司",
+        "start": 157,
+        "end": 161,
+        "source": "model"
+       },
+       {
+        "role": "减持方",
+        "text": "中际旭创",
+        "start": 162,
+        "end": 166,
+        "source": "model"
+       },
+       {
+        "role": "减持方",
+        "text": "宁德时代",
+        "start": 167,
+        "end": 171,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9338,
+    "needs_review": false,
+    "review_reasons": []
+   }
+  ],
+  "latency_ms": 64.8,
+  "text": "【减持茅台、增持科技股 有主动ETF从价值切向成长赛道】经历昨日的反弹后，首批主动ETF的调仓动作分化。18只产品的前十大重仓股来看，贵州茅台依旧是第一大重仓股，但被减持，持有ETF数量减少1只。主要是均衡量化主动ETF天弘呈现从价值切向成长风格的情况，贵州茅台在该ETF中清仓退出，片仔癀、工商银行等个股被减持；中微公司、中际旭创、宁德时代等被增持。",
+  "url": "https://finance.eastmoney.com/a/202611243938279275.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 10:28:31",
+  "type_hint": "股东减持",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 3,
+    "kind": "trigger",
+    "label": "股东减持·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 3,
+    "end": 5,
+    "kind": "arg",
+    "label": "股东减持·股票简称",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 127,
+    "end": 131,
+    "kind": "arg",
+    "label": "股东减持·股票简称",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 142,
+    "end": 145,
+    "kind": "arg",
+    "label": "股东减持·减持方",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 146,
+    "end": 150,
+    "kind": "arg",
+    "label": "股东减持·减持方",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 154,
+    "end": 156,
+    "kind": "trigger",
+    "label": "股东减持·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 157,
+    "end": 161,
+    "kind": "arg",
+    "label": "股东减持·减持方",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 162,
+    "end": 166,
+    "kind": "arg",
+    "label": "股东减持·减持方",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 167,
+    "end": 171,
+    "kind": "arg",
+    "label": "股东减持·减持方",
+    "event_idx": 1,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_016",
+  "title": "重庆信托：由总经理秦晓倩代为履行公司董事长职务",
+  "n_sentences": 2,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【重庆信托：由总经理秦晓倩代为履行公司董事长职务】近日，重庆国际信托股份有限公司（以下简称“重庆信托”）公告称，11月20日，公司召开董事会审议通过如下决议：同意秦晓倩女士代为履行公司董事长职务（含相关委员会委员），自本次董事会决议通过之日起生效。",
+    "events": [],
+    "confidence": 0.939,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 124,
+    "text": "目前，公司经营管理及业务开展正常，员工队伍保持稳定，各项业务均按既定部署平稳有序开展。",
+    "events": [],
+    "confidence": 0.9998,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 55.3,
+  "text": "【重庆信托：由总经理秦晓倩代为履行公司董事长职务】近日，重庆国际信托股份有限公司（以下简称“重庆信托”）公告称，11月20日，公司召开董事会审议通过如下决议：同意秦晓倩女士代为履行公司董事长职务（含相关委员会委员），自本次董事会决议通过之日起生效。目前，公司经营管理及业务开展正常，员工队伍保持稳定，各项业务均按既定部署平稳有序开展。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqtf2196789.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:25:34",
+  "type_hint": "高管变动",
+  "highlight": []
+ },
+ {
+  "id": "news_017",
+  "title": "东方证券：收购上海证券100%股权完成过户",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "企业收购",
+    "trigger": {
+     "text": "收购",
+     "start": 6,
+     "end": 8
+    },
+    "args": [
+     {
+      "role": "收购方",
+      "text": "东方证券",
+      "start": 1,
+      "end": 5,
+      "source": "model"
+     },
+     {
+      "role": "被收购方",
+      "text": "上海证券",
+      "start": 8,
+      "end": 12,
+      "source": "model"
+     },
+     {
+      "role": "收购标的",
+      "text": "100%股权",
+      "start": 12,
+      "end": 18,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9775
+   },
+   {
+    "type": "公司上市",
+    "trigger": {
+     "text": "上市",
+     "start": 131,
+     "end": 133
+    },
+    "args": [
+     {
+      "role": "事件时间",
+      "text": "截至公告日",
+      "start": 83,
+      "end": 88,
+      "source": "model"
+     },
+     {
+      "role": "上市公司",
+      "text": "上海证券",
+      "start": 103,
+      "end": 107,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9814
+   }
+  ],
+  "needs_review": false,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【东方证券：收购上海证券100%股权完成过户】东方证券(600958.SH)公告称，公司拟通过发行A股股份及支付现金方式购买上海证券100%股权，已获证监会批复同意。",
+    "events": [
+     {
+      "type": "企业收购",
+      "trigger": {
+       "text": "收购",
+       "start": 6,
+       "end": 8
+      },
+      "args": [
+       {
+        "role": "收购方",
+        "text": "东方证券",
+        "start": 1,
+        "end": 5,
+        "source": "model"
+       },
+       {
+        "role": "被收购方",
+        "text": "上海证券",
+        "start": 8,
+        "end": 12,
+        "source": "model"
+       },
+       {
+        "role": "收购标的",
+        "text": "100%股权",
+        "start": 12,
+        "end": 18,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9775,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 83,
+    "text": "截至公告日，标的资产过户手续已办理完毕，上海证券已成为公司全资子公司。后续公司将办理新增股份登记上市、注册资本及章程变更等事项。",
+    "events": [
+     {
+      "type": "公司上市",
+      "trigger": {
+       "text": "上市",
+       "start": 131,
+       "end": 133
+      },
+      "args": [
+       {
+        "role": "事件时间",
+        "text": "截至公告日",
+        "start": 83,
+        "end": 88,
+        "source": "model"
+       },
+       {
+        "role": "上市公司",
+        "text": "上海证券",
+        "start": 103,
+        "end": 107,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9814,
+    "needs_review": false,
+    "review_reasons": []
+   }
+  ],
+  "latency_ms": 52.5,
+  "text": "【东方证券：收购上海证券100%股权完成过户】东方证券(600958.SH)公告称，公司拟通过发行A股股份及支付现金方式购买上海证券100%股权，已获证监会批复同意。截至公告日，标的资产过户手续已办理完毕，上海证券已成为公司全资子公司。后续公司将办理新增股份登记上市、注册资本及章程变更等事项。",
+  "url": "https://finance.eastmoney.com/a/202611243938454285.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 16:20:06",
+  "type_hint": "企业收购",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 5,
+    "kind": "arg",
+    "label": "企业收购·收购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 6,
+    "end": 8,
+    "kind": "trigger",
+    "label": "企业收购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 8,
+    "end": 12,
+    "kind": "arg",
+    "label": "企业收购·被收购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 12,
+    "end": 18,
+    "kind": "arg",
+    "label": "企业收购·收购标的",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 83,
+    "end": 88,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 103,
+    "end": 107,
+    "kind": "arg",
+    "label": "公司上市·上市公司",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 131,
+    "end": 133,
+    "kind": "trigger",
+    "label": "公司上市·触发词",
+    "event_idx": 1,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_018",
+  "title": "“木头姐”错失英伟达31%大涨行情：在黄仁勋回归前抛售持仓",
+  "n_sentences": 1,
+  "events": [
+   {
+    "type": "股东减持",
+    "trigger": {
+     "text": "减持",
+     "start": 57,
+     "end": 59
+    },
+    "args": [
+     {
+      "role": "股票简称",
+      "text": "英伟达",
+      "start": 8,
+      "end": 11,
+      "source": "model"
+     },
+     {
+      "role": "减持方",
+      "text": "黄仁勋",
+      "start": 20,
+      "end": 23,
+      "source": "model"
+     },
+     {
+      "role": "减持方",
+      "text": "凯西·伍德",
+      "start": 50,
+      "end": 55,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "近1.07亿美元",
+      "start": 62,
+      "end": 70,
+      "source": "model"
+     },
+     {
+      "role": "减持部分占总股本比例",
+      "text": "31%",
+      "start": 11,
+      "end": 14,
+      "source": "regex"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "1.07亿美元",
+      "start": 63,
+      "end": 70,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9832
+   }
+  ],
+  "needs_review": false,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【“木头姐”错失英伟达31%大涨行情：在黄仁勋回归前抛售持仓】由于担心黄仁勋离职会冲击英伟达管理层，凯西·伍德此前减持了价值近1.07亿美元的英伟达股票。而这家芯片巨头随后宣布恢复黄仁勋职务，股价迎来多年最强单日涨幅，这次卖出操作也因此踏空、事与愿违。",
+    "events": [
+     {
+      "type": "股东减持",
+      "trigger": {
+       "text": "减持",
+       "start": 57,
+       "end": 59
+      },
+      "args": [
+       {
+        "role": "股票简称",
+        "text": "英伟达",
+        "start": 8,
+        "end": 11,
+        "source": "model"
+       },
+       {
+        "role": "减持方",
+        "text": "黄仁勋",
+        "start": 20,
+        "end": 23,
+        "source": "model"
+       },
+       {
+        "role": "减持方",
+        "text": "凯西·伍德",
+        "start": 50,
+        "end": 55,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "近1.07亿美元",
+        "start": 62,
+        "end": 70,
+        "source": "model"
+       },
+       {
+        "role": "减持部分占总股本比例",
+        "text": "31%",
+        "start": 11,
+        "end": 14,
+        "source": "regex"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "1.07亿美元",
+        "start": 63,
+        "end": 70,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9832,
+    "needs_review": false,
+    "review_reasons": []
+   }
+  ],
+  "latency_ms": 42.9,
+  "text": "【“木头姐”错失英伟达31%大涨行情：在黄仁勋回归前抛售持仓】由于担心黄仁勋离职会冲击英伟达管理层，凯西·伍德此前减持了价值近1.07亿美元的英伟达股票。而这家芯片巨头随后宣布恢复黄仁勋职务，股价迎来多年最强单日涨幅，这次卖出操作也因此踏空、事与愿违。",
+  "url": "https://finance.eastmoney.com/a/202611243938412670.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 15:24:27",
+  "type_hint": "股东减持",
+  "highlight": [
+   {
+    "start": 8,
+    "end": 11,
+    "kind": "arg",
+    "label": "股东减持·股票简称",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 11,
+    "end": 14,
+    "kind": "arg",
+    "label": "股东减持·减持部分占总股本比例",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 20,
+    "end": 23,
+    "kind": "arg",
+    "label": "股东减持·减持方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 50,
+    "end": 55,
+    "kind": "arg",
+    "label": "股东减持·减持方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 57,
+    "end": 59,
+    "kind": "trigger",
+    "label": "股东减持·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 62,
+    "end": 70,
+    "kind": "arg",
+    "label": "股东减持·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_019",
+  "title": "中方对黄仁勋重回英伟达有何评论？外交部回应",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "高管变动",
+    "trigger": {
+     "text": "任命",
+     "start": 63,
+     "end": 65
+    },
+    "args": [
+     {
+      "role": "高管姓名",
+      "text": "黄仁勋",
+      "start": 4,
+      "end": 7,
+      "source": "model"
+     },
+     {
+      "role": "任职公司",
+      "text": "英伟达",
+      "start": 9,
+      "end": 12,
+      "source": "model"
+     },
+     {
+      "role": "披露日期",
+      "text": "11月24日",
+      "start": 23,
+      "end": 29,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9428
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【中方对黄仁勋重回英伟达有何评论？外交部回应】11月24日，外交部发言人郭嘉昆主持例行记者会。彭博社记者提问，英伟达董事会重新任命黄仁勋为负责人，此前他因为丑闻辞职，美国政府对此进行了介入。",
+    "events": [
+     {
+      "type": "高管变动",
+      "trigger": {
+       "text": "任命",
+       "start": 63,
+       "end": 65
+      },
+      "args": [
+       {
+        "role": "高管姓名",
+        "text": "黄仁勋",
+        "start": 4,
+        "end": 7,
+        "source": "model"
+       },
+       {
+        "role": "任职公司",
+        "text": "英伟达",
+        "start": 9,
+        "end": 12,
+        "source": "model"
+       },
+       {
+        "role": "披露日期",
+        "text": "11月24日",
+        "start": 23,
+        "end": 29,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9428,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 95,
+    "text": "中方对此有何评论？“我们对此不做评论。”郭嘉昆说。（澎湃）",
+    "events": [],
+    "confidence": 0.9991,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 47.9,
+  "text": "【中方对黄仁勋重回英伟达有何评论？外交部回应】11月24日，外交部发言人郭嘉昆主持例行记者会。彭博社记者提问，英伟达董事会重新任命黄仁勋为负责人，此前他因为丑闻辞职，美国政府对此进行了介入。中方对此有何评论？“我们对此不做评论。”郭嘉昆说。（澎湃）",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmk9030093.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:16:03",
+  "type_hint": "高管变动",
+  "highlight": [
+   {
+    "start": 4,
+    "end": 7,
+    "kind": "arg",
+    "label": "高管变动·高管姓名",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 9,
+    "end": 12,
+    "kind": "arg",
+    "label": "高管变动·任职公司",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 23,
+    "end": 29,
+    "kind": "arg",
+    "label": "高管变动·披露日期",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 63,
+    "end": 65,
+    "kind": "trigger",
+    "label": "高管变动·触发词",
+    "event_idx": 0,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_020",
+  "title": "“就算离职也要继续买” 荣盛发展启动年内第三轮增持 打响“1元保卫战”",
+  "n_sentences": 1,
+  "events": [
+   {
+    "type": "股东增持",
+    "trigger": {
+     "text": "增持",
+     "start": 24,
+     "end": 26
+    },
+    "args": [
+     {
+      "role": "股票简称",
+      "text": "荣盛发展",
+      "start": 13,
+      "end": 17,
+      "source": "model"
+     },
+     {
+      "role": "披露时间",
+      "text": "11月24日",
+      "start": 37,
+      "end": 43,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "1元",
+      "start": 30,
+      "end": 32,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9922
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【“就算离职也要继续买” 荣盛发展启动年内第三轮增持 打响“1元保卫战”】11月24日，荣盛发展方面在接受记者采访时坦言，董事高管与核心骨干处于经营和化债一线，对资产状况、谈判进展的了解比外部投资者更为直接，“对公司有信心”。",
+    "events": [
+     {
+      "type": "股东增持",
+      "trigger": {
+       "text": "增持",
+       "start": 24,
+       "end": 26
+      },
+      "args": [
+       {
+        "role": "股票简称",
+        "text": "荣盛发展",
+        "start": 13,
+        "end": 17,
+        "source": "model"
+       },
+       {
+        "role": "披露时间",
+        "text": "11月24日",
+        "start": 37,
+        "end": 43,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "1元",
+        "start": 30,
+        "end": 32,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9922,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:增持方"
+    ]
+   }
+  ],
+  "latency_ms": 35.7,
+  "text": "【“就算离职也要继续买” 荣盛发展启动年内第三轮增持 打响“1元保卫战”】11月24日，荣盛发展方面在接受记者采访时坦言，董事高管与核心骨干处于经营和化债一线，对资产状况、谈判进展的了解比外部投资者更为直接，“对公司有信心”。",
+  "url": "https://finance.eastmoney.com/a/202611243938349487.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 13:46:13",
+  "type_hint": "股东增持",
+  "highlight": [
+   {
+    "start": 13,
+    "end": 17,
+    "kind": "arg",
+    "label": "股东增持·股票简称",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 24,
+    "end": 26,
+    "kind": "trigger",
+    "label": "股东增持·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 30,
+    "end": 32,
+    "kind": "arg",
+    "label": "股东增持·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 37,
+    "end": 43,
+    "kind": "arg",
+    "label": "股东增持·披露时间",
+    "event_idx": 0,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_021",
+  "title": "SpaceX和特斯拉委派五名董事负责合并谈判",
+  "n_sentences": 1,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【SpaceX和特斯拉委派五名董事负责合并谈判】媒体援引知情人士的话报道称，埃隆·马斯克旗下的两家上市公司已任命五名董事——其中三人来自特斯拉，两人来自SpaceX——以指导负责合并谈判的两个特别委员会。",
+    "events": [],
+    "confidence": 0.9713,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 33.1,
+  "text": "【SpaceX和特斯拉委派五名董事负责合并谈判】媒体援引知情人士的话报道称，埃隆·马斯克旗下的两家上市公司已任命五名董事——其中三人来自特斯拉，两人来自SpaceX——以指导负责合并谈判的两个特别委员会。",
+  "url": "https://finance.eastmoney.com/a/202611243938338226.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 13:20:43",
+  "type_hint": "公司上市",
+  "highlight": []
+ },
+ {
+  "id": "news_022",
+  "title": "中方对黄仁勋重回英伟达有何评论？外交部回应",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "高管变动",
+    "trigger": {
+     "text": "任",
+     "start": 39,
+     "end": 40
+    },
+    "args": [
+     {
+      "role": "高管姓名",
+      "text": "黄仁勋",
+      "start": 4,
+      "end": 7,
+      "source": "model"
+     },
+     {
+      "role": "任职公司",
+      "text": "英伟达",
+      "start": 9,
+      "end": 12,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9335
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【中方对黄仁勋重回英伟达有何评论？外交部回应】彭博社记者提问，英伟达董事会重新任命黄仁勋为负责人，此前他因为丑闻辞职，美国政府对此进行了介入。中方对此有何评论？",
+    "events": [
+     {
+      "type": "高管变动",
+      "trigger": {
+       "text": "任",
+       "start": 39,
+       "end": 40
+      },
+      "args": [
+       {
+        "role": "高管姓名",
+        "text": "黄仁勋",
+        "start": 4,
+        "end": 7,
+        "source": "model"
+       },
+       {
+        "role": "任职公司",
+        "text": "英伟达",
+        "start": 9,
+        "end": 12,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9335,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 80,
+    "text": "“我们对此不做评论。”郭嘉昆说。",
+    "events": [],
+    "confidence": 0.9959,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 42.2,
+  "text": "【中方对黄仁勋重回英伟达有何评论？外交部回应】彭博社记者提问，英伟达董事会重新任命黄仁勋为负责人，此前他因为丑闻辞职，美国政府对此进行了介入。中方对此有何评论？“我们对此不做评论。”郭嘉昆说。",
+  "url": "https://finance.eastmoney.com/a/202611243938407822.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 15:17:10",
+  "type_hint": "高管变动",
+  "highlight": [
+   {
+    "start": 4,
+    "end": 7,
+    "kind": "arg",
+    "label": "高管变动·高管姓名",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 9,
+    "end": 12,
+    "kind": "arg",
+    "label": "高管变动·任职公司",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 39,
+    "end": 40,
+    "kind": "trigger",
+    "label": "高管变动·触发词",
+    "event_idx": 0,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_023",
+  "title": "中央企业和地方国资国企社会责任蓝皮书发布会在京举办",
+  "n_sentences": 3,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【中央企业和地方国资国企社会责任蓝皮书发布会在京举办】日前，中央企业和地方国资国企社会责任蓝皮书发布会在京举办。国务院国资委党委委员、副主任庞骁刚出席并致辞。会议以“勇担社会责任 谱写时代新篇”为主题，充分展示了近年来中央企业和地方国资国企深入学习贯彻习近平总书记关于社会责任工作的重要指示精神，围绕增强核心功能、提升核心竞争力，在服务国家战略、促进经济社会高质量发展、保障和改善民生中勇担社会责任，在关键时刻发挥骨干中坚作用，各项工作取得的积极进展和明显成效。",
+    "events": [],
+    "confidence": 0.9835,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 231,
+    "text": "会议集中发布并解读了《中央企业社会责任蓝皮书（2026）》《中央企业上市公司环境、社会和公司治理（ESG）蓝皮书（2026）》《中央企业海外环境、社会和公司治理（ESG）蓝皮书（2026）》《国资国企社会责任蓝皮书（2026）》系列履责报告，同时发起“低碳未来 从‘衣’做起——中央企业纤维再生社会责任行动”。",
+    "events": [],
+    "confidence": 0.9991,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 386,
+    "text": "国家电网、中国联通、中国安能、北京市国资委、陕西省国资委、江苏交控、广东环保集团负责同志作了交流发言。中国一汽、中国远洋海运一线同志分享了履责故事。各中央企业、地方国资委负责同志及有关地方国有企业负责同志参加发布会。",
+    "events": [],
+    "confidence": 0.9555,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 153.5,
+  "text": "【中央企业和地方国资国企社会责任蓝皮书发布会在京举办】日前，中央企业和地方国资国企社会责任蓝皮书发布会在京举办。国务院国资委党委委员、副主任庞骁刚出席并致辞。会议以“勇担社会责任 谱写时代新篇”为主题，充分展示了近年来中央企业和地方国资国企深入学习贯彻习近平总书记关于社会责任工作的重要指示精神，围绕增强核心功能、提升核心竞争力，在服务国家战略、促进经济社会高质量发展、保障和改善民生中勇担社会责任，在关键时刻发挥骨干中坚作用，各项工作取得的积极进展和明显成效。会议集中发布并解读了《中央企业社会责任蓝皮书（2026）》《中央企业上市公司环境、社会和公司治理（ESG）蓝皮书（2026）》《中央企业海外环境、社会和公司治理（ESG）蓝皮书（2026）》《国资国企社会责任蓝皮书（2026）》系列履责报告，同时发起“低碳未来 从‘衣’做起——中央企业纤维再生社会责任行动”。国家电网、中国联通、中国安能、北京市国资委、陕西省国资委、江苏交控、广东环保集团负责同志作了交流发言。中国一汽、中国远洋海运一线同志分享了履责故事。各中央企业、地方国资委负责同志及有关地方国有企业负责同志参加发布会。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmk9024226.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:11:27",
+  "type_hint": "公司上市",
+  "highlight": []
+ },
+ {
+  "id": "news_024",
+  "title": "商务部新闻发言人就欧盟宣布对混动汽车采取临时保障措施答记者问",
+  "n_sentences": 5,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【商务部新闻发言人就欧盟宣布对混动汽车采取临时保障措施答记者问】 问：11月24日，欧盟委员会发布混动汽车全球保障措施初步裁定，并拟于12月1日起采取临时保障措施。",
+    "events": [],
+    "confidence": 0.9829,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 82,
+    "text": "请问中方有何评论？ 答：中方注意到相关消息。 欧方于10月30日对进口混动汽车发起全球保障措施调查，不到一个月又决定采取临时保障措施。 此前，中欧双方本着相互尊重、平等协商的原则，在中欧贸易投资磋商机制项下进行了立案前磋商，并就混动汽车贸易达成了合法合规、务实平衡的安排。",
+    "events": [],
+    "confidence": 0.9932,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 218,
+    "text": "希望欧方切实遵守双方共识，严格依照世贸组织规则，不折不扣落实非歧视原则，公平、公正开展相关调查。中方将密切关注欧方后续调查进展，保留在世贸组织框架下诉诸争端解决、要求贸易补偿等一切权利，坚决维护中国相关产业正当权益。",
+    "events": [],
+    "confidence": 0.9994,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 3,
+    "offset": 326,
+    "text": "中方重申，保护主义没有出路，开放合作才是正道。当前，全球汽车产业正处于绿色转型的关键阶段，开放合作是必然趋势。中欧汽车产业优势互补、深度融合，深化合作符合双方共同利益。",
+    "events": [],
+    "confidence": 0.9948,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 4,
+    "offset": 411,
+    "text": "希望欧方与中方相向而行，为双方产业提供稳定、可预期、可持续的贸易投资环境，推动双边经贸关系稳定、平衡和健康发展。（商务部）",
+    "events": [],
+    "confidence": 0.9986,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 162.7,
+  "text": "【商务部新闻发言人就欧盟宣布对混动汽车采取临时保障措施答记者问】 问：11月24日，欧盟委员会发布混动汽车全球保障措施初步裁定，并拟于12月1日起采取临时保障措施。请问中方有何评论？ 答：中方注意到相关消息。 欧方于10月30日对进口混动汽车发起全球保障措施调查，不到一个月又决定采取临时保障措施。 此前，中欧双方本着相互尊重、平等协商的原则，在中欧贸易投资磋商机制项下进行了立案前磋商，并就混动汽车贸易达成了合法合规、务实平衡的安排。希望欧方切实遵守双方共识，严格依照世贸组织规则，不折不扣落实非歧视原则，公平、公正开展相关调查。中方将密切关注欧方后续调查进展，保留在世贸组织框架下诉诸争端解决、要求贸易补偿等一切权利，坚决维护中国相关产业正当权益。 中方重申，保护主义没有出路，开放合作才是正道。当前，全球汽车产业正处于绿色转型的关键阶段，开放合作是必然趋势。中欧汽车产业优势互补、深度融合，深化合作符合双方共同利益。希望欧方与中方相向而行，为双方产业提供稳定、可预期、可持续的贸易投资环境，推动双边经贸关系稳定、平衡和健康发展。（商务部）",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqtf2204379.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:33:53",
+  "type_hint": "被约谈",
+  "highlight": []
+ },
+ {
+  "id": "news_025",
+  "title": "小摩：人形机器人及实体AI进入加速执行阶段，升宇树科技及优必选目标价",
+  "n_sentences": 4,
+  "events": [
+   {
+    "type": "股东增持",
+    "trigger": {
+     "text": "增持",
+     "start": 265,
+     "end": 267
+    },
+    "args": [
+     {
+      "role": "股票简称",
+      "text": "宇树科技",
+      "start": 260,
+      "end": 264,
+      "source": "model"
+     },
+     {
+      "role": "增持部分占总股本比例",
+      "text": "50%",
+      "start": 295,
+      "end": 298,
+      "source": "regex"
+     },
+     {
+      "role": "交易金额",
+      "text": "995元",
+      "start": 275,
+      "end": 279,
+      "source": "regex"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "1060元",
+      "start": 282,
+      "end": 287,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 2,
+    "confidence": 0.9869
+   },
+   {
+    "type": "股东增持",
+    "trigger": {
+     "text": "增持",
+     "start": 350,
+     "end": 352
+    },
+    "args": [
+     {
+      "role": "股票简称",
+      "text": "恒立液压",
+      "start": 415,
+      "end": 419,
+      "source": "model"
+     },
+     {
+      "role": "股票简称",
+      "text": "三花智控",
+      "start": 420,
+      "end": 424,
+      "source": "model"
+     },
+     {
+      "role": "增持部分占总股本比例",
+      "text": "30%",
+      "start": 373,
+      "end": 376,
+      "source": "regex"
+     },
+     {
+      "role": "交易金额",
+      "text": "74港元",
+      "start": 358,
+      "end": 362,
+      "source": "regex"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "77港元",
+      "start": 364,
+      "end": 368,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 3,
+    "confidence": 0.9761
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【小摩：人形机器人及实体AI进入加速执行阶段，升宇树科技及优必选目标价】摩根大通发表研报指，人形机器人及实体AI正进入新一轮加速阶段，技术、政策与商业执行动能同步升温，采用曲线(S-curve)正在变陡。",
+    "events": [],
+    "confidence": 0.9981,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 102,
+    "text": "该行指出，亚洲科技创新与增长(TIG)会议反映行业正由炒作与演示转向真实世界执行，数据、部署与客户投资回报(ROI)成为胜负关键；实体AI的ChatGPT时刻有望于一年内出现，但共识是模型进步并不足够，可规模化的数据管道、反馈闭环与可量化ROI，才是区分赢家的核心。",
+    "events": [],
+    "confidence": 0.978,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 235,
+    "text": "未来两至三年将是行业整合关键期。个股方面，该行维持宇树科技“增持”评级，目标价由995元上调至1060元，相当于较现价约50%上行空间，反映市场愈加认可其不止于硬件规模，亦在构建“脑力”与生态系统。",
+    "events": [
+     {
+      "type": "股东增持",
+      "trigger": {
+       "text": "增持",
+       "start": 265,
+       "end": 267
+      },
+      "args": [
+       {
+        "role": "股票简称",
+        "text": "宇树科技",
+        "start": 260,
+        "end": 264,
+        "source": "model"
+       },
+       {
+        "role": "增持部分占总股本比例",
+        "text": "50%",
+        "start": 295,
+        "end": 298,
+        "source": "regex"
+       },
+       {
+        "role": "交易金额",
+        "text": "995元",
+        "start": 275,
+        "end": 279,
+        "source": "regex"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "1060元",
+        "start": 282,
+        "end": 287,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9869,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:增持方"
+    ]
+   },
+   {
+    "sent_idx": 3,
+    "offset": 334,
+    "text": "该行将优必选评级由“中性”升至“增持”，目标价由74港元升至77港元，相当于约30%上行空间。中国OEM供应链首选维持奥比中光与绿的谐波，特斯拉机器人供应链则看好恒立液压及三花智控，均予“增持”评级。",
+    "events": [
+     {
+      "type": "股东增持",
+      "trigger": {
+       "text": "增持",
+       "start": 350,
+       "end": 352
+      },
+      "args": [
+       {
+        "role": "股票简称",
+        "text": "恒立液压",
+        "start": 415,
+        "end": 419,
+        "source": "model"
+       },
+       {
+        "role": "股票简称",
+        "text": "三花智控",
+        "start": 420,
+        "end": 424,
+        "source": "model"
+       },
+       {
+        "role": "增持部分占总股本比例",
+        "text": "30%",
+        "start": 373,
+        "end": 376,
+        "source": "regex"
+       },
+       {
+        "role": "交易金额",
+        "text": "74港元",
+        "start": 358,
+        "end": 362,
+        "source": "regex"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "77港元",
+        "start": 364,
+        "end": 368,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9761,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:增持方"
+    ]
+   }
+  ],
+  "latency_ms": 149.5,
+  "text": "【小摩：人形机器人及实体AI进入加速执行阶段，升宇树科技及优必选目标价】摩根大通发表研报指，人形机器人及实体AI正进入新一轮加速阶段，技术、政策与商业执行动能同步升温，采用曲线(S-curve)正在变陡。该行指出，亚洲科技创新与增长(TIG)会议反映行业正由炒作与演示转向真实世界执行，数据、部署与客户投资回报(ROI)成为胜负关键；实体AI的ChatGPT时刻有望于一年内出现，但共识是模型进步并不足够，可规模化的数据管道、反馈闭环与可量化ROI，才是区分赢家的核心。未来两至三年将是行业整合关键期。个股方面，该行维持宇树科技“增持”评级，目标价由995元上调至1060元，相当于较现价约50%上行空间，反映市场愈加认可其不止于硬件规模，亦在构建“脑力”与生态系统。该行将优必选评级由“中性”升至“增持”，目标价由74港元升至77港元，相当于约30%上行空间。中国OEM供应链首选维持奥比中光与绿的谐波，特斯拉机器人供应链则看好恒立液压及三花智控，均予“增持”评级。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmi2255239.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:17:13",
+  "type_hint": "股东增持",
+  "highlight": [
+   {
+    "start": 260,
+    "end": 264,
+    "kind": "arg",
+    "label": "股东增持·股票简称",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 265,
+    "end": 267,
+    "kind": "trigger",
+    "label": "股东增持·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 275,
+    "end": 279,
+    "kind": "arg",
+    "label": "股东增持·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 282,
+    "end": 287,
+    "kind": "arg",
+    "label": "股东增持·每股交易价格",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 295,
+    "end": 298,
+    "kind": "arg",
+    "label": "股东增持·增持部分占总股本比例",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 350,
+    "end": 352,
+    "kind": "trigger",
+    "label": "股东增持·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 358,
+    "end": 362,
+    "kind": "arg",
+    "label": "股东增持·交易金额",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 364,
+    "end": 368,
+    "kind": "arg",
+    "label": "股东增持·每股交易价格",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 373,
+    "end": 376,
+    "kind": "arg",
+    "label": "股东增持·增持部分占总股本比例",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 415,
+    "end": 419,
+    "kind": "arg",
+    "label": "股东增持·股票简称",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 420,
+    "end": 424,
+    "kind": "arg",
+    "label": "股东增持·股票简称",
+    "event_idx": 1,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_026",
+  "title": "中国化学：2026年1-10月新签合同额3132.78亿元",
+  "n_sentences": 3,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【中国化学：2026年1-10月新签合同额3132.78亿元】中国化学公告，公司2026年1-10月按业务类型统计，工程业务合同数量4479个，合同金额3012.14亿元，其中化学工程2729.94亿元、其他工程282.2亿元；",
+    "events": [],
+    "confidence": 0.9864,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 114,
+    "text": "实业业务合同金额114.31亿元；现代服务业合同金额6.33亿元；合计合同金额3132.78亿元。按地区分布统计，境内合同金额2114.19亿元，境外合同金额1018.59亿元。",
+    "events": [],
+    "confidence": 0.9714,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 203,
+    "text": "10月单笔合同额在5亿元以上的重大合同包括华陆工程科技有限责任公司环氧树脂一体化项目（一期）公用与辅助工程总承包合同10.48亿元、中国成达工程有限公司解化搬迁转型升级建设50万吨合成氨及下游项目空分锅炉装置工程总承包合同6.18亿元、中国化学工程第十三建设有限公司尼日利亚丹格特炼油厂及聚丙烯装置二期储罐项目合同5.38亿元（折合人民币）。",
+    "events": [],
+    "confidence": 0.9346,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 120.9,
+  "text": "【中国化学：2026年1-10月新签合同额3132.78亿元】中国化学公告，公司2026年1-10月按业务类型统计，工程业务合同数量4479个，合同金额3012.14亿元，其中化学工程2729.94亿元、其他工程282.2亿元；实业业务合同金额114.31亿元；现代服务业合同金额6.33亿元；合计合同金额3132.78亿元。按地区分布统计，境内合同金额2114.19亿元，境外合同金额1018.59亿元。10月单笔合同额在5亿元以上的重大合同包括华陆工程科技有限责任公司环氧树脂一体化项目（一期）公用与辅助工程总承包合同10.48亿元、中国成达工程有限公司解化搬迁转型升级建设50万吨合成氨及下游项目空分锅炉装置工程总承包合同6.18亿元、中国化学工程第十三建设有限公司尼日利亚丹格特炼油厂及聚丙烯装置二期储罐项目合同5.38亿元（折合人民币）。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmh0125883.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:32:23",
+  "type_hint": "中标",
+  "highlight": []
+ },
+ {
+  "id": "news_027",
+  "title": "南方基金拟1亿元自购旗下主动ETF，基金经理：估值风险释放较为充分，配置价值凸显",
+  "n_sentences": 4,
+  "events": [
+   {
+    "type": "企业收购",
+    "trigger": {
+     "text": "自购",
+     "start": 9,
+     "end": 11
+    },
+    "args": [
+     {
+      "role": "收购方",
+      "text": "南方基金",
+      "start": 1,
+      "end": 5,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "1亿元",
+      "start": 6,
+      "end": 9,
+      "source": "model"
+     },
+     {
+      "role": "披露时间",
+      "text": "11月24日",
+      "start": 42,
+      "end": 48,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9672
+   },
+   {
+    "type": "公司上市",
+    "trigger": {
+     "text": "上市",
+     "start": 95,
+     "end": 97
+    },
+    "args": [
+     {
+      "role": "事件时间",
+      "text": "11月23日",
+      "start": 89,
+      "end": 95,
+      "source": "model"
+     },
+     {
+      "role": "上市公司",
+      "text": "ETF南方",
+      "start": 146,
+      "end": 151,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9726
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【南方基金拟1亿元自购旗下主动ETF，基金经理：估值风险释放较为充分，配置价值凸显】11月24日，南方基金发布公告称，将出资1亿元自有资金申购旗下均衡主动ETF南方。",
+    "events": [
+     {
+      "type": "企业收购",
+      "trigger": {
+       "text": "自购",
+       "start": 9,
+       "end": 11
+      },
+      "args": [
+       {
+        "role": "收购方",
+        "text": "南方基金",
+        "start": 1,
+        "end": 5,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "1亿元",
+        "start": 6,
+        "end": 9,
+        "source": "model"
+       },
+       {
+        "role": "披露时间",
+        "text": "11月24日",
+        "start": 42,
+        "end": 48,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9672,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:被收购方"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 83,
+    "text": "这是该产品于11月23日上市交易后，管理人首次以自有资金大额申购，向市场传递出对公司主动投研能力和产品策略的坚定信心。均衡主动ETF南方是深交所首批试点的9只主动ETF产品之一，该产品选择均衡配置作为核心策略，投资目标为超越业绩比较基准中证800指数获取超额收益。",
+    "events": [
+     {
+      "type": "公司上市",
+      "trigger": {
+       "text": "上市",
+       "start": 95,
+       "end": 97
+      },
+      "args": [
+       {
+        "role": "事件时间",
+        "text": "11月23日",
+        "start": 89,
+        "end": 95,
+        "source": "model"
+       },
+       {
+        "role": "上市公司",
+        "text": "ETF南方",
+        "start": 146,
+        "end": 151,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9726,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 2,
+    "offset": 215,
+    "text": "在市场展望方面，均衡主动ETF南方基金经理表示，政策端稳市组合拳持续落地，中长期资金入市趋势明确；国内经济稳健复苏，上市公司盈利逐步回升；AI算力硬件景气延续，产业趋势未遭破坏。",
+    "events": [],
+    "confidence": 0.9732,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 3,
+    "offset": 304,
+    "text": "经历前期海外国内的阶段调整后，估值风险释放较为充分，配置价值凸显。综合来看，对权益市场保持乐观，预计市场中枢有望逐步上移。（澎湃）",
+    "events": [],
+    "confidence": 0.9997,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 125.3,
+  "text": "【南方基金拟1亿元自购旗下主动ETF，基金经理：估值风险释放较为充分，配置价值凸显】11月24日，南方基金发布公告称，将出资1亿元自有资金申购旗下均衡主动ETF南方。这是该产品于11月23日上市交易后，管理人首次以自有资金大额申购，向市场传递出对公司主动投研能力和产品策略的坚定信心。均衡主动ETF南方是深交所首批试点的9只主动ETF产品之一，该产品选择均衡配置作为核心策略，投资目标为超越业绩比较基准中证800指数获取超额收益。在市场展望方面，均衡主动ETF南方基金经理表示，政策端稳市组合拳持续落地，中长期资金入市趋势明确；国内经济稳健复苏，上市公司盈利逐步回升；AI算力硬件景气延续，产业趋势未遭破坏。经历前期海外国内的阶段调整后，估值风险释放较为充分，配置价值凸显。综合来看，对权益市场保持乐观，预计市场中枢有望逐步上移。（澎湃）",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqta7678745.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:48:55",
+  "type_hint": "公司上市",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 5,
+    "kind": "arg",
+    "label": "企业收购·收购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 6,
+    "end": 9,
+    "kind": "arg",
+    "label": "企业收购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 9,
+    "end": 11,
+    "kind": "trigger",
+    "label": "企业收购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 42,
+    "end": 48,
+    "kind": "arg",
+    "label": "企业收购·披露时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 89,
+    "end": 95,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 95,
+    "end": 97,
+    "kind": "trigger",
+    "label": "公司上市·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 146,
+    "end": 151,
+    "kind": "arg",
+    "label": "公司上市·上市公司",
+    "event_idx": 1,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_028",
+  "title": "老挝正式退出联合国最不发达国家行列",
+  "n_sentences": 4,
+  "events": [
+   {
+    "type": "企业融资",
+    "trigger": {
+     "text": "融资",
+     "start": 192,
+     "end": 194
+    },
+    "args": [
+     {
+      "role": "事件时间",
+      "text": "11月19日",
+      "start": 142,
+      "end": 148,
+      "source": "model"
+     },
+     {
+      "role": "被投资方",
+      "text": "老",
+      "start": 149,
+      "end": 150,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9685
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【老挝正式退出联合国最不发达国家行列】根据联合国大会有关决议，老挝于今年的11月24日正式退出最不发达国家行列。11月24日，老挝副总理兼外交部长通沙万和联合国驻老挝协调员巴霍迪尔在联合署名文章中表示，退出最不发达国家行列是老挝经济社会发展的重要里程碑，也标志着老挝进入新的发展阶段。",
+    "events": [],
+    "confidence": 0.9796,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 142,
+    "text": "11月19日，老挝政府在首都万象举行2026年度圆桌执行会议，重点讨论退出最不发达国家行列后的发展、融资和经济转型等问题。会议提出，将加强宏观经济稳定，拓宽融资渠道，推动经济结构转型，提高经济韧性和自主发展能力。",
+    "events": [
+     {
+      "type": "企业融资",
+      "trigger": {
+       "text": "融资",
+       "start": 192,
+       "end": 194
+      },
+      "args": [
+       {
+        "role": "事件时间",
+        "text": "11月19日",
+        "start": 142,
+        "end": 148,
+        "source": "model"
+       },
+       {
+        "role": "被投资方",
+        "text": "老",
+        "start": 149,
+        "end": 150,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9685,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 2,
+    "offset": 248,
+    "text": "根据老挝第十个国家经济社会发展五年规划，老挝提出到2035年迈入中高收入国家行列。2021年11月24日，联合国大会通过第76/8号决议，决定给予老挝5年准备期，于2026年11月24日退出最不发达国家行列。",
+    "events": [],
+    "confidence": 0.9783,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 3,
+    "offset": 352,
+    "text": "（央视新闻）",
+    "events": [],
+    "confidence": 0.9916,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 123.9,
+  "text": "【老挝正式退出联合国最不发达国家行列】根据联合国大会有关决议，老挝于今年的11月24日正式退出最不发达国家行列。11月24日，老挝副总理兼外交部长通沙万和联合国驻老挝协调员巴霍迪尔在联合署名文章中表示，退出最不发达国家行列是老挝经济社会发展的重要里程碑，也标志着老挝进入新的发展阶段。11月19日，老挝政府在首都万象举行2026年度圆桌执行会议，重点讨论退出最不发达国家行列后的发展、融资和经济转型等问题。会议提出，将加强宏观经济稳定，拓宽融资渠道，推动经济结构转型，提高经济韧性和自主发展能力。根据老挝第十个国家经济社会发展五年规划，老挝提出到2035年迈入中高收入国家行列。2021年11月24日，联合国大会通过第76/8号决议，决定给予老挝5年准备期，于2026年11月24日退出最不发达国家行列。（央视新闻）",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqtf2165417.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:54:57",
+  "type_hint": "企业融资",
+  "highlight": [
+   {
+    "start": 142,
+    "end": 148,
+    "kind": "arg",
+    "label": "企业融资·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 149,
+    "end": 150,
+    "kind": "arg",
+    "label": "企业融资·被投资方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 192,
+    "end": 194,
+    "kind": "trigger",
+    "label": "企业融资·触发词",
+    "event_idx": 0,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_029",
+  "title": "软银拟出售旗下科技媒体 ITmedia 控股权，集中资源押注 AI",
+  "n_sentences": 4,
+  "events": [
+   {
+    "type": "公司上市",
+    "trigger": {
+     "text": "上市",
+     "start": 220,
+     "end": 222
+    },
+    "args": [
+     {
+      "role": "上市公司",
+      "text": "ITmedia",
+      "start": 193,
+      "end": 200,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "截至",
+      "start": 223,
+      "end": 225,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "2026",
+      "start": 226,
+      "end": 230,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "年",
+      "start": 231,
+      "end": 232,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "11",
+      "start": 233,
+      "end": 235,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "月",
+      "start": 236,
+      "end": 237,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "24",
+      "start": 238,
+      "end": 240,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "日",
+      "start": 241,
+      "end": 242,
+      "source": "model"
+     },
+     {
+      "role": "披露时间",
+      "text": "2026 年 11 月 24 日",
+      "start": 226,
+      "end": 242,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 2,
+    "confidence": 0.9646
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【软银拟出售旗下科技媒体 ITmedia 控股权，集中资源押注 AI】据日本经济新闻报道，软银公司正考虑出售其在线媒体子公司 ITmedia 的控股权，以将经营资源集中于人工智能（AI）业务。",
+    "events": [],
+    "confidence": 0.9606,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 96,
+    "text": "截至 2026 年 9 月底，软银公司通过其全资子公司 SB Media Holdings 持有 ITmedia 52.98% 的股份。 软银已委任瑞穗证券作为财务顾问，启动出售的前期准备工作。",
+    "events": [],
+    "confidence": 0.929,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 193,
+    "text": "ITmedia 目前在东京证券交易所 Prime 市场上市，截至 2026 年 11 月 24 日，其总市值约为 253 亿日元。若出售交易最终达成，ITmedia 可能会被私有化退市，从而消除日本资本市场长期关注的“母子公司同时上市”结构。",
+    "events": [
+     {
+      "type": "公司上市",
+      "trigger": {
+       "text": "上市",
+       "start": 220,
+       "end": 222
+      },
+      "args": [
+       {
+        "role": "上市公司",
+        "text": "ITmedia",
+        "start": 193,
+        "end": 200,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "截至",
+        "start": 223,
+        "end": 225,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "2026",
+        "start": 226,
+        "end": 230,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "年",
+        "start": 231,
+        "end": 232,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "11",
+        "start": 233,
+        "end": 235,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "月",
+        "start": 236,
+        "end": 237,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "24",
+        "start": 238,
+        "end": 240,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "日",
+        "start": 241,
+        "end": 242,
+        "source": "model"
+       },
+       {
+        "role": "披露时间",
+        "text": "2026 年 11 月 24 日",
+        "start": 226,
+        "end": 242,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9646,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 3,
+    "offset": 314,
+    "text": "软银方面对该报道未予置评。",
+    "events": [],
+    "confidence": 0.963,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 108.7,
+  "text": "【软银拟出售旗下科技媒体 ITmedia 控股权，集中资源押注 AI】据日本经济新闻报道，软银公司正考虑出售其在线媒体子公司 ITmedia 的控股权，以将经营资源集中于人工智能（AI）业务。截至 2026 年 9 月底，软银公司通过其全资子公司 SB Media Holdings 持有 ITmedia 52.98% 的股份。 软银已委任瑞穗证券作为财务顾问，启动出售的前期准备工作。ITmedia 目前在东京证券交易所 Prime 市场上市，截至 2026 年 11 月 24 日，其总市值约为 253 亿日元。若出售交易最终达成，ITmedia 可能会被私有化退市，从而消除日本资本市场长期关注的“母子公司同时上市”结构。软银方面对该报道未予置评。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqtf2194159.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:23:09",
+  "type_hint": "公司上市",
+  "highlight": [
+   {
+    "start": 193,
+    "end": 200,
+    "kind": "arg",
+    "label": "公司上市·上市公司",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 220,
+    "end": 222,
+    "kind": "trigger",
+    "label": "公司上市·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 223,
+    "end": 225,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 226,
+    "end": 230,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 231,
+    "end": 232,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 233,
+    "end": 235,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 236,
+    "end": 237,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 238,
+    "end": 240,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 241,
+    "end": 242,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_030",
+  "title": "固德威：拟以1.5亿元-3亿元回购公司股份",
+  "n_sentences": 4,
+  "events": [
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 16,
+     "end": 18
+    },
+    "args": [
+     {
+      "role": "回购方",
+      "text": "固德威",
+      "start": 1,
+      "end": 4,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "1.5亿元-3亿元",
+      "start": 7,
+      "end": 16,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "不低于人民币1.5亿元",
+      "start": 52,
+      "end": 63,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "不超过人民币3亿元",
+      "start": 67,
+      "end": 76,
+      "source": "model"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "不超过人民币70元",
+      "start": 84,
+      "end": 93,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.993
+   },
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 99,
+     "end": 101
+    },
+    "args": [
+     {
+      "role": "回购完成时间",
+      "text": "12个月",
+      "start": 143,
+      "end": 147,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9727
+   },
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 214,
+     "end": 216
+    },
+    "args": [],
+    "sent_idx": 2,
+    "confidence": 0.999
+   },
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 277,
+     "end": 279
+    },
+    "args": [
+     {
+      "role": "回购完成时间",
+      "text": "自",
+      "start": 282,
+      "end": 283,
+      "source": "model"
+     },
+     {
+      "role": "回购完成时间",
+      "text": "公司董事会审议通过本次回购股份方案之日起3个月内",
+      "start": 283,
+      "end": 307,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 3,
+    "confidence": 0.9603
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【固德威：拟以1.5亿元-3亿元回购公司股份】固德威公告，拟以集中竞价交易方式回购公司股份，回购资金总额不低于人民币1.5亿元（含），不超过人民币3亿元（含），回购价格不超过人民币70元/股（含）。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 16,
+       "end": 18
+      },
+      "args": [
+       {
+        "role": "回购方",
+        "text": "固德威",
+        "start": 1,
+        "end": 4,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "1.5亿元-3亿元",
+        "start": 7,
+        "end": 16,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "不低于人民币1.5亿元",
+        "start": 52,
+        "end": 63,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "不超过人民币3亿元",
+        "start": 67,
+        "end": 76,
+        "source": "model"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "不超过人民币70元",
+        "start": 84,
+        "end": 93,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.993,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 99,
+    "text": "回购股份用途为维护公司价值及股东权益，回购股份将在公司披露股份回购实施结果暨股份变动公告12个月后采用集中竞价交易方式出售，并在披露回购结果暨股份变动公告后3年内完成出售；",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 99,
+       "end": 101
+      },
+      "args": [
+       {
+        "role": "回购完成时间",
+        "text": "12个月",
+        "start": 143,
+        "end": 147,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9727,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 185,
+    "text": "若未能出售完毕，将依法履行减少注册资本的程序，尚未出售的已回购股份将予以注销。回购资金来源为公司自有资金和股票回购专项贷款，公司已取得中信银行股份有限公司苏州分行出具的《贷款承诺函》。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 214,
+       "end": 216
+      },
+      "args": []
+     }
+    ],
+    "confidence": 0.999,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   },
+   {
+    "sent_idx": 3,
+    "offset": 277,
+    "text": "回购期限为自公司董事会审议通过本次回购股份方案之日起3个月内。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 277,
+       "end": 279
+      },
+      "args": [
+       {
+        "role": "回购完成时间",
+        "text": "自",
+        "start": 282,
+        "end": 283,
+        "source": "model"
+       },
+       {
+        "role": "回购完成时间",
+        "text": "公司董事会审议通过本次回购股份方案之日起3个月内",
+        "start": 283,
+        "end": 307,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9603,
+    "needs_review": true,
+    "review_reasons": [
+     "missing_core_role:回购方"
+    ]
+   }
+  ],
+  "latency_ms": 104.1,
+  "text": "【固德威：拟以1.5亿元-3亿元回购公司股份】固德威公告，拟以集中竞价交易方式回购公司股份，回购资金总额不低于人民币1.5亿元（含），不超过人民币3亿元（含），回购价格不超过人民币70元/股（含）。回购股份用途为维护公司价值及股东权益，回购股份将在公司披露股份回购实施结果暨股份变动公告12个月后采用集中竞价交易方式出售，并在披露回购结果暨股份变动公告后3年内完成出售；若未能出售完毕，将依法履行减少注册资本的程序，尚未出售的已回购股份将予以注销。回购资金来源为公司自有资金和股票回购专项贷款，公司已取得中信银行股份有限公司苏州分行出具的《贷款承诺函》。回购期限为自公司董事会审议通过本次回购股份方案之日起3个月内。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqte0003325.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:42:59",
+  "type_hint": "股份回购",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 4,
+    "kind": "arg",
+    "label": "股份回购·回购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 7,
+    "end": 16,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 16,
+    "end": 18,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 52,
+    "end": 63,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 67,
+    "end": 76,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 84,
+    "end": 93,
+    "kind": "arg",
+    "label": "股份回购·每股交易价格",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 99,
+    "end": 101,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 143,
+    "end": 147,
+    "kind": "arg",
+    "label": "股份回购·回购完成时间",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 214,
+    "end": 216,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 2,
+    "priority": 0
+   },
+   {
+    "start": 277,
+    "end": 279,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 3,
+    "priority": 0
+   },
+   {
+    "start": 282,
+    "end": 283,
+    "kind": "arg",
+    "label": "股份回购·回购完成时间",
+    "event_idx": 3,
+    "priority": 1
+   },
+   {
+    "start": 283,
+    "end": 307,
+    "kind": "arg",
+    "label": "股份回购·回购完成时间",
+    "event_idx": 3,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_031",
+  "title": "天奇股份：磷酸铁锂电池环保项目（二期）拟延期至2027年11月",
+  "n_sentences": 3,
+  "events": [
+   {
+    "type": "企业融资",
+    "trigger": {
+     "text": "募集资金",
+     "start": 133,
+     "end": 137
+    },
+    "args": [
+     {
+      "role": "事件时间",
+      "text": "截至2026年9月30日",
+      "start": 113,
+      "end": 125,
+      "source": "model"
+     },
+     {
+      "role": "融资金额",
+      "text": "15563.46万元",
+      "start": 137,
+      "end": 147,
+      "source": "model"
+     },
+     {
+      "role": "披露时间",
+      "text": "2026年9月30日",
+      "start": 115,
+      "end": 125,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9804
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【天奇股份：磷酸铁锂电池环保项目（二期）拟延期至2027年11月】天奇股份公告称，公司2023年以简易程序向特定对象发行A股股票募投项目“年处理15万吨磷酸铁锂电池环保项目（二期）”，原计划2026年11月达到预定可使用状态。",
+    "events": [],
+    "confidence": 0.9731,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 113,
+    "text": "截至2026年9月30日，该项目累计投入募集资金15563.46万元，使用比例74.11%，目前已完成土建，正进行设备采购安装。结合行业情况及项目进度，公司拟将该项目达到预定可使用状态日期延期至2027年11月，项目实施主体、地点、募资用途及投资规模均不变，预计2026年12月启动部分产能试生产，2027年上半年投产。",
+    "events": [
+     {
+      "type": "企业融资",
+      "trigger": {
+       "text": "募集资金",
+       "start": 133,
+       "end": 137
+      },
+      "args": [
+       {
+        "role": "事件时间",
+        "text": "截至2026年9月30日",
+        "start": 113,
+        "end": 125,
+        "source": "model"
+       },
+       {
+        "role": "融资金额",
+        "text": "15563.46万元",
+        "start": 137,
+        "end": 147,
+        "source": "model"
+       },
+       {
+        "role": "披露时间",
+        "text": "2026年9月30日",
+        "start": 115,
+        "end": 125,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9804,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 2,
+    "offset": 273,
+    "text": "该事项已经公司董事会审议通过，保荐机构无异议。",
+    "events": [],
+    "confidence": 0.9995,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 96.8,
+  "text": "【天奇股份：磷酸铁锂电池环保项目（二期）拟延期至2027年11月】天奇股份公告称，公司2023年以简易程序向特定对象发行A股股票募投项目“年处理15万吨磷酸铁锂电池环保项目（二期）”，原计划2026年11月达到预定可使用状态。截至2026年9月30日，该项目累计投入募集资金15563.46万元，使用比例74.11%，目前已完成土建，正进行设备采购安装。结合行业情况及项目进度，公司拟将该项目达到预定可使用状态日期延期至2027年11月，项目实施主体、地点、募资用途及投资规模均不变，预计2026年12月启动部分产能试生产，2027年上半年投产。该事项已经公司董事会审议通过，保荐机构无异议。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqth8944253.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:57:43",
+  "type_hint": "企业融资",
+  "highlight": [
+   {
+    "start": 113,
+    "end": 125,
+    "kind": "arg",
+    "label": "企业融资·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 133,
+    "end": 137,
+    "kind": "trigger",
+    "label": "企业融资·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 137,
+    "end": 147,
+    "kind": "arg",
+    "label": "企业融资·融资金额",
+    "event_idx": 0,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_032",
+  "title": "中远海控：推进人工智能技术全业务场景落地应用",
+  "n_sentences": 2,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【中远海控：推进人工智能技术全业务场景落地应用】中远海控高管在2026年第三季度业绩说明会上介绍，中远海控积极推进人工智能技术在全业务场景的落地应用。目前，智能询价Agent、智能客服已投入日常使用，智能供应链管家、大订单客户端正持续迭代优化，此外公司现已搭建起海陆铁路多式联运数字化管理体系，运营效率和客户体验得到显著提升。",
+    "events": [],
+    "confidence": 0.9978,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 163,
+    "text": "另外，根据规划，公司年度内分配的现金分红总额应占公司当年度实现的归属于上市公司股东净利润的30%—50%。据统计，自2021年起至今，在满足现金分红条件的前提下，公司共实施现金分红10次，现金红利合计约人民币7.99元/股，累计派发现金红利总额超过1268亿元。",
+    "events": [],
+    "confidence": 0.9703,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 88.1,
+  "text": "【中远海控：推进人工智能技术全业务场景落地应用】中远海控高管在2026年第三季度业绩说明会上介绍，中远海控积极推进人工智能技术在全业务场景的落地应用。目前，智能询价Agent、智能客服已投入日常使用，智能供应链管家、大订单客户端正持续迭代优化，此外公司现已搭建起海陆铁路多式联运数字化管理体系，运营效率和客户体验得到显著提升。另外，根据规划，公司年度内分配的现金分红总额应占公司当年度实现的归属于上市公司股东净利润的30%—50%。据统计，自2021年起至今，在满足现金分红条件的前提下，公司共实施现金分红10次，现金红利合计约人民币7.99元/股，累计派发现金红利总额超过1268亿元。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqth8950561.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:05:14",
+  "type_hint": "公司上市",
+  "highlight": []
+ },
+ {
+  "id": "news_033",
+  "title": "华为Mate X8发布：全系搭载麒麟9050 Pro芯片，售价12999元起",
+  "n_sentences": 3,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【华为Mate X8发布：全系搭载麒麟9050 Pro芯片，售价12999元起】在今日的华为Mate X8及全场景新品发布会上，华为常务董事、产品投资评审委员会主任、终端BG董事长余承东发表演讲。",
+    "events": [],
+    "confidence": 0.9587,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 98,
+    "text": "华为Mate X8全系搭载麒麟9050 Pro芯片，协同新一代鸿蒙操作系统，实现软硬芯云深度协同，整机性能提升31%。华为Mate X8是首款支持四卡三待的大折叠手机，支持2张实体SIM+1张eSIM，或1张实体SIM+2张eSIM的组合，三卡均可通话、上网、收发短信。",
+    "events": [],
+    "confidence": 0.9829,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 233,
+    "text": "售价方面，华为Mate X8售价12999元起，华为Mate X8典藏版售价15999元起。（新浪科技）",
+    "events": [],
+    "confidence": 0.9728,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 95.2,
+  "text": "【华为Mate X8发布：全系搭载麒麟9050 Pro芯片，售价12999元起】在今日的华为Mate X8及全场景新品发布会上，华为常务董事、产品投资评审委员会主任、终端BG董事长余承东发表演讲。华为Mate X8全系搭载麒麟9050 Pro芯片，协同新一代鸿蒙操作系统，实现软硬芯云深度协同，整机性能提升31%。华为Mate X8是首款支持四卡三待的大折叠手机，支持2张实体SIM+1张eSIM，或1张实体SIM+2张eSIM的组合，三卡均可通话、上网、收发短信。售价方面，华为Mate X8售价12999元起，华为Mate X8典藏版售价15999元起。（新浪科技）",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmi2270812.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:30:30",
+  "type_hint": "高管变动",
+  "highlight": []
+ },
+ {
+  "id": "news_034",
+  "title": "黑龙江：引导金融机构加强对创新药企业的投融资支持 鼓励商业保险扩大创新药支付范围",
+  "n_sentences": 3,
+  "events": [
+   {
+    "type": "企业融资",
+    "trigger": {
+     "text": "融资",
+     "start": 21,
+     "end": 23
+    },
+    "args": [],
+    "sent_idx": 0,
+    "confidence": 0.9697
+   },
+   {
+    "type": "企业融资",
+    "trigger": {
+     "text": "融资",
+     "start": 255,
+     "end": 257
+    },
+    "args": [],
+    "sent_idx": 2,
+    "confidence": 0.991
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【黑龙江：引导金融机构加强对创新药企业的投融资支持 鼓励商业保险扩大创新药支付范围】黑龙江省人民政府印发《黑龙江省卫生健康发展“十五五”规划》，其中提出，支持创新药和医疗器械发展。",
+    "events": [
+     {
+      "type": "企业融资",
+      "trigger": {
+       "text": "融资",
+       "start": 21,
+       "end": 23
+      },
+      "args": []
+     }
+    ],
+    "confidence": 0.9697,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 90,
+    "text": "支持医疗机构与科研院所、企业协同开展创新药临床试验和医疗器械研发，促进基础研究成果向临床诊疗方案转化。加快细胞和基因治疗药物、新型抗体、新型疫苗、核酸药物、放射性药物等应用，提升应急疫苗和药物使用能力，丰富儿童用药品种。",
+    "events": [],
+    "confidence": 0.9999,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 200,
+    "text": "推动人工智能赋能医药全产业链升级。落实医保支持创新药和医疗器械高质量发展机制。引导金融机构加强对创新药企业的投融资支持，鼓励商业保险扩大创新药支付范围。",
+    "events": [
+     {
+      "type": "企业融资",
+      "trigger": {
+       "text": "融资",
+       "start": 255,
+       "end": 257
+      },
+      "args": []
+     }
+    ],
+    "confidence": 0.991,
+    "needs_review": false,
+    "review_reasons": []
+   }
+  ],
+  "latency_ms": 95.8,
+  "text": "【黑龙江：引导金融机构加强对创新药企业的投融资支持 鼓励商业保险扩大创新药支付范围】黑龙江省人民政府印发《黑龙江省卫生健康发展“十五五”规划》，其中提出，支持创新药和医疗器械发展。支持医疗机构与科研院所、企业协同开展创新药临床试验和医疗器械研发，促进基础研究成果向临床诊疗方案转化。加快细胞和基因治疗药物、新型抗体、新型疫苗、核酸药物、放射性药物等应用，提升应急疫苗和药物使用能力，丰富儿童用药品种。推动人工智能赋能医药全产业链升级。落实医保支持创新药和医疗器械高质量发展机制。引导金融机构加强对创新药企业的投融资支持，鼓励商业保险扩大创新药支付范围。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmi2227564.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 14:52:15",
+  "type_hint": "企业融资",
+  "highlight": [
+   {
+    "start": 21,
+    "end": 23,
+    "kind": "trigger",
+    "label": "企业融资·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 255,
+    "end": 257,
+    "kind": "trigger",
+    "label": "企业融资·触发词",
+    "event_idx": 1,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_035",
+  "title": "沪深两市今日成交额合计1.66万亿元，中际旭创成交额居首",
+  "n_sentences": 2,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【沪深两市今日成交额合计1.66万亿元，中际旭创成交额居首】沪深两市今日全天成交额合计1.66万亿元，较上一日增量1022.06亿元。其中，沪市成交额为7718.61亿元（上一交易日为7385亿元），成交量为4.94亿手（上一交易日为5.12亿手）；",
+    "events": [],
+    "confidence": 0.9867,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 125,
+    "text": "深市成交额为8832.25亿元（上一交易日为8143.8亿元），成交量为5.91亿手（上一交易日为6.07亿手）。中际旭创成交额居首，为285.83亿元。其次是新易盛、东山精密、寒武纪、长鑫科技，成交额分别为249.75亿元、146.58亿元、143.21亿元、119.13亿元。",
+    "events": [],
+    "confidence": 0.9618,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 84.3,
+  "text": "【沪深两市今日成交额合计1.66万亿元，中际旭创成交额居首】沪深两市今日全天成交额合计1.66万亿元，较上一日增量1022.06亿元。其中，沪市成交额为7718.61亿元（上一交易日为7385亿元），成交量为4.94亿手（上一交易日为5.12亿手）；深市成交额为8832.25亿元（上一交易日为8143.8亿元），成交量为5.91亿手（上一交易日为6.07亿手）。中际旭创成交额居首，为285.83亿元。其次是新易盛、东山精密、寒武纪、长鑫科技，成交额分别为249.75亿元、146.58亿元、143.21亿元、119.13亿元。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmh0096299.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:01:02",
+  "type_hint": "中标",
+  "highlight": []
+ },
+ {
+  "id": "news_036",
+  "title": "四川省达州市人大常委会原党组成员、副主任罗建一审获刑十二年",
+  "n_sentences": 2,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【四川省达州市人大常委会原党组成员、副主任罗建一审获刑十二年】四川高院消息，11月24日，四川省资阳市中级人民法院一审公开宣判四川省达州市人大常委会原党组成员、副主任罗建受贿案，对被告人罗建以受贿罪判处有期徒刑十二年，并处罚金人民币二百八十万元；",
+    "events": [],
+    "confidence": 0.9403,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 123,
+    "text": "对追缴在案的罗建受贿所得财物依法上缴国库，不足部分继续追缴。经审理查明：2009年至2025年，被告人罗建利用担任达州市达县代理县长、县长，开江县委书记等职务上的便利，为相关个人在工程承揽、项目审批、资金拨付等事项上提供帮助，直接或通过他人非法收受财物共计折合人民币2820万余元。",
+    "events": [],
+    "confidence": 0.9564,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 93.6,
+  "text": "【四川省达州市人大常委会原党组成员、副主任罗建一审获刑十二年】四川高院消息，11月24日，四川省资阳市中级人民法院一审公开宣判四川省达州市人大常委会原党组成员、副主任罗建受贿案，对被告人罗建以受贿罪判处有期徒刑十二年，并处罚金人民币二百八十万元；对追缴在案的罗建受贿所得财物依法上缴国库，不足部分继续追缴。经审理查明：2009年至2025年，被告人罗建利用担任达州市达县代理县长、县长，开江县委书记等职务上的便利，为相关个人在工程承揽、项目审批、资金拨付等事项上提供帮助，直接或通过他人非法收受财物共计折合人民币2820万余元。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvqta7697807.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 16:14:22",
+  "type_hint": "被约谈",
+  "highlight": []
+ },
+ {
+  "id": "news_037",
+  "title": "欧洲10月新车销量同比增长3.4%，纯电动汽车销量大增56.1%",
+  "n_sentences": 3,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【欧洲10月新车销量同比增长3.4%，纯电动汽车销量大增56.1%】欧洲汽车制造商协会（ACEA）11月24日公布的数据显示，10月欧洲新车注册量同比增长3.4%至112.83万辆。",
+    "events": [],
+    "confidence": 0.9912,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 91,
+    "text": "其中，纯电动汽车销量同比增长56.1%至35.20万辆，插电式混合动力汽车销量同比增长9.2%至12.76万辆，混合动力汽车销量同比下降0.3%至37.20万辆，汽油及柴油汽车销量分别同比下降28.3%和30.2%。",
+    "events": [],
+    "confidence": 0.999,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 199,
+    "text": "今年前10个月，欧洲新车累计注册量同比增长6%至1168.28万辆，其中纯电动汽车销量同比增长43.5%至290.16万辆。",
+    "events": [],
+    "confidence": 0.9488,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 94.6,
+  "text": "【欧洲10月新车销量同比增长3.4%，纯电动汽车销量大增56.1%】欧洲汽车制造商协会（ACEA）11月24日公布的数据显示，10月欧洲新车注册量同比增长3.4%至112.83万辆。其中，纯电动汽车销量同比增长56.1%至35.20万辆，插电式混合动力汽车销量同比增长9.2%至12.76万辆，混合动力汽车销量同比下降0.3%至37.20万辆，汽油及柴油汽车销量分别同比下降28.3%和30.2%。今年前10个月，欧洲新车累计注册量同比增长6%至1168.28万辆，其中纯电动汽车销量同比增长43.5%至290.16万辆。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmk9004705.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 14:53:07",
+  "type_hint": "亏损",
+  "highlight": []
+ },
+ {
+  "id": "news_038",
+  "title": "赛诺菲宣布将以410亿美元现金收购Insmed",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "企业收购",
+    "trigger": {
+     "text": "收购",
+     "start": 16,
+     "end": 18
+    },
+    "args": [
+     {
+      "role": "收购方",
+      "text": "赛诺菲",
+      "start": 1,
+      "end": 4,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "410亿美元",
+      "start": 8,
+      "end": 14,
+      "source": "model"
+     },
+     {
+      "role": "被收购方",
+      "text": "Insmed",
+      "start": 18,
+      "end": 24,
+      "source": "model"
+     },
+     {
+      "role": "披露时间",
+      "text": "11月24日",
+      "start": 25,
+      "end": 31,
+      "source": "model"
+     },
+     {
+      "role": "被收购方",
+      "text": "Incorporated",
+      "start": 58,
+      "end": 70,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9901
+   },
+   {
+    "type": "企业收购",
+    "trigger": {
+     "text": "收购",
+     "start": 177,
+     "end": 179
+    },
+    "args": [
+     {
+      "role": "收购方",
+      "text": "赛诺菲",
+      "start": 163,
+      "end": 166,
+      "source": "model"
+     },
+     {
+      "role": "被收购方",
+      "text": "Insmed",
+      "start": 179,
+      "end": 185,
+      "source": "model"
+     },
+     {
+      "role": "收购标的",
+      "text": "全部流通股",
+      "start": 185,
+      "end": 190,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "约410亿美元/376亿欧元",
+      "start": 198,
+      "end": 212,
+      "source": "model"
+     },
+     {
+      "role": "收购完成时间",
+      "text": "2027年上半年",
+      "start": 218,
+      "end": 226,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 1,
+    "confidence": 0.9906
+   }
+  ],
+  "needs_review": false,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【赛诺菲宣布将以410亿美元现金收购Insmed】11月24日，赛诺菲宣布已达成协议，收购生物制药公司Insmed Incorporated。本次收购涵盖Brinsupri（brensocatib）与Arikayce（阿米卡星脂质体吸入混悬液），以及III期临床项目曲前列尼尔棕榈酸酯吸入粉雾剂（TPIP）。",
+    "events": [
+     {
+      "type": "企业收购",
+      "trigger": {
+       "text": "收购",
+       "start": 16,
+       "end": 18
+      },
+      "args": [
+       {
+        "role": "收购方",
+        "text": "赛诺菲",
+        "start": 1,
+        "end": 4,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "410亿美元",
+        "start": 8,
+        "end": 14,
+        "source": "model"
+       },
+       {
+        "role": "被收购方",
+        "text": "Insmed",
+        "start": 18,
+        "end": 24,
+        "source": "model"
+       },
+       {
+        "role": "披露时间",
+        "text": "11月24日",
+        "start": 25,
+        "end": 31,
+        "source": "model"
+       },
+       {
+        "role": "被收购方",
+        "text": "Incorporated",
+        "start": 58,
+        "end": 70,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9901,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 154,
+    "text": "根据合并协议条款，赛诺菲将以每股175美元现金收购Insmed全部流通股，对应总股权价值约410亿美元/376亿欧元。交易预计于2027年上半年完成。本次拟议收购预计不会对赛诺菲2026年财务指引产生任何影响。",
+    "events": [
+     {
+      "type": "企业收购",
+      "trigger": {
+       "text": "收购",
+       "start": 177,
+       "end": 179
+      },
+      "args": [
+       {
+        "role": "收购方",
+        "text": "赛诺菲",
+        "start": 163,
+        "end": 166,
+        "source": "model"
+       },
+       {
+        "role": "被收购方",
+        "text": "Insmed",
+        "start": 179,
+        "end": 185,
+        "source": "model"
+       },
+       {
+        "role": "收购标的",
+        "text": "全部流通股",
+        "start": 185,
+        "end": 190,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "约410亿美元/376亿欧元",
+        "start": 198,
+        "end": 212,
+        "source": "model"
+       },
+       {
+        "role": "收购完成时间",
+        "text": "2027年上半年",
+        "start": 218,
+        "end": 226,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9906,
+    "needs_review": false,
+    "review_reasons": []
+   }
+  ],
+  "latency_ms": 80.4,
+  "text": "【赛诺菲宣布将以410亿美元现金收购Insmed】11月24日，赛诺菲宣布已达成协议，收购生物制药公司Insmed Incorporated。本次收购涵盖Brinsupri（brensocatib）与Arikayce（阿米卡星脂质体吸入混悬液），以及III期临床项目曲前列尼尔棕榈酸酯吸入粉雾剂（TPIP）。根据合并协议条款，赛诺菲将以每股175美元现金收购Insmed全部流通股，对应总股权价值约410亿美元/376亿欧元。交易预计于2027年上半年完成。本次拟议收购预计不会对赛诺菲2026年财务指引产生任何影响。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmi2221317.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 14:43:04",
+  "type_hint": "企业收购",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 4,
+    "kind": "arg",
+    "label": "企业收购·收购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 8,
+    "end": 14,
+    "kind": "arg",
+    "label": "企业收购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 16,
+    "end": 18,
+    "kind": "trigger",
+    "label": "企业收购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 18,
+    "end": 24,
+    "kind": "arg",
+    "label": "企业收购·被收购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 25,
+    "end": 31,
+    "kind": "arg",
+    "label": "企业收购·披露时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 58,
+    "end": 70,
+    "kind": "arg",
+    "label": "企业收购·被收购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 163,
+    "end": 166,
+    "kind": "arg",
+    "label": "企业收购·收购方",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 177,
+    "end": 179,
+    "kind": "trigger",
+    "label": "企业收购·触发词",
+    "event_idx": 1,
+    "priority": 0
+   },
+   {
+    "start": 179,
+    "end": 185,
+    "kind": "arg",
+    "label": "企业收购·被收购方",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 185,
+    "end": 190,
+    "kind": "arg",
+    "label": "企业收购·收购标的",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 198,
+    "end": 212,
+    "kind": "arg",
+    "label": "企业收购·交易金额",
+    "event_idx": 1,
+    "priority": 1
+   },
+   {
+    "start": 218,
+    "end": 226,
+    "kind": "arg",
+    "label": "企业收购·收购完成时间",
+    "event_idx": 1,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_039",
+  "title": "上海浦创金桥企航集成电路产业私募基金登记成立 出资额12.01亿",
+  "n_sentences": 2,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【上海浦创金桥企航集成电路产业私募基金登记成立 出资额12.01亿】天眼查App显示，近日，上海浦创金桥企航集成电路产业私募基金合伙企业（有限合伙）成立，执行事务合伙人为农银资本管理有限公司、上海浦东私募基金管理有限公司，出资额12.01亿元人民币，经营范围为以私募基金从事股权投资、投资管理、资产管理等活动。",
+    "events": [],
+    "confidence": 0.9831,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 155,
+    "text": "合伙人信息显示，该基金由上海浦东引领区投资中心（有限合伙）、上海金桥投资合伙企业（有限合伙）、农银金融资产投资有限公司、农银资本管理有限公司、上海浦东私募基金管理有限公司共同出资。",
+    "events": [],
+    "confidence": 0.9787,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 81.0,
+  "text": "【上海浦创金桥企航集成电路产业私募基金登记成立 出资额12.01亿】天眼查App显示，近日，上海浦创金桥企航集成电路产业私募基金合伙企业（有限合伙）成立，执行事务合伙人为农银资本管理有限公司、上海浦东私募基金管理有限公司，出资额12.01亿元人民币，经营范围为以私募基金从事股权投资、投资管理、资产管理等活动。合伙人信息显示，该基金由上海浦东引领区投资中心（有限合伙）、上海金桥投资合伙企业（有限合伙）、农银金融资产投资有限公司、农银资本管理有限公司、上海浦东私募基金管理有限公司共同出资。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmi2232850.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 14:59:36",
+  "type_hint": "企业融资",
+  "highlight": []
+ },
+ {
+  "id": "news_040",
+  "title": "魏建军自曝压力很大，长城汽车从自主品牌销量第一滑落到第九",
+  "n_sentences": 3,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【魏建军自曝压力很大，长城汽车从自主品牌销量第一滑落到第九】胖东来创始人于东来宣布再购310辆坦克700配给管理团队后，长城汽车董事长魏建军近日赴许昌考察胖东来，于东来亲自到高铁站迎接。",
+    "events": [],
+    "confidence": 0.9432,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 93,
+    "text": "在两人的交流中，魏建军表示，长城汽车曾经是中国自主品牌的销量第一，现在已经排到第九了。有来自媒体的压力，资本的压力，“竞争对手还嘲笑你，不行的现在变成第一，我们是从第一变成第九。",
+    "events": [],
+    "confidence": 0.9891,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 182,
+    "text": "”魏建军还提到，长城汽车有点胖东来的文化，平均单车价格高，现在平均单车均价18万，而同行大部分是10万、11万。（新浪科技）",
+    "events": [],
+    "confidence": 0.9816,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 88.2,
+  "text": "【魏建军自曝压力很大，长城汽车从自主品牌销量第一滑落到第九】胖东来创始人于东来宣布再购310辆坦克700配给管理团队后，长城汽车董事长魏建军近日赴许昌考察胖东来，于东来亲自到高铁站迎接。在两人的交流中，魏建军表示，长城汽车曾经是中国自主品牌的销量第一，现在已经排到第九了。有来自媒体的压力，资本的压力，“竞争对手还嘲笑你，不行的现在变成第一，我们是从第一变成第九。”魏建军还提到，长城汽车有点胖东来的文化，平均单车价格高，现在平均单车均价18万，而同行大部分是10万、11万。（新浪科技）",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmk8989097.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 14:31:12",
+  "type_hint": "高管变动",
+  "highlight": []
+ },
+ {
+  "id": "news_041",
+  "title": "创业板拟引入做市商制度，政策组合拳释放稳市场积极信号，创业板50ETF万家标的指数盘中涨超4%",
+  "n_sentences": 2,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【创业板拟引入做市商制度，政策组合拳释放稳市场积极信号，创业板50ETF万家标的指数盘中涨超4%】2026年11月24日早盘，A股三大指数全线高开，截至09:44，创业板50指数(399673)强势上涨3.30%，成分股胜宏科技上涨12.95%，罗博特科上涨11.86%，天孚通信上涨10.76%，光库科技，中际旭创等个股跟涨。",
+    "events": [],
+    "confidence": 0.9785,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 164,
+    "text": "流动性方面，创业板50ETF万家盘中换手1.57%，成交145.55万元。拉长时间看，截至11月23日，创业板50ETF万家近1周日均成交855.37万元。",
+    "events": [],
+    "confidence": 0.9459,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 77.1,
+  "text": "【创业板拟引入做市商制度，政策组合拳释放稳市场积极信号，创业板50ETF万家标的指数盘中涨超4%】2026年11月24日早盘，A股三大指数全线高开，截至09:44，创业板50指数(399673)强势上涨3.30%，成分股胜宏科技上涨12.95%，罗博特科上涨11.86%，天孚通信上涨10.76%，光库科技，中际旭创等个股跟涨。流动性方面，创业板50ETF万家盘中换手1.57%，成交145.55万元。拉长时间看，截至11月23日，创业板50ETF万家近1周日均成交855.37万元。",
+  "url": "https://finance.eastmoney.com/a/202611243938265654.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 10:13:40",
+  "type_hint": "中标",
+  "highlight": []
+ },
+ {
+  "id": "news_042",
+  "title": "上海医药：注射用B024获临床试验批准，拟用于系统性红斑狼疮",
+  "n_sentences": 3,
+  "events": [
+   {
+    "type": "公司上市",
+    "trigger": {
+     "text": "上市",
+     "start": 239,
+     "end": 241
+    },
+    "args": [
+     {
+      "role": "上市公司",
+      "text": "注射用B024",
+      "start": 196,
+      "end": 203,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "截至公告披露日",
+      "start": 217,
+      "end": 224,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 2,
+    "confidence": 0.9833
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【上海医药：注射用B024获临床试验批准，拟用于系统性红斑狼疮】上海医药公告，公司下属上药交联自主研发的注射用B024收到国家药监局核准签发的《药物临床试验批准通知书》，同意本品开展系统性红斑狼疮适应症临床试验。",
+    "events": [],
+    "confidence": 0.9788,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 106,
+    "text": "该项目为抗体偶联药物，由人源化抗CD74抗体与糖皮质激素载荷偶联制备而成，拟用于系统性红斑狼疮的治疗，上药交联拥有其全部知识产权。截至目前，该项目已累计投入研发费用约2600万元。",
+    "events": [],
+    "confidence": 0.9883,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 196,
+    "text": "注射用B024为治疗用生物制品1类创新药，截至公告披露日，全球未有同品种同适应症的药品上市。",
+    "events": [
+     {
+      "type": "公司上市",
+      "trigger": {
+       "text": "上市",
+       "start": 239,
+       "end": 241
+      },
+      "args": [
+       {
+        "role": "上市公司",
+        "text": "注射用B024",
+        "start": 196,
+        "end": 203,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "截至公告披露日",
+        "start": 217,
+        "end": 224,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9833,
+    "needs_review": false,
+    "review_reasons": []
+   }
+  ],
+  "latency_ms": 84.7,
+  "text": "【上海医药：注射用B024获临床试验批准，拟用于系统性红斑狼疮】上海医药公告，公司下属上药交联自主研发的注射用B024收到国家药监局核准签发的《药物临床试验批准通知书》，同意本品开展系统性红斑狼疮适应症临床试验。该项目为抗体偶联药物，由人源化抗CD74抗体与糖皮质激素载荷偶联制备而成，拟用于系统性红斑狼疮的治疗，上药交联拥有其全部知识产权。截至目前，该项目已累计投入研发费用约2600万元。注射用B024为治疗用生物制品1类创新药，截至公告披露日，全球未有同品种同适应症的药品上市。",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmk9049530.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 15:32:37",
+  "type_hint": "公司上市",
+  "highlight": [
+   {
+    "start": 196,
+    "end": 203,
+    "kind": "arg",
+    "label": "公司上市·上市公司",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 217,
+    "end": 224,
+    "kind": "arg",
+    "label": "公司上市·事件时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 239,
+    "end": 241,
+    "kind": "trigger",
+    "label": "公司上市·触发词",
+    "event_idx": 0,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_043",
+  "title": "十五五新型储能方案落地 储能电池ETF易方达涨5.01%",
+  "n_sentences": 2,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【十五五新型储能方案落地 储能电池ETF易方达涨5.01%】截至2026年11月24日10时38分，储能电池ETF易方达（159566）涨5.01%报1.384元，较昨日收盘价1.318元上涨0.066元，今日开盘价为1.347元，开盘后价格快速上行，盘中最高触及1.384元，最低下探至1.337元，区间振幅约3.57%，成交额约1.46亿元；",
+    "events": [],
+    "confidence": 0.9728,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 173,
+    "text": "从盘口特征看，最新价与盘中高点持平，显示早盘交投较为活跃，价格维持在相对高位运行，该ETF早盘整体未出现明显回撤。",
+    "events": [],
+    "confidence": 0.9933,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 71.7,
+  "text": "【十五五新型储能方案落地 储能电池ETF易方达涨5.01%】截至2026年11月24日10时38分，储能电池ETF易方达（159566）涨5.01%报1.384元，较昨日收盘价1.318元上涨0.066元，今日开盘价为1.347元，开盘后价格快速上行，盘中最高触及1.384元，最低下探至1.337元，区间振幅约3.57%，成交额约1.46亿元；从盘口特征看，最新价与盘中高点持平，显示早盘交投较为活跃，价格维持在相对高位运行，该ETF早盘整体未出现明显回撤。",
+  "url": "https://finance.eastmoney.com/a/202611243938284568.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 10:46:31",
+  "type_hint": "中标",
+  "highlight": []
+ },
+ {
+  "id": "news_044",
+  "title": "余承东：华为折叠手机市场份额达70%，大折叠全球发货量突破1200万",
+  "n_sentences": 3,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【余承东：华为折叠手机市场份额达70%，大折叠全球发货量突破1200万】在今日的华为Mate X8及全场景新品发布会上，华为常务董事、产品投资评审委员会主任、终端BG董事长余承东发表演讲。",
+    "events": [],
+    "confidence": 0.9855,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 94,
+    "text": "余承东表示，华为折叠屏八年深耕，构建覆盖全形态的折叠产品矩阵，以创新科技和卓越体验赢得广大消费者认可与喜爱。截至目前，华为折叠手机市场份额达70%，折叠机品牌提及率第一。",
+    "events": [],
+    "confidence": 0.9812,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 179,
+    "text": "发布会现场，余承东宣布华为大折叠全球发货量突破1200万，并在现场感谢千万用户信任。 （新浪科技）",
+    "events": [],
+    "confidence": 0.9754,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 78.5,
+  "text": "【余承东：华为折叠手机市场份额达70%，大折叠全球发货量突破1200万】在今日的华为Mate X8及全场景新品发布会上，华为常务董事、产品投资评审委员会主任、终端BG董事长余承东发表演讲。余承东表示，华为折叠屏八年深耕，构建覆盖全形态的折叠产品矩阵，以创新科技和卓越体验赢得广大消费者认可与喜爱。截至目前，华为折叠手机市场份额达70%，折叠机品牌提及率第一。发布会现场，余承东宣布华为大折叠全球发货量突破1200万，并在现场感谢千万用户信任。 （新浪科技）",
+  "url": "https://finance.sina.cn/7x24/2026-11-24/detail-inizvkmi2225052.d.html",
+  "source": "新浪财经7×24",
+  "time": "2026-11-24 14:48:29",
+  "type_hint": "高管变动",
+  "highlight": []
+ },
+ {
+  "id": "news_045",
+  "title": "黄仁勋与Anthropic之间 一场AI“冷战”正在上演",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "公司上市",
+    "trigger": {
+     "text": "上市",
+     "start": 80,
+     "end": 82
+    },
+    "args": [
+     {
+      "role": "上市公司",
+      "text": "Anthropic",
+      "start": 5,
+      "end": 14,
+      "source": "model"
+     },
+     {
+      "role": "披露时间",
+      "text": "北京时间11月24日",
+      "start": 30,
+      "end": 40,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "11月24日",
+      "start": 34,
+      "end": 40,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9623
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【黄仁勋与Anthropic之间 一场AI“冷战”正在上演】北京时间11月24日，随着黄仁勋戏剧性地重返英伟达CEO岗位，周一多数AI概念股大幅上涨，但刚刚完成上市的AI巨头Anthropic却成为一个明显的例外，其股价不涨反跌。",
+    "events": [
+     {
+      "type": "公司上市",
+      "trigger": {
+       "text": "上市",
+       "start": 80,
+       "end": 82
+      },
+      "args": [
+       {
+        "role": "上市公司",
+        "text": "Anthropic",
+        "start": 5,
+        "end": 14,
+        "source": "model"
+       },
+       {
+        "role": "披露时间",
+        "text": "北京时间11月24日",
+        "start": 30,
+        "end": 40,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "11月24日",
+        "start": 34,
+        "end": 40,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9623,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 115,
+    "text": "《商业内幕》全球科技编辑阿利斯泰尔·巴尔（Alistair Barr）认为，这一反差背后，是一场关乎AI产业未来发展方向的博弈，而黄仁勋与Anthropic CEO达里奥·阿莫迪（Dario Amodei）恰好站在了对立面。",
+    "events": [],
+    "confidence": 0.983,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 70.8,
+  "text": "【黄仁勋与Anthropic之间 一场AI“冷战”正在上演】北京时间11月24日，随着黄仁勋戏剧性地重返英伟达CEO岗位，周一多数AI概念股大幅上涨，但刚刚完成上市的AI巨头Anthropic却成为一个明显的例外，其股价不涨反跌。《商业内幕》全球科技编辑阿利斯泰尔·巴尔（Alistair Barr）认为，这一反差背后，是一场关乎AI产业未来发展方向的博弈，而黄仁勋与Anthropic CEO达里奥·阿莫迪（Dario Amodei）恰好站在了对立面。",
+  "url": "https://finance.eastmoney.com/a/202611243938322429.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 12:58:52",
+  "type_hint": "公司上市",
+  "highlight": [
+   {
+    "start": 5,
+    "end": 14,
+    "kind": "arg",
+    "label": "公司上市·上市公司",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 30,
+    "end": 40,
+    "kind": "arg",
+    "label": "公司上市·披露时间",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 80,
+    "end": 82,
+    "kind": "trigger",
+    "label": "公司上市·触发词",
+    "event_idx": 0,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_046",
+  "title": "英伟达财报超预期点燃AI链，科创创业人工智能ETF华泰柏瑞涨超4.12%",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "股份回购",
+    "trigger": {
+     "text": "回购",
+     "start": 128,
+     "end": 130
+    },
+    "args": [
+     {
+      "role": "回购方",
+      "text": "英伟达",
+      "start": 1,
+      "end": 4,
+      "source": "model"
+     },
+     {
+      "role": "交易金额",
+      "text": "1500亿美元",
+      "start": 121,
+      "end": 128,
+      "source": "model"
+     },
+     {
+      "role": "占公司总股本比例",
+      "text": "4.12%",
+      "start": 32,
+      "end": 37,
+      "source": "regex"
+     },
+     {
+      "role": "每股交易价格",
+      "text": "1158亿美元",
+      "start": 84,
+      "end": 91,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9956
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【英伟达财报超预期点燃AI链，科创创业人工智能ETF华泰柏瑞涨超4.12%】今日市场整体上行，半导体板块领涨全市场，AI链一开盘就表现活跃。消息面上，英伟达最新财季营收1158亿美元、下一财季指引1300亿美元，均高于市场预期，同时董事会批准1500亿美元回购授权，直接给全球AI硬件提供了短线估值锚。",
+    "events": [
+     {
+      "type": "股份回购",
+      "trigger": {
+       "text": "回购",
+       "start": 128,
+       "end": 130
+      },
+      "args": [
+       {
+        "role": "回购方",
+        "text": "英伟达",
+        "start": 1,
+        "end": 4,
+        "source": "model"
+       },
+       {
+        "role": "交易金额",
+        "text": "1500亿美元",
+        "start": 121,
+        "end": 128,
+        "source": "model"
+       },
+       {
+        "role": "占公司总股本比例",
+        "text": "4.12%",
+        "start": 32,
+        "end": 37,
+        "source": "regex"
+       },
+       {
+        "role": "每股交易价格",
+        "text": "1158亿美元",
+        "start": 84,
+        "end": 91,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9956,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 151,
+    "text": "国内方面也有配合，中国移动刚启动2026年至2027年新一代人工智能超节点设备第二批集采，采购规模合计52160卡，运营商智算基础设施采购明显提速。",
+    "events": [],
+    "confidence": 0.9703,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 73.0,
+  "text": "【英伟达财报超预期点燃AI链，科创创业人工智能ETF华泰柏瑞涨超4.12%】今日市场整体上行，半导体板块领涨全市场，AI链一开盘就表现活跃。消息面上，英伟达最新财季营收1158亿美元、下一财季指引1300亿美元，均高于市场预期，同时董事会批准1500亿美元回购授权，直接给全球AI硬件提供了短线估值锚。国内方面也有配合，中国移动刚启动2026年至2027年新一代人工智能超节点设备第二批集采，采购规模合计52160卡，运营商智算基础设施采购明显提速。",
+  "url": "https://finance.eastmoney.com/a/202611243938294965.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 11:08:47",
+  "type_hint": "股份回购",
+  "highlight": [
+   {
+    "start": 1,
+    "end": 4,
+    "kind": "arg",
+    "label": "股份回购·回购方",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 32,
+    "end": 37,
+    "kind": "arg",
+    "label": "股份回购·占公司总股本比例",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 84,
+    "end": 91,
+    "kind": "arg",
+    "label": "股份回购·每股交易价格",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 121,
+    "end": 128,
+    "kind": "arg",
+    "label": "股份回购·交易金额",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 128,
+    "end": 130,
+    "kind": "trigger",
+    "label": "股份回购·触发词",
+    "event_idx": 0,
+    "priority": 0
+   }
+  ]
+ },
+ {
+  "id": "news_047",
+  "title": "算力硬件、半导体强势拉升，产业利好持续催化AI板块行情，科创创业50ETF鹏华涨超2%",
+  "n_sentences": 2,
+  "events": [
+   {
+    "type": "高管变动",
+    "trigger": {
+     "text": "任命",
+     "start": 88,
+     "end": 90
+    },
+    "args": [
+     {
+      "role": "任职公司",
+      "text": "英伟达",
+      "start": 76,
+      "end": 79,
+      "source": "model"
+     },
+     {
+      "role": "高管姓名",
+      "text": "黄仁勋",
+      "start": 90,
+      "end": 93,
+      "source": "model"
+     },
+     {
+      "role": "变动后职位",
+      "text": "公司总裁",
+      "start": 95,
+      "end": 99,
+      "source": "model"
+     },
+     {
+      "role": "变动后职位",
+      "text": "首席执行官",
+      "start": 100,
+      "end": 105,
+      "source": "model"
+     },
+     {
+      "role": "变动后职位",
+      "text": "董事会成员",
+      "start": 106,
+      "end": 111,
+      "source": "model"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9292
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【算力硬件、半导体强势拉升，产业利好持续催化AI板块行情，科创创业50ETF鹏华涨超2%】算力硬件、半导体午后持续拉升，消息面上，当地时间周一美股盘前，英伟达发布公告，宣布重新任命黄仁勋担任公司总裁、首席执行官及董事会成员，任命即刻生效。",
+    "events": [
+     {
+      "type": "高管变动",
+      "trigger": {
+       "text": "任命",
+       "start": 88,
+       "end": 90
+      },
+      "args": [
+       {
+        "role": "任职公司",
+        "text": "英伟达",
+        "start": 76,
+        "end": 79,
+        "source": "model"
+       },
+       {
+        "role": "高管姓名",
+        "text": "黄仁勋",
+        "start": 90,
+        "end": 93,
+        "source": "model"
+       },
+       {
+        "role": "变动后职位",
+        "text": "公司总裁",
+        "start": 95,
+        "end": 99,
+        "source": "model"
+       },
+       {
+        "role": "变动后职位",
+        "text": "首席执行官",
+        "start": 100,
+        "end": 105,
+        "source": "model"
+       },
+       {
+        "role": "变动后职位",
+        "text": "董事会成员",
+        "start": 106,
+        "end": 111,
+        "source": "model"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9292,
+    "needs_review": true,
+    "review_reasons": [
+     "role_not_in_type:高管变动.披露时间",
+     "role_not_in_type:高管变动.披露时间"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 119,
+    "text": "此外，全球电子协会发布PCB紧缺警报，指出从上游玻纤布、树脂到下游成品电路板全产业链需求已超供应能力；TrendForce预计2026年全球AI服务器出货量同比增28.3%，高多层、高阶HDI板结构性放量。",
+    "events": [],
+    "confidence": 0.9924,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 72.3,
+  "text": "【算力硬件、半导体强势拉升，产业利好持续催化AI板块行情，科创创业50ETF鹏华涨超2%】算力硬件、半导体午后持续拉升，消息面上，当地时间周一美股盘前，英伟达发布公告，宣布重新任命黄仁勋担任公司总裁、首席执行官及董事会成员，任命即刻生效。此外，全球电子协会发布PCB紧缺警报，指出从上游玻纤布、树脂到下游成品电路板全产业链需求已超供应能力；TrendForce预计2026年全球AI服务器出货量同比增28.3%，高多层、高阶HDI板结构性放量。",
+  "url": "https://finance.eastmoney.com/a/202611243938349540.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 13:41:34",
+  "type_hint": "高管变动",
+  "highlight": [
+   {
+    "start": 76,
+    "end": 79,
+    "kind": "arg",
+    "label": "高管变动·任职公司",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 88,
+    "end": 90,
+    "kind": "trigger",
+    "label": "高管变动·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 90,
+    "end": 93,
+    "kind": "arg",
+    "label": "高管变动·高管姓名",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 95,
+    "end": 99,
+    "kind": "arg",
+    "label": "高管变动·变动后职位",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 100,
+    "end": 105,
+    "kind": "arg",
+    "label": "高管变动·变动后职位",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 106,
+    "end": 111,
+    "kind": "arg",
+    "label": "高管变动·变动后职位",
+    "event_idx": 0,
+    "priority": 1
+   }
+  ]
+ },
+ {
+  "id": "news_048",
+  "title": "杭州2宗宅地8.95亿元成交 最高溢价率41.56%",
+  "n_sentences": 2,
+  "events": [],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【杭州2宗宅地8.95亿元成交 最高溢价率41.56%】11月24日，杭州有2宗宅地出让，均溢价成交，总成交金额8.95亿元。其中，上城区笕桥单元地块规划建筑面积33768平方米，起始价4.64亿元，最终由滨江集团以4.69亿元竞得，成交楼面价13888元/平方米，溢价率1.08%；",
+    "events": [],
+    "confidence": 0.9608,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 1,
+    "offset": 142,
+    "text": "萧山区湘湖单元地块规划建筑面积30078平方米，起始价3.01亿元，最终由浙江交投以4.26亿元竞得，成交楼面价14156元/平方米，溢价率41.56%。",
+    "events": [],
+    "confidence": 0.9185,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 71.7,
+  "text": "【杭州2宗宅地8.95亿元成交 最高溢价率41.56%】11月24日，杭州有2宗宅地出让，均溢价成交，总成交金额8.95亿元。其中，上城区笕桥单元地块规划建筑面积33768平方米，起始价4.64亿元，最终由滨江集团以4.69亿元竞得，成交楼面价13888元/平方米，溢价率1.08%；萧山区湘湖单元地块规划建筑面积30078平方米，起始价3.01亿元，最终由浙江交投以4.26亿元竞得，成交楼面价14156元/平方米，溢价率41.56%。",
+  "url": "https://finance.eastmoney.com/a/202611243938366527.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 13:57:00",
+  "type_hint": "中标",
+  "highlight": []
+ },
+ {
+  "id": "news_049",
+  "title": "有人用了12年 有人只用33小时：硅谷创始人回归往事",
+  "n_sentences": 3,
+  "events": [
+   {
+    "type": "高管变动",
+    "trigger": {
+     "text": "恢",
+     "start": 64,
+     "end": 65
+    },
+    "args": [
+     {
+      "role": "披露日期",
+      "text": "北京时间11月24日",
+      "start": 28,
+      "end": 38,
+      "source": "model"
+     },
+     {
+      "role": "任职公司",
+      "text": "英伟达",
+      "start": 59,
+      "end": 62,
+      "source": "model"
+     },
+     {
+      "role": "高管姓名",
+      "text": "黄仁勋",
+      "start": 66,
+      "end": 69,
+      "source": "model"
+     },
+     {
+      "role": "事件时间",
+      "text": "11月24日",
+      "start": 32,
+      "end": 38,
+      "source": "regex"
+     }
+    ],
+    "sent_idx": 0,
+    "confidence": 0.9417
+   }
+  ],
+  "needs_review": true,
+  "sentences": [
+   {
+    "sent_idx": 0,
+    "offset": 0,
+    "text": "【有人用了12年 有人只用33小时：硅谷创始人回归往事】北京时间11月24日，据Business Insider报道，英伟达宣布恢复黄仁勋CEO职务，距离其宣布辞职仅过去11天。",
+    "events": [
+     {
+      "type": "高管变动",
+      "trigger": {
+       "text": "恢",
+       "start": 64,
+       "end": 65
+      },
+      "args": [
+       {
+        "role": "披露日期",
+        "text": "北京时间11月24日",
+        "start": 28,
+        "end": 38,
+        "source": "model"
+       },
+       {
+        "role": "任职公司",
+        "text": "英伟达",
+        "start": 59,
+        "end": 62,
+        "source": "model"
+       },
+       {
+        "role": "高管姓名",
+        "text": "黄仁勋",
+        "start": 66,
+        "end": 69,
+        "source": "model"
+       },
+       {
+        "role": "事件时间",
+        "text": "11月24日",
+        "start": 32,
+        "end": 38,
+        "source": "regex"
+       }
+      ]
+     }
+    ],
+    "confidence": 0.9417,
+    "needs_review": false,
+    "review_reasons": []
+   },
+   {
+    "sent_idx": 1,
+    "offset": 89,
+    "text": "黄仁勋由此加入了科技商业史上一个为数不多的创始人群体：在被迫离开公司权力中心后，重新夺回公司的领导权。过去，硅谷将这种现象称为“乔布斯式回归”，后来又有了“奥特曼式回归”。",
+    "events": [],
+    "confidence": 0.9867,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   },
+   {
+    "sent_idx": 2,
+    "offset": 175,
+    "text": "Business Insider调侃称，今后，人们或许会将其称为“黄仁勋式回归”。",
+    "events": [],
+    "confidence": 0.9874,
+    "needs_review": true,
+    "review_reasons": [
+     "no_event"
+    ]
+   }
+  ],
+  "latency_ms": 76.5,
+  "text": "【有人用了12年 有人只用33小时：硅谷创始人回归往事】北京时间11月24日，据Business Insider报道，英伟达宣布恢复黄仁勋CEO职务，距离其宣布辞职仅过去11天。黄仁勋由此加入了科技商业史上一个为数不多的创始人群体：在被迫离开公司权力中心后，重新夺回公司的领导权。过去，硅谷将这种现象称为“乔布斯式回归”，后来又有了“奥特曼式回归”。Business Insider调侃称，今后，人们或许会将其称为“黄仁勋式回归”。",
+  "url": "https://finance.eastmoney.com/a/202611243938322164.html",
+  "source": "东方财富7×24",
+  "time": "2026-11-24 12:52:45",
+  "type_hint": "高管变动",
+  "highlight": [
+   {
+    "start": 28,
+    "end": 38,
+    "kind": "arg",
+    "label": "高管变动·披露日期",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 59,
+    "end": 62,
+    "kind": "arg",
+    "label": "高管变动·任职公司",
+    "event_idx": 0,
+    "priority": 1
+   },
+   {
+    "start": 64,
+    "end": 65,
+    "kind": "trigger",
+    "label": "高管变动·触发词",
+    "event_idx": 0,
+    "priority": 0
+   },
+   {
+    "start": 66,
+    "end": 69,
+    "kind": "arg",
+    "label": "高管变动·高管姓名",
+    "event_idx": 0,
+    "priority": 1
+   }
+  ]
+ }
+]

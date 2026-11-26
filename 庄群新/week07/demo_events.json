@@ -1,0 +1,61 @@
+[
+  {
+    "doc_id": "60229be25b3f52bdbbd91ea664591a72",
+    "title": "理想汽车拟将美国IPO定价在招股区间顶端或更高水平",
+    "events": [],
+    "needs_review": true
+  },
+  {
+    "doc_id": "10be7f956da35f15fa4a9ad2a4556960",
+    "title": "北京市监局约谈美团、饿了么等6家网络平台，严禁销售长江禁捕水域水产品",
+    "events": [],
+    "needs_review": true
+  },
+  {
+    "doc_id": "be11a1377c0d97bd5f5da146990597fa",
+    "title": "安泰科技间接参股公司天宜上佳22日科创板上市",
+    "events": [
+      {
+        "type": "公司上市",
+        "trigger": {
+          "text": "上市",
+          "start": 42,
+          "end": 44
+        },
+        "args": [
+          {
+            "role": "上市公司",
+            "text": "天宜上佳",
+            "start": 32,
+            "end": 36,
+            "source": "model"
+          },
+          {
+            "role": "事件时间",
+            "text": "22日",
+            "start": 36,
+            "end": 39,
+            "source": "model"
+          },
+          {
+            "role": "事件时间",
+            "text": "近日",
+            "start": 81,
+            "end": 83,
+            "source": "model"
+          },
+          {
+            "role": "事件时间",
+            "text": "7月22日",
+            "start": 115,
+            "end": 120,
+            "source": "model"
+          }
+        ],
+        "sent_idx": 0,
+        "confidence": 0.9725
+      }
+    ],
+    "needs_review": true
+  }
+]
