@@ -1,0 +1,18 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": NaN,
+    "val_loss": NaN,
+    "steps": 312,
+    "elapsed_s": 194.6,
+    "peak_mem_gb": 2.58
+  },
+  {
+    "epoch": 2,
+    "train_loss": NaN,
+    "val_loss": NaN,
+    "steps": 624,
+    "elapsed_s": 388.7,
+    "peak_mem_gb": 2.58
+  }
+]
