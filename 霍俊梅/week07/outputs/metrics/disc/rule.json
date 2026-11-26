@@ -1,0 +1,164 @@
+{
+  "num_samples": 125,
+  "missing_predictions": 0,
+  "trigger": {
+    "precision": 0.592,
+    "recall": 0.592,
+    "f1": 0.592,
+    "tp": 74,
+    "fp": 51,
+    "fn": 51
+  },
+  "argument": {
+    "precision": 0.1993,
+    "recall": 0.2148,
+    "f1": 0.2068,
+    "tp": 55,
+    "fp": 221,
+    "fn": 201
+  },
+  "event_exact": {
+    "precision": 0.048,
+    "recall": 0.048,
+    "f1": 0.048,
+    "tp": 6,
+    "fp": 119,
+    "fn": 119
+  },
+  "per_type": {
+    "交通事故": {
+      "precision": 1.0,
+      "recall": 0.9737,
+      "f1": 0.9867,
+      "tp": 37,
+      "fp": 0,
+      "fn": 1
+    },
+    "地震": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 28,
+      "fp": 0,
+      "fn": 0
+    },
+    "恐怖袭击": {
+      "precision": 1.0,
+      "recall": 0.44,
+      "f1": 0.6111,
+      "tp": 11,
+      "fp": 0,
+      "fn": 14
+    },
+    "火灾": {
+      "precision": 0.6053,
+      "recall": 1.0,
+      "f1": 0.7541,
+      "tp": 23,
+      "fp": 15,
+      "fn": 0
+    },
+    "食物中毒": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 11,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "per_role": {
+    "中毒者": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 10
+    },
+    "伤亡人数": {
+      "precision": 0.5106,
+      "recall": 0.4211,
+      "f1": 0.4615,
+      "tp": 24,
+      "fp": 23,
+      "fn": 33
+    },
+    "受害者": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 8
+    },
+    "地点": {
+      "precision": 0.086,
+      "recall": 0.0941,
+      "f1": 0.0899,
+      "tp": 8,
+      "fp": 85,
+      "fn": 77
+    },
+    "时间": {
+      "precision": 0.2472,
+      "recall": 0.3607,
+      "f1": 0.2933,
+      "tp": 22,
+      "fp": 67,
+      "fn": 39
+    },
+    "涉事车辆": {
+      "precision": 0.0217,
+      "recall": 0.1667,
+      "f1": 0.0385,
+      "tp": 1,
+      "fp": 45,
+      "fn": 5
+    },
+    "肇事者": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 22
+    },
+    "袭击者": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7
+    }
+  },
+  "type_macro_f1": 0.8704,
+  "method": "rule",
+  "gold": "/Users/may/badouai/hub-usME/霍俊梅/week07/data/processed/dev.jsonl",
+  "pred": "/Users/may/badouai/hub-usME/霍俊梅/week07/outputs/disc/pred_rule.jsonl",
+  "meta": {
+    "display_name": "L0 规则（白名单+正则）",
+    "train_s": 0,
+    "params_m": 0,
+    "num_triggers": 100,
+    "note": "零训练基线；触发词=白名单最长优先，论元=时间/地点/伤亡/车辆正则"
+  },
+  "failure_analysis": {
+    "counts": {
+      "arg_spurious": 61,
+      "wrong_trigger": 36,
+      "wrong_type": 15,
+      "arg_missing": 7,
+      "exact": 6
+    },
+    "ratios": {
+      "arg_spurious": 0.488,
+      "wrong_trigger": 0.288,
+      "wrong_type": 0.12,
+      "arg_missing": 0.056,
+      "exact": 0.048
+    },
+    "trigger_hit_rate": 1.0
+  }
+}

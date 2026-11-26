@@ -1,0 +1,169 @@
+{
+  "num_samples": 125,
+  "missing_predictions": 0,
+  "trigger": {
+    "precision": 0.7364,
+    "recall": 0.648,
+    "f1": 0.6894,
+    "tp": 81,
+    "fp": 29,
+    "fn": 44
+  },
+  "argument": {
+    "precision": 0.5594,
+    "recall": 0.4414,
+    "f1": 0.4934,
+    "tp": 113,
+    "fp": 89,
+    "fn": 143
+  },
+  "event_exact": {
+    "precision": 0.3,
+    "recall": 0.264,
+    "f1": 0.2809,
+    "tp": 33,
+    "fp": 77,
+    "fn": 92
+  },
+  "per_type": {
+    "交通事故": {
+      "precision": 1.0,
+      "recall": 0.8684,
+      "f1": 0.9296,
+      "tp": 33,
+      "fp": 0,
+      "fn": 5
+    },
+    "地震": {
+      "precision": 1.0,
+      "recall": 0.9643,
+      "f1": 0.9818,
+      "tp": 27,
+      "fp": 0,
+      "fn": 1
+    },
+    "恐怖袭击": {
+      "precision": 1.0,
+      "recall": 0.84,
+      "f1": 0.913,
+      "tp": 21,
+      "fp": 0,
+      "fn": 4
+    },
+    "火灾": {
+      "precision": 1.0,
+      "recall": 0.8261,
+      "f1": 0.9048,
+      "tp": 19,
+      "fp": 0,
+      "fn": 4
+    },
+    "食物中毒": {
+      "precision": 1.0,
+      "recall": 0.9091,
+      "f1": 0.9524,
+      "tp": 10,
+      "fp": 0,
+      "fn": 1
+    }
+  },
+  "per_role": {
+    "中毒者": {
+      "precision": 0.25,
+      "recall": 0.1,
+      "f1": 0.1429,
+      "tp": 1,
+      "fp": 3,
+      "fn": 9
+    },
+    "伤亡人数": {
+      "precision": 0.7119,
+      "recall": 0.7368,
+      "f1": 0.7241,
+      "tp": 42,
+      "fp": 17,
+      "fn": 15
+    },
+    "受害者": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 8
+    },
+    "地点": {
+      "precision": 0.431,
+      "recall": 0.2941,
+      "f1": 0.3497,
+      "tp": 25,
+      "fp": 33,
+      "fn": 60
+    },
+    "时间": {
+      "precision": 0.6545,
+      "recall": 0.5902,
+      "f1": 0.6207,
+      "tp": 36,
+      "fp": 19,
+      "fn": 25
+    },
+    "涉事车辆": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 4,
+      "fn": 6
+    },
+    "肇事者": {
+      "precision": 0.4286,
+      "recall": 0.4091,
+      "f1": 0.4186,
+      "tp": 9,
+      "fp": 12,
+      "fn": 13
+    },
+    "袭击者": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7
+    }
+  },
+  "type_macro_f1": 0.9363,
+  "method": "bilstm_crf",
+  "gold": "/Users/may/badouai/hub-usME/霍俊梅/week07/data/processed/dev.jsonl",
+  "pred": "/Users/may/badouai/hub-usME/霍俊梅/week07/outputs/disc/pred_bilstm_crf.jsonl",
+  "meta": {
+    "display_name": "BiLSTM-CRF（CRF）",
+    "train_s": 146.9,
+    "params_m": 1.02,
+    "ms_per_sentence": 3.05,
+    "peak_gpu_mb": 0.0,
+    "decoder": "crf",
+    "epochs": 40,
+    "max_len": 256,
+    "emb_dim": 128,
+    "hidden": 256,
+    "lr": 0.001,
+    "best_epoch": 35,
+    "inner_val_span_f1": 0.6454,
+    "num_labels": 27,
+    "vocab_size": 1656,
+    "illegal_dev": {
+      "illegal_start": 2,
+      "illegal_transition": 43,
+      "total_seqs": 125,
+      "illegal_seqs": 36,
+      "total_illegal": 45,
+      "illegal_seq_rate": 0.288,
+      "illegal_per_seq": 0.36
+    },
+    "n_truncated": 0,
+    "pretrained": false,
+    "seed": 42
+  }
+}
