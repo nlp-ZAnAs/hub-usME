@@ -1,0 +1,181 @@
+{
+  "num_samples": 125,
+  "missing_predictions": 0,
+  "trigger": {
+    "precision": 0.7333,
+    "recall": 0.704,
+    "f1": 0.7184,
+    "tp": 88,
+    "fp": 32,
+    "fn": 37
+  },
+  "argument": {
+    "precision": 0.5248,
+    "recall": 0.5781,
+    "f1": 0.5502,
+    "tp": 148,
+    "fp": 134,
+    "fn": 108
+  },
+  "event_exact": {
+    "precision": 0.375,
+    "recall": 0.36,
+    "f1": 0.3673,
+    "tp": 45,
+    "fp": 75,
+    "fn": 80
+  },
+  "per_type": {
+    "交通事故": {
+      "precision": 1.0,
+      "recall": 0.9737,
+      "f1": 0.9867,
+      "tp": 37,
+      "fp": 0,
+      "fn": 1
+    },
+    "地震": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 28,
+      "fp": 0,
+      "fn": 0
+    },
+    "恐怖袭击": {
+      "precision": 1.0,
+      "recall": 0.96,
+      "f1": 0.9796,
+      "tp": 24,
+      "fp": 0,
+      "fn": 1
+    },
+    "火灾": {
+      "precision": 0.9524,
+      "recall": 0.8696,
+      "f1": 0.9091,
+      "tp": 20,
+      "fp": 1,
+      "fn": 3
+    },
+    "食物中毒": {
+      "precision": 1.0,
+      "recall": 0.9091,
+      "f1": 0.9524,
+      "tp": 10,
+      "fp": 0,
+      "fn": 1
+    }
+  },
+  "per_role": {
+    "中毒者": {
+      "precision": 0.3077,
+      "recall": 0.4,
+      "f1": 0.3478,
+      "tp": 4,
+      "fp": 9,
+      "fn": 6
+    },
+    "伤亡人数": {
+      "precision": 0.6429,
+      "recall": 0.7895,
+      "f1": 0.7087,
+      "tp": 45,
+      "fp": 25,
+      "fn": 12
+    },
+    "受害者": {
+      "precision": 0.25,
+      "recall": 0.125,
+      "f1": 0.1667,
+      "tp": 1,
+      "fp": 3,
+      "fn": 7
+    },
+    "地点": {
+      "precision": 0.4933,
+      "recall": 0.4353,
+      "f1": 0.4625,
+      "tp": 37,
+      "fp": 38,
+      "fn": 48
+    },
+    "时间": {
+      "precision": 0.7812,
+      "recall": 0.8197,
+      "f1": 0.8,
+      "tp": 50,
+      "fp": 14,
+      "fn": 11
+    },
+    "涉事车辆": {
+      "precision": 0.0833,
+      "recall": 0.1667,
+      "f1": 0.1111,
+      "tp": 1,
+      "fp": 11,
+      "fn": 5
+    },
+    "肇事者": {
+      "precision": 0.25,
+      "recall": 0.4545,
+      "f1": 0.3226,
+      "tp": 10,
+      "fp": 30,
+      "fn": 12
+    },
+    "袭击者": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 4,
+      "fn": 7
+    }
+  },
+  "type_macro_f1": 0.9656,
+  "method": "bert_crf_256",
+  "gold": "/Users/may/badouai/hub-usME/霍俊梅/week07/data/processed/dev.jsonl",
+  "pred": "/Users/may/badouai/hub-usME/霍俊梅/week07/outputs/disc/pred_bert_crf_256.jsonl",
+  "meta": {
+    "display_name": "BERT-12L+CRF",
+    "train_s": 359.4,
+    "params_m": 102.3,
+    "ms_per_sentence": 23.79,
+    "peak_gpu_mb": 0.0,
+    "decoder": "crf",
+    "bert_layers": 12,
+    "max_len": 256,
+    "epochs": 15,
+    "lr": 3e-05,
+    "head_lr_mult": 5.0,
+    "batch_size": 32,
+    "grad_accum": 1,
+    "best_epoch": 8,
+    "inner_val_span_f1": 0.712,
+    "num_labels": 27,
+    "illegal_dev": {
+      "illegal_start": 0,
+      "illegal_transition": 83,
+      "total_seqs": 125,
+      "illegal_seqs": 45,
+      "total_illegal": 83,
+      "illegal_seq_rate": 0.36,
+      "illegal_per_seq": 0.664
+    },
+    "illegal_train_pred": {
+      "illegal_start": 1,
+      "illegal_transition": 169,
+      "total_seqs": 457,
+      "illegal_seqs": 122,
+      "total_illegal": 170,
+      "illegal_seq_rate": 0.267,
+      "illegal_per_seq": 0.372
+    },
+    "n_truncated": 0,
+    "hard_constraint": false,
+    "device": "mps",
+    "seed": 42,
+    "selection_note": "按 train 切出的 10% 内层验证集选 epoch；dev 未参与训练与选点"
+  }
+}

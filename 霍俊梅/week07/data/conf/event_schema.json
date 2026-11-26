@@ -1,0 +1,47 @@
+[
+  {
+    "event_type": "地震",
+    "role_list": [
+      {"role": "时间"},
+      {"role": "地点"},
+      {"role": "伤亡人数"}
+    ]
+  },
+  {
+    "event_type": "火灾",
+    "role_list": [
+      {"role": "时间"},
+      {"role": "地点"},
+      {"role": "伤亡人数"}
+    ]
+  },
+  {
+    "event_type": "交通事故",
+    "role_list": [
+      {"role": "时间"},
+      {"role": "地点"},
+      {"role": "肇事者"},
+      {"role": "受害者"},
+      {"role": "涉事车辆"},
+      {"role": "伤亡人数"}
+    ]
+  },
+  {
+    "event_type": "恐怖袭击",
+    "role_list": [
+      {"role": "时间"},
+      {"role": "地点"},
+      {"role": "袭击者"},
+      {"role": "受害者"},
+      {"role": "伤亡人数"}
+    ]
+  },
+  {
+    "event_type": "食物中毒",
+    "role_list": [
+      {"role": "时间"},
+      {"role": "地点"},
+      {"role": "中毒者"}
+    ]
+  }
+]

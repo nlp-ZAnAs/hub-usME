@@ -1,0 +1,31 @@
+{
+  "_comment": "CEC 实体标签 → 事件论元角色的固定映射。这是把 CEC 标注投影到事件抽取 schema 的唯一转换规则, 不涉及边界重标 (span 仍来自人工标注)。key = 实体 tag, 内层 key = 侧别 (sid=主语/施事, oid=宾语/受事, *=任意含无属性); lookup 先精确匹配 side, 再回退 '*'。",
+  "_note_dead_roles": "震级/起火原因/问题食品/财产损失/受损情况/袭击方式/中毒人数 已在 event_schema.json 中移除: CEC 从不用 Object 标注这些论元 (全部 Object 都带 sid/oid, 原 (Object,None) 分支实际不可达)。",
+  "地震": {
+    "Time":       {"*": "时间"},
+    "Location":   {"*": "地点"},
+    "Participant":{"*": "伤亡人数"}
+  },
+  "火灾": {
+    "Time":       {"*": "时间"},
+    "Location":   {"*": "地点"},
+    "Participant":{"*": "伤亡人数"}
+  },
+  "交通事故": {
+    "Time":       {"*": "时间"},
+    "Location":   {"*": "地点"},
+    "Participant":{"sid": "肇事者", "oid": "受害者", "*": "受害者"},
+    "Object":     {"sid": "肇事者", "oid": "涉事车辆", "*": "涉事车辆"}
+  },
+  "恐怖袭击": {
+    "Time":       {"*": "时间"},
+    "Location":   {"*": "地点"},
+    "Participant":{"sid": "袭击者", "oid": "受害者", "*": "受害者"},
+    "Object":     {"sid": "袭击者", "oid": "受害者"}
+  },
+  "食物中毒": {
+    "Time":       {"*": "时间"},
+    "Location":   {"*": "地点"},
+    "Participant":{"*": "中毒者"}
+  }
+}

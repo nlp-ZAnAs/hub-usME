@@ -1,0 +1,159 @@
+{
+  "num_samples": 125,
+  "missing_predictions": 0,
+  "trigger": {
+    "precision": 1.0,
+    "recall": 0.888,
+    "f1": 0.9407,
+    "tp": 111,
+    "fp": 0,
+    "fn": 14
+  },
+  "argument": {
+    "precision": 1.0,
+    "recall": 0.3633,
+    "f1": 0.533,
+    "tp": 93,
+    "fp": 0,
+    "fn": 163
+  },
+  "event_exact": {
+    "precision": 0.1802,
+    "recall": 0.16,
+    "f1": 0.1695,
+    "tp": 20,
+    "fp": 91,
+    "fn": 105
+  },
+  "per_type": {
+    "交通事故": {
+      "precision": 1.0,
+      "recall": 0.8421,
+      "f1": 0.9143,
+      "tp": 32,
+      "fp": 0,
+      "fn": 6
+    },
+    "地震": {
+      "precision": 1.0,
+      "recall": 0.8571,
+      "f1": 0.9231,
+      "tp": 24,
+      "fp": 0,
+      "fn": 4
+    },
+    "恐怖袭击": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 25,
+      "fp": 0,
+      "fn": 0
+    },
+    "火灾": {
+      "precision": 1.0,
+      "recall": 0.913,
+      "f1": 0.9545,
+      "tp": 21,
+      "fp": 0,
+      "fn": 2
+    },
+    "食物中毒": {
+      "precision": 1.0,
+      "recall": 0.8182,
+      "f1": 0.9,
+      "tp": 9,
+      "fp": 0,
+      "fn": 2
+    }
+  },
+  "per_role": {
+    "中毒者": {
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.3333,
+      "tp": 2,
+      "fp": 0,
+      "fn": 8
+    },
+    "伤亡人数": {
+      "precision": 1.0,
+      "recall": 0.0351,
+      "f1": 0.0678,
+      "tp": 2,
+      "fp": 0,
+      "fn": 55
+    },
+    "受害者": {
+      "precision": 1.0,
+      "recall": 0.125,
+      "f1": 0.2222,
+      "tp": 1,
+      "fp": 0,
+      "fn": 7
+    },
+    "地点": {
+      "precision": 1.0,
+      "recall": 0.3176,
+      "f1": 0.4821,
+      "tp": 27,
+      "fp": 0,
+      "fn": 58
+    },
+    "时间": {
+      "precision": 1.0,
+      "recall": 0.6721,
+      "f1": 0.8039,
+      "tp": 41,
+      "fp": 0,
+      "fn": 20
+    },
+    "涉事车辆": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "tp": 3,
+      "fp": 0,
+      "fn": 3
+    },
+    "肇事者": {
+      "precision": 1.0,
+      "recall": 0.5455,
+      "f1": 0.7059,
+      "tp": 12,
+      "fp": 0,
+      "fn": 10
+    },
+    "袭击者": {
+      "precision": 1.0,
+      "recall": 0.7143,
+      "f1": 0.8333,
+      "tp": 5,
+      "fp": 0,
+      "fn": 2
+    }
+  },
+  "type_macro_f1": 0.9384,
+  "method": "llm_zero_shot_mock",
+  "gold": "/Users/may/badouai/hub-usME/霍俊梅/week07/data/processed/dev.jsonl",
+  "pred": "/Users/may/badouai/hub-usME/霍俊梅/week07/outputs/disc/pred_llm_zero_shot_mock.jsonl",
+  "meta": {
+    "display_name": "LLM API 零样本（mock）",
+    "train_s": 0,
+    "params_m": 0,
+    "backend": "mock",
+    "mode": "zero",
+    "pretrained": true,
+    "n": 125,
+    "few_shot_examples": 0,
+    "json_valid_rate": 90.4,
+    "parse_fail": 12,
+    "empty_reply": 5,
+    "repaired": 1,
+    "arg_not_in_source": 0,
+    "trigger_not_in_source": 0,
+    "ms_per_sentence": 0.0,
+    "total_tokens": 0,
+    "is_mock": true
+  }
+}

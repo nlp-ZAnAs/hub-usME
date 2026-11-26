@@ -1,0 +1,212 @@
+{
+  "num_samples": 125,
+  "missing_predictions": 0,
+  "trigger": {
+    "precision": 0.7586,
+    "recall": 0.704,
+    "f1": 0.7303,
+    "tp": 88,
+    "fp": 28,
+    "fn": 37
+  },
+  "argument": {
+    "precision": 0.5,
+    "recall": 0.582,
+    "f1": 0.5379,
+    "tp": 149,
+    "fp": 149,
+    "fn": 107
+  },
+  "event_exact": {
+    "precision": 0.3276,
+    "recall": 0.304,
+    "f1": 0.3154,
+    "tp": 38,
+    "fp": 78,
+    "fn": 87
+  },
+  "per_type": {
+    "交通事故": {
+      "precision": 1.0,
+      "recall": 0.9474,
+      "f1": 0.973,
+      "tp": 36,
+      "fp": 0,
+      "fn": 2
+    },
+    "地震": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 28,
+      "fp": 0,
+      "fn": 0
+    },
+    "恐怖袭击": {
+      "precision": 1.0,
+      "recall": 0.92,
+      "f1": 0.9583,
+      "tp": 23,
+      "fp": 0,
+      "fn": 2
+    },
+    "火灾": {
+      "precision": 1.0,
+      "recall": 0.8261,
+      "f1": 0.9048,
+      "tp": 19,
+      "fp": 0,
+      "fn": 4
+    },
+    "食物中毒": {
+      "precision": 1.0,
+      "recall": 0.9091,
+      "f1": 0.9524,
+      "tp": 10,
+      "fp": 0,
+      "fn": 1
+    }
+  },
+  "per_role": {
+    "中毒者": {
+      "precision": 0.3333,
+      "recall": 0.5,
+      "f1": 0.4,
+      "tp": 5,
+      "fp": 10,
+      "fn": 5
+    },
+    "伤亡人数": {
+      "precision": 0.6364,
+      "recall": 0.7368,
+      "f1": 0.6829,
+      "tp": 42,
+      "fp": 24,
+      "fn": 15
+    },
+    "受害者": {
+      "precision": 0.2,
+      "recall": 0.125,
+      "f1": 0.1538,
+      "tp": 1,
+      "fp": 4,
+      "fn": 7
+    },
+    "地点": {
+      "precision": 0.4316,
+      "recall": 0.4824,
+      "f1": 0.4556,
+      "tp": 41,
+      "fp": 54,
+      "fn": 44
+    },
+    "时间": {
+      "precision": 0.7164,
+      "recall": 0.7869,
+      "f1": 0.75,
+      "tp": 48,
+      "fp": 19,
+      "fn": 13
+    },
+    "涉事车辆": {
+      "precision": 0.1,
+      "recall": 0.1667,
+      "f1": 0.125,
+      "tp": 1,
+      "fp": 9,
+      "fn": 5
+    },
+    "肇事者": {
+      "precision": 0.2703,
+      "recall": 0.4545,
+      "f1": 0.339,
+      "tp": 10,
+      "fp": 27,
+      "fn": 12
+    },
+    "袭击者": {
+      "precision": 0.3333,
+      "recall": 0.1429,
+      "f1": 0.2,
+      "tp": 1,
+      "fp": 2,
+      "fn": 6
+    }
+  },
+  "type_macro_f1": 0.9577,
+  "method": "pipeline_oracle_type",
+  "gold": "/Users/may/badouai/hub-usME/霍俊梅/week07/data/processed/dev.jsonl",
+  "pred": "/Users/may/badouai/hub-usME/霍俊梅/week07/outputs/disc/pred_pipeline_oracle_type.jsonl",
+  "meta": {
+    "display_name": "两段式（类型给金标的上界）",
+    "train_s": 575.1,
+    "ms_per_sentence": 49.86,
+    "peak_gpu_mb": 0.0,
+    "max_len": 256,
+    "cls_epochs": 6,
+    "arg_epochs": 30,
+    "arg_layers": 12,
+    "pipeline_stages": 2,
+    "num_models": 6,
+    "type_classifier": {
+      "train_s": 0.0,
+      "skipped": true
+    },
+    "arg_experts": {
+      "交通事故": {
+        "n_rows": 143,
+        "n_fit": 129,
+        "n_val": 14,
+        "num_labels": 15,
+        "best_epoch": 16,
+        "inner_span_f1": 0.6353,
+        "train_s": 184.6
+      },
+      "地震": {
+        "n_rows": 120,
+        "n_fit": 108,
+        "n_val": 12,
+        "num_labels": 9,
+        "best_epoch": 30,
+        "inner_span_f1": 0.7797,
+        "train_s": 122.9
+      },
+      "恐怖袭击": {
+        "n_rows": 85,
+        "n_fit": 77,
+        "n_val": 8,
+        "num_labels": 13,
+        "best_epoch": 30,
+        "inner_span_f1": 0.3529,
+        "train_s": 94.9
+      },
+      "火灾": {
+        "n_rows": 100,
+        "n_fit": 90,
+        "n_val": 10,
+        "num_labels": 9,
+        "best_epoch": 11,
+        "inner_span_f1": 0.625,
+        "train_s": 97.0
+      },
+      "食物中毒": {
+        "n_rows": 59,
+        "n_fit": 54,
+        "n_val": 5,
+        "num_labels": 9,
+        "best_epoch": 27,
+        "inner_span_f1": 0.5556,
+        "train_s": 65.5
+      },
+      "_total_train_s": 568.3
+    },
+    "diag": {
+      "n_type_wrong": 0,
+      "type_accuracy_on_dev": 1.0,
+      "n_arg_truncated": 0
+    },
+    "pretrained": true,
+    "seed": 42,
+    "note": "类型用金标，只保留论元段的错误 → 定位瓶颈在类型还是论元"
+  }
+}
