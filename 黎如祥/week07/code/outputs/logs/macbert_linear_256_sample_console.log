@@ -1,0 +1,49 @@
+epoch 1/21 | train_loss=4.4392 | inner_loss=2.3778 inner_spanF1=0.0000 | dev_spanF1(监控)=0.0000 | 19s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 2/21 | train_loss=1.6006 | inner_loss=1.3392 inner_spanF1=0.0000 | dev_spanF1(监控)=0.0000 | 19s
+epoch 3/21 | train_loss=1.2346 | inner_loss=1.0401 inner_spanF1=0.0000 | dev_spanF1(监控)=0.0000 | 27s
+epoch 4/21 | train_loss=0.9494 | inner_loss=0.8388 inner_spanF1=0.0000 | dev_spanF1(监控)=0.0000 | 21s
+epoch 5/21 | train_loss=0.7459 | inner_loss=0.6831 inner_spanF1=0.1186 | dev_spanF1(监控)=0.1326 | 21s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 6/21 | train_loss=0.6177 | inner_loss=0.6039 inner_spanF1=0.3053 | dev_spanF1(监控)=0.3092 | 21s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 7/21 | train_loss=0.5081 | inner_loss=0.5512 inner_spanF1=0.3949 | dev_spanF1(监控)=0.3990 | 21s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 8/21 | train_loss=0.4234 | inner_loss=0.5249 inner_spanF1=0.4622 | dev_spanF1(监控)=0.4677 | 21s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 9/21 | train_loss=0.3563 | inner_loss=0.4725 inner_spanF1=0.5142 | dev_spanF1(监控)=0.4972 | 19s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 10/21 | train_loss=0.3026 | inner_loss=0.4431 inner_spanF1=0.4922 | dev_spanF1(监控)=0.5089 | 20s
+epoch 11/21 | train_loss=0.2637 | inner_loss=0.4220 inner_spanF1=0.5527 | dev_spanF1(监控)=0.5335 | 24s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 12/21 | train_loss=0.2309 | inner_loss=0.4391 inner_spanF1=0.5568 | dev_spanF1(监控)=0.5554 | 25s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 13/21 | train_loss=0.2078 | inner_loss=0.4292 inner_spanF1=0.5496 | dev_spanF1(监控)=0.5681 | 19s
+epoch 14/21 | train_loss=0.1858 | inner_loss=0.4477 inner_spanF1=0.5768 | dev_spanF1(监控)=0.5717 | 19s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 15/21 | train_loss=0.1716 | inner_loss=0.4279 inner_spanF1=0.5703 | dev_spanF1(监控)=0.5872 | 18s
+epoch 16/21 | train_loss=0.1540 | inner_loss=0.4589 inner_spanF1=0.5794 | dev_spanF1(监控)=0.6007 | 18s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 17/21 | train_loss=0.1441 | inner_loss=0.4468 inner_spanF1=0.5950 | dev_spanF1(监控)=0.6142 | 18s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 18/21 | train_loss=0.1332 | inner_loss=0.4541 inner_spanF1=0.5864 | dev_spanF1(监控)=0.6137 | 18s
+epoch 19/21 | train_loss=0.1285 | inner_loss=0.4469 inner_spanF1=0.6247 | dev_spanF1(监控)=0.6281 | 18s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 20/21 | train_loss=0.1245 | inner_loss=0.4419 inner_spanF1=0.6260 | dev_spanF1(监控)=0.6268 | 18s
+  ★ 内层验证最优 → 保存 macbert_linear_256_sample.pt
+epoch 21/21 | train_loss=0.1205 | inner_loss=0.4479 inner_spanF1=0.6203 | dev_spanF1(监控)=0.6284 | 18s
+加载最优 checkpoint（epoch 20，内层验证 spanF1=0.6260）
+dev 解码：300 句，其中没抽到触发词 9 句
+样本数 300（缺预测 0 条）
+  trigger      P=0.8351 R=0.8100 F1=0.8223 (tp=243 fp=48 fn=57)
+  argument     P=0.4835 R=0.6309 F1=0.5475 (tp=836 fp=893 fn=489)
+  event_exact  P=0.1615 R=0.1567 F1=0.1591 (tp=47 fp=244 fn=253)
+  type_macro_f1 = 0.7788
+  n200 子集：trigger F1=0.8295 arg F1=0.5275 → macbert_linear_256_sample_n200.json
+  指标已写入 → D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\metrics\disc\macbert_linear_256_sample.json
+
+【非法 BIO 统计（dev，模型原始输出）】
+  序列数 300：含非法序列 214 条（71.3%），其中非法开头 1 处、非法转移 520 处
+  训练集对照：含非法序列 404 条（56.1%）
+
+训练耗时 430s | 推理延迟 5.97 ms/句 | 峰值显存 1842 MiB

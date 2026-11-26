@@ -1,0 +1,115 @@
+{
+  "method": "bert_base_linear_256",
+  "argv": [
+    "bert\\train.py",
+    "--decoder",
+    "linear",
+    "--max_len",
+    "256",
+    "--epochs",
+    "3",
+    "--run_name",
+    "bert_base_linear_256",
+    "--bert_path",
+    "D:\\Env\\models\\bert-base-chinese"
+  ],
+  "args": {
+    "decoder": "linear",
+    "bert_path": "D:\\Env\\models\\bert-base-chinese",
+    "bert_layers": 0,
+    "max_len": 256,
+    "epochs": 3,
+    "batch_size": 32,
+    "lr": 2e-05,
+    "head_lr_mult": 5.0,
+    "warmup_ratio": 0.1,
+    "grad_accum": 1,
+    "max_grad_norm": 1.0,
+    "weight_decay": 0.01,
+    "dropout": 0.1,
+    "inner_val": 0.1,
+    "hard_constraint": false,
+    "device": "",
+    "log_every": 50,
+    "seed": 42,
+    "run_name": "bert_base_linear_256",
+    "mock": false,
+    "data_dir": ""
+  },
+  "env": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "time": "2026-11-26 11:29:28",
+    "torch": "2.13.0+cu132",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "transformers": "5.15.1"
+  },
+  "params": 102382229,
+  "log_every": 50,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.340777,
+      "elapsed_s": 138.7,
+      "val": {
+        "inner_loss": 0.4380018677976396,
+        "inner_span_f1": 0.38999337309476473,
+        "dev_span_f1_monitor": 0.3992560446373217
+      },
+      "best_so_far": -1.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.349435,
+      "elapsed_s": 139.5,
+      "val": {
+        "inner_loss": 0.2656649235222075,
+        "inner_span_f1": 0.6037620431258602,
+        "dev_span_f1_monitor": 0.6038199697428139
+      },
+      "best_so_far": 0.389993
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.251891,
+      "elapsed_s": 138.4,
+      "val": {
+        "inner_loss": 0.24264830930365455,
+        "inner_span_f1": 0.6301247771836007,
+        "dev_span_f1_monitor": 0.6386647101980925
+      },
+      "best_so_far": 0.603762
+    }
+  ],
+  "total_elapsed_s": 418.3,
+  "finished": true,
+  "best_epoch": 3,
+  "best_inner_val_span_f1": 0.630125,
+  "dev_metrics": {
+    "trigger": 0.8278,
+    "argument": 0.5585,
+    "event_exact": 0.1578
+  },
+  "inference_latency_ms": 7.0,
+  "peak_gpu_mb": 1841.6,
+  "illegal_dev": {
+    "illegal_start": 3,
+    "illegal_transition": 1531,
+    "total_seqs": 930,
+    "illegal_seqs": 613,
+    "total_illegal": 1534,
+    "illegal_seq_rate": 0.6591,
+    "illegal_per_seq": 1.649
+  },
+  "illegal_train_pred_sample": {
+    "illegal_start": 9,
+    "illegal_transition": 8526,
+    "total_seqs": 5173,
+    "illegal_seqs": 3501,
+    "total_illegal": 8535,
+    "illegal_seq_rate": 0.6768,
+    "illegal_per_seq": 1.65
+  },
+  "notes": "BERT 序列标注（linear）训练过程"
+}

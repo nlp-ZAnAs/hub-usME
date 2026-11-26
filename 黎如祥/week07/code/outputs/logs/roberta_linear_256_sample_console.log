@@ -1,0 +1,50 @@
+epoch 1/21 | train_loss=4.3891 | inner_loss=2.4943 inner_spanF1=0.0000 | dev_spanF1(监控)=0.0000 | 21s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 2/21 | train_loss=1.6361 | inner_loss=1.3426 inner_spanF1=0.0000 | dev_spanF1(监控)=0.0000 | 37s
+epoch 3/21 | train_loss=1.2464 | inner_loss=1.0595 inner_spanF1=0.0000 | dev_spanF1(监控)=0.0000 | 38s
+epoch 4/21 | train_loss=0.9459 | inner_loss=0.8207 inner_spanF1=0.0000 | dev_spanF1(监控)=0.0000 | 38s
+epoch 5/21 | train_loss=0.7370 | inner_loss=0.6619 inner_spanF1=0.2390 | dev_spanF1(监控)=0.2548 | 37s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 6/21 | train_loss=0.5907 | inner_loss=0.5841 inner_spanF1=0.3409 | dev_spanF1(监控)=0.3262 | 37s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 7/21 | train_loss=0.4757 | inner_loss=0.5124 inner_spanF1=0.4042 | dev_spanF1(监控)=0.4004 | 26s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 8/21 | train_loss=0.3951 | inner_loss=0.4958 inner_spanF1=0.4548 | dev_spanF1(监控)=0.4588 | 18s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 9/21 | train_loss=0.3331 | inner_loss=0.4371 inner_spanF1=0.5036 | dev_spanF1(监控)=0.4772 | 18s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 10/21 | train_loss=0.2848 | inner_loss=0.4054 inner_spanF1=0.5101 | dev_spanF1(监控)=0.5079 | 18s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 11/21 | train_loss=0.2476 | inner_loss=0.4257 inner_spanF1=0.5508 | dev_spanF1(监控)=0.5201 | 26s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 12/21 | train_loss=0.2180 | inner_loss=0.4163 inner_spanF1=0.5891 | dev_spanF1(监控)=0.5520 | 21s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 13/21 | train_loss=0.1967 | inner_loss=0.4243 inner_spanF1=0.5743 | dev_spanF1(监控)=0.5568 | 21s
+epoch 14/21 | train_loss=0.1754 | inner_loss=0.4101 inner_spanF1=0.5851 | dev_spanF1(监控)=0.5711 | 20s
+epoch 15/21 | train_loss=0.1624 | inner_loss=0.3987 inner_spanF1=0.6027 | dev_spanF1(监控)=0.5891 | 20s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 16/21 | train_loss=0.1444 | inner_loss=0.4102 inner_spanF1=0.6053 | dev_spanF1(监控)=0.6064 | 18s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 17/21 | train_loss=0.1373 | inner_loss=0.4216 inner_spanF1=0.6197 | dev_spanF1(监控)=0.6056 | 19s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 18/21 | train_loss=0.1274 | inner_loss=0.4038 inner_spanF1=0.6373 | dev_spanF1(监控)=0.6112 | 19s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+epoch 19/21 | train_loss=0.1231 | inner_loss=0.4196 inner_spanF1=0.6300 | dev_spanF1(监控)=0.6181 | 19s
+epoch 20/21 | train_loss=0.1181 | inner_loss=0.4169 inner_spanF1=0.6368 | dev_spanF1(监控)=0.6208 | 19s
+epoch 21/21 | train_loss=0.1145 | inner_loss=0.4169 inner_spanF1=0.6389 | dev_spanF1(监控)=0.6224 | 19s
+  ★ 内层验证最优 → 保存 roberta_linear_256_sample.pt
+加载最优 checkpoint（epoch 21，内层验证 spanF1=0.6389）
+dev 解码：300 句，其中没抽到触发词 8 句
+样本数 300（缺预测 0 条）
+  trigger      P=0.8356 R=0.8133 F1=0.8243 (tp=244 fp=48 fn=56)
+  argument     P=0.4927 R=0.6377 F1=0.5559 (tp=845 fp=870 fn=480)
+  event_exact  P=0.1575 R=0.1533 F1=0.1554 (tp=46 fp=246 fn=254)
+  type_macro_f1 = 0.8360
+  n200 子集：trigger F1=0.8214 arg F1=0.5458 → roberta_linear_256_sample_n200.json
+  指标已写入 → D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\metrics\disc\roberta_linear_256_sample.json
+
+【非法 BIO 统计（dev，模型原始输出）】
+  序列数 300：含非法序列 202 条（67.3%），其中非法开头 0 处、非法转移 517 处
+  训练集对照：含非法序列 380 条（52.8%）
+
+训练耗时 514s | 推理延迟 6.29 ms/句 | 峰值显存 1842 MiB

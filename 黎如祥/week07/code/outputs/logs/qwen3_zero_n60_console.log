@@ -1,0 +1,29 @@
+数据：dev_extract.jsonl → 采样 60 条（seed=42，规则见 event_data.canonical_order）
+输出：D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\llm\pred_qwen3_zero_n60.jsonl
+[gpu] 当前显存占用 9966 MiB（阈值 1500 MiB）
+[gpu][警告] 显存占用较高，可能有其它 GPU 任务在跑；8GB 卡同时跑两个任务很容易 OOM。
+[local] 设备=cuda 模型=D:\Env\models\Qwen3-0.6B batch=8 dtype=auto
+  [ 16/60] 合法 16 条，平均 2.65s/条
+  [ 24/60] 合法 23 条，平均 4.26s/条
+  [ 32/60] 合法 31 条，平均 4.20s/条
+  [ 40/60] 合法 39 条，平均 3.74s/条
+  [ 56/60] 合法 55 条，平均 4.53s/条
+  [ 60/60] 合法 59 条，平均 4.85s/条
+
+统计 → D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\llm\report_qwen3_zero_n60.json（总耗时 291s）
+
+==============================================================================
+结果：qwen3_zero_n60（local/zero，60 条）
+==============================================================================
+  trigger F1   : 0.3788   (P=0.3472 R=0.4167)
+  argument F1  : 0.1159   (P=0.1589 R=0.0913)
+  event  F1    : 0.0000
+  type_macro_f1: 0.3405
+  JSON 合法率  : 98.33%（结构性修复 23 条，围栏/废话剥离 3 条）
+  解析失败     : 1 条 | 空回复 0 条
+  幻觉论元     : 16 次 | 触发词找不到 9 次
+  平均延迟     : 4.844s/条（p50=4.001s）
+  token        : prompt 52979 + completion 15352 = 68331
+统一评测 → D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\metrics\llm\qwen3_zero_n60.json
+
+下一步：把这条预测和其它方案一起画进对比图（eval/plot_compare.py）

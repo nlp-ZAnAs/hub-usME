@@ -1,0 +1,29 @@
+数据：dev_extract.jsonl → 采样 60 条（seed=42，规则见 event_data.canonical_order）
+输出：D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\llm\pred_qwen2_zero_n60.jsonl
+[gpu] 当前显存占用 9738 MiB（阈值 1500 MiB）
+[gpu][警告] 显存占用较高，可能有其它 GPU 任务在跑；8GB 卡同时跑两个任务很容易 OOM。
+[local] 设备=cuda 模型=E:\LRX\八斗\Videos\01_往期录播学习\week6文本分类问题\pretrain_models\Qwen2-0.5B-Instruct batch=8 dtype=auto
+  [ 16/60] 合法 12 条，平均 3.90s/条
+  [ 24/60] 合法 20 条，平均 3.96s/条
+  [ 32/60] 合法 26 条，平均 3.78s/条
+  [ 40/60] 合法 34 条，平均 3.44s/条
+  [ 56/60] 合法 46 条，平均 3.36s/条
+  [ 60/60] 合法 49 条，平均 3.44s/条
+
+统计 → D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\llm\report_qwen2_zero_n60.json（总耗时 206s）
+
+==============================================================================
+结果：qwen2_zero_n60（local/zero，60 条）
+==============================================================================
+  trigger F1   : 0.0296   (P=0.0267 R=0.0333)
+  argument F1  : 0.0052   (P=0.0085 R=0.0038)
+  event  F1    : 0.0000
+  type_macro_f1: 0.0830
+  JSON 合法率  : 81.67%（结构性修复 24 条，围栏/废话剥离 3 条）
+  解析失败     : 11 条 | 空回复 0 条
+  幻觉论元     : 42 次 | 触发词找不到 29 次
+  平均延迟     : 3.436s/条（p50=3.242s）
+  token        : prompt 52889 + completion 21660 = 74549
+统一评测 → D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\metrics\llm\qwen2_zero_n60.json
+
+下一步：把这条预测和其它方案一起画进对比图（eval/plot_compare.py）

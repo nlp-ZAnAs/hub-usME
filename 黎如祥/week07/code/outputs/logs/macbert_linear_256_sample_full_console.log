@@ -1,0 +1,10 @@
+加载 macbert_linear_256_sample.pt（epoch 20，内层验证 spanF1=0.6260，解码器=linear）
+样本数 930（缺预测 0 条）
+  trigger      P=0.7962 R=0.7688 F1=0.7823 (tp=715 fp=183 fn=215)
+  argument     P=0.4631 R=0.6007 F1=0.5230 (tp=2476 fp=2871 fn=1646)
+  event_exact  P=0.1370 R=0.1323 F1=0.1346 (tp=123 fp=775 fn=807)
+  type_macro_f1 = 0.7660
+  n200 子集：trigger F1=0.8295 arg F1=0.5275 → macbert_linear_256_sample_full_n200.json
+  指标已写入 → D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\metrics\disc\macbert_linear_256_sample_full.json
+
+非法统计（dev）：含非法序列 679 条（73.0%），非法转移 1756 处 / 非法开头 3 处

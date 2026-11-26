@@ -1,0 +1,10 @@
+加载 bert_base_linear_256_sample.pt（epoch 19，内层验证 spanF1=0.6292，解码器=linear）
+样本数 930（缺预测 0 条）
+  trigger      P=0.8601 R=0.8065 F1=0.8324 (tp=750 fp=122 fn=180)
+  argument     P=0.5063 R=0.5864 F1=0.5434 (tp=2417 fp=2357 fn=1705)
+  event_exact  P=0.1606 R=0.1505 F1=0.1554 (tp=140 fp=732 fn=790)
+  type_macro_f1 = 0.8438
+  n200 子集：trigger F1=0.8260 arg F1=0.5492 → bert_base_linear_256_sample_full_n200.json
+  指标已写入 → D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\metrics\disc\bert_base_linear_256_sample_full.json
+
+非法统计（dev）：含非法序列 603 条（64.8%），非法转移 1400 处 / 非法开头 0 处
