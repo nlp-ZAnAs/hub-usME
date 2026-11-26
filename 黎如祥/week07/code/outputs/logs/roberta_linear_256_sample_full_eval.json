@@ -1,0 +1,41 @@
+{
+  "method": "roberta_linear_256_sample_full",
+  "argv": [
+    "bert\\evaluate.py",
+    "--ckpt",
+    "outputs\\checkpoints\\roberta_linear_256_sample.pt",
+    "--run_name",
+    "roberta_linear_256_sample_full",
+    "--data_dir",
+    "D:\\Study\\Ba_Dou_Xue_Yuan\\nlp_study\\黎如祥\\week07\\code\\data\\processed"
+  ],
+  "args": "Namespace(ckpt='outputs\\\\checkpoints\\\\roberta_linear_256_sample.pt', run_name='roberta_linear_256_sample_full', data_dir='D:\\\\Study\\\\Ba_Dou_Xue_Yuan\\\\nlp_study\\\\黎如祥\\\\week07\\\\code\\\\data\\\\processed', split='dev', batch_size=32, train_sample=0, device='')",
+  "env": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "time": "2026-11-26 12:12:59",
+    "torch": "2.13.0+cu132",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "transformers": "5.15.1"
+  },
+  "runtime_s": 13.76,
+  "metrics": {
+    "trigger": 0.8162,
+    "argument": 0.5403,
+    "event_exact": 0.1411
+  },
+  "type_macro_f1": 0.8582,
+  "illegal_dev": {
+    "illegal_start": 3,
+    "illegal_transition": 1742,
+    "total_seqs": 930,
+    "illegal_seqs": 650,
+    "total_illegal": 1745,
+    "illegal_seq_rate": 0.6989,
+    "illegal_per_seq": 1.876
+  },
+  "inference_latency_ms": 14.45,
+  "ckpt": "outputs\\checkpoints\\roberta_linear_256_sample.pt",
+  "notes": "纯评测：从 checkpoint 复评 dev（不训练）"
+}

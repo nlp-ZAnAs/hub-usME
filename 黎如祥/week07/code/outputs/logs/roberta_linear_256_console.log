@@ -1,0 +1,30 @@
+  epoch 1 step 50/162 loss=2.8757
+  epoch 1 step 100/162 loss=1.9629
+  epoch 1 step 150/162 loss=1.5353
+epoch 1/3 | train_loss=1.4621 | inner_loss=0.4779 inner_spanF1=0.3541 | dev_spanF1(监控)=0.3682 | 147s
+  ★ 内层验证最优 → 保存 roberta_linear_256.pt
+  epoch 2 step 50/162 loss=0.4398
+  epoch 2 step 100/162 loss=0.3998
+  epoch 2 step 150/162 loss=0.3719
+epoch 2/3 | train_loss=0.3676 | inner_loss=0.2736 inner_spanF1=0.5683 | dev_spanF1(监控)=0.5746 | 146s
+  ★ 内层验证最优 → 保存 roberta_linear_256.pt
+  epoch 3 step 50/162 loss=0.2772
+  epoch 3 step 100/162 loss=0.2674
+  epoch 3 step 150/162 loss=0.2591
+epoch 3/3 | train_loss=0.2591 | inner_loss=0.2457 inner_spanF1=0.6147 | dev_spanF1(监控)=0.6285 | 145s
+  ★ 内层验证最优 → 保存 roberta_linear_256.pt
+加载最优 checkpoint（epoch 3，内层验证 spanF1=0.6147）
+dev 解码：930 句，其中没抽到触发词 29 句
+样本数 930（缺预测 0 条）
+  trigger      P=0.8313 R=0.8054 F1=0.8181 (tp=749 fp=152 fn=181)
+  argument     P=0.4890 R=0.6172 F1=0.5457 (tp=2544 fp=2658 fn=1578)
+  event_exact  P=0.1643 R=0.1591 F1=0.1617 (tp=148 fp=753 fn=782)
+  type_macro_f1 = 0.7653
+  n200 子集：trigger F1=0.8244 arg F1=0.5441 → roberta_linear_256_n200.json
+  指标已写入 → D:\Study\Ba_Dou_Xue_Yuan\nlp_study\黎如祥\week07\code\outputs\metrics\disc\roberta_linear_256.json
+
+【非法 BIO 统计（dev，模型原始输出）】
+  序列数 930：含非法序列 650 条（69.9%），其中非法开头 1 处、非法转移 1654 处
+  训练集对照：含非法序列 3638 条（70.3%）
+
+训练耗时 439s | 推理延迟 7.27 ms/句 | 峰值显存 1842 MiB
