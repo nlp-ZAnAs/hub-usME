@@ -1,0 +1,10 @@
+{
+  "torch": "2.7.1+cu126",
+  "cuda": "12.6",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "bert_initial_files": {
+    "config.json": "f430de5db56599c2fc7f3e9736ebf57ada56f02c661aacacf09abb85570c028b",
+    "pytorch_model.bin": "8a693db616eaf647ed2bfe531e1fa446637358fc108a8bf04e8d4db17e837ee9",
+    "tokenizer.json": "55c5edcfb8936895e019b2d8f97dcb547734f25b29f95009155f4c8c15649aae"
+  }
+}

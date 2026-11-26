@@ -1,0 +1,241 @@
+[
+  {
+    "id": "60229be25b3f52bdbbd91ea664591a72",
+    "title": "理想汽车拟将美国IPO定价在招股区间顶端或更高水平",
+    "segments": [
+      {
+        "start": 0,
+        "end": 66,
+        "detector_score": 0.4867,
+        "passed_detection": false
+      },
+      {
+        "start": 66,
+        "end": 90,
+        "detector_score": 0.4264,
+        "passed_detection": false
+      }
+    ],
+    "events": []
+  },
+  {
+    "id": "10be7f956da35f15fa4a9ad2a4556960",
+    "title": "北京市监局约谈美团、饿了么等6家网络平台，严禁销售长江禁捕水域水产品",
+    "segments": [
+      {
+        "start": 0,
+        "end": 84,
+        "detector_score": 0.723,
+        "passed_detection": true,
+        "found_event": true,
+        "needs_review": false
+      },
+      {
+        "start": 85,
+        "end": 131,
+        "detector_score": 0.0862,
+        "passed_detection": false
+      },
+      {
+        "start": 131,
+        "end": 179,
+        "detector_score": 0.0516,
+        "passed_detection": false
+      },
+      {
+        "start": 179,
+        "end": 235,
+        "detector_score": 0.0334,
+        "passed_detection": false
+      },
+      {
+        "start": 235,
+        "end": 294,
+        "detector_score": 0.071,
+        "passed_detection": false
+      },
+      {
+        "start": 295,
+        "end": 359,
+        "detector_score": 0.0529,
+        "passed_detection": false
+      },
+      {
+        "start": 359,
+        "end": 377,
+        "detector_score": 0.0548,
+        "passed_detection": false
+      }
+    ],
+    "events": [
+      {
+        "type": "被约谈",
+        "trigger": {
+          "start": 80,
+          "end": 82,
+          "text": "约谈"
+        },
+        "args": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "北京市市场监督管理局",
+            "role": "约谈机构"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "近日",
+            "role": "被约谈时间"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "北京市市场监管局",
+            "role": "约谈机构"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "text": "美团",
+            "role": "公司名称"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "text": "饿了么",
+            "role": "公司名称"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "text": "京东",
+            "role": "公司名称"
+          },
+          {
+            "start": 38,
+            "end": 40,
+            "text": "微店",
+            "role": "公司名称"
+          },
+          {
+            "start": 41,
+            "end": 43,
+            "text": "抖音",
+            "role": "公司名称"
+          },
+          {
+            "start": 44,
+            "end": 46,
+            "text": "快手",
+            "role": "公司名称"
+          },
+          {
+            "start": 63,
+            "end": 65,
+            "text": "长江",
+            "role": "公司名称"
+          }
+        ],
+        "segment_index": 0,
+        "needs_review": false
+      }
+    ]
+  },
+  {
+    "id": "be11a1377c0d97bd5f5da146990597fa",
+    "title": "安泰科技间接参股公司天宜上佳22日科创板上市",
+    "segments": [
+      {
+        "start": 0,
+        "end": 56,
+        "detector_score": 0.6865,
+        "passed_detection": true,
+        "found_event": true,
+        "needs_review": false
+      },
+      {
+        "start": 57,
+        "end": 132,
+        "detector_score": 0.9576,
+        "passed_detection": true,
+        "found_event": true,
+        "needs_review": false
+      },
+      {
+        "start": 132,
+        "end": 167,
+        "detector_score": 0.3566,
+        "passed_detection": false
+      },
+      {
+        "start": 167,
+        "end": 208,
+        "detector_score": 0.1536,
+        "passed_detection": false
+      }
+    ],
+    "events": [
+      {
+        "type": "公司上市",
+        "trigger": {
+          "start": 42,
+          "end": 44,
+          "text": "上市"
+        },
+        "args": [
+          {
+            "start": 32,
+            "end": 36,
+            "text": "天宜上佳",
+            "role": "上市公司"
+          },
+          {
+            "start": 36,
+            "end": 39,
+            "text": "22日",
+            "role": "事件时间"
+          }
+        ],
+        "segment_index": 0,
+        "needs_review": false
+      },
+      {
+        "type": "公司上市",
+        "trigger": {
+          "start": 129,
+          "end": 131,
+          "text": "上市"
+        },
+        "args": [
+          {
+            "start": 74,
+            "end": 78,
+            "text": "安泰科技",
+            "role": "上市公司"
+          },
+          {
+            "start": 81,
+            "end": 83,
+            "text": "近日",
+            "role": "事件时间"
+          },
+          {
+            "start": 109,
+            "end": 113,
+            "text": "天宜上佳",
+            "role": "上市公司"
+          },
+          {
+            "start": 115,
+            "end": 120,
+            "text": "7月22日",
+            "role": "事件时间"
+          }
+        ],
+        "segment_index": 1,
+        "needs_review": false
+      }
+    ]
+  }
+]
