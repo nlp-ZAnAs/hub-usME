@@ -1,0 +1,5 @@
+.env
+.cache/
+checkpoints/
+__pycache__/
+*.log

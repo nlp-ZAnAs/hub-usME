@@ -1,0 +1,132 @@
+[
+  {
+    "scope": "full",
+    "a": "bilstm_crf",
+    "b": "rule",
+    "difference": 0.06832620377223209,
+    "ci95": [
+      0.049561369727852606,
+      0.08702519233786629
+    ]
+  },
+  {
+    "scope": "full",
+    "a": "roberta_linear",
+    "b": "bilstm_crf",
+    "difference": 0.06645590432199233,
+    "ci95": [
+      0.04911609434472497,
+      0.08473921225783217
+    ]
+  },
+  {
+    "scope": "full",
+    "a": "roberta_crf",
+    "b": "roberta_linear",
+    "difference": 0.04284817603568036,
+    "ci95": [
+      0.03201141405933649,
+      0.05333269029768589
+    ]
+  },
+  {
+    "scope": "full",
+    "a": "roberta_linear_constrained",
+    "b": "roberta_linear",
+    "difference": 0.03653866875878975,
+    "ci95": [
+      0.029285599029946787,
+      0.04375604903170274
+    ]
+  },
+  {
+    "scope": "full",
+    "a": "roberta_crf_constrained",
+    "b": "roberta_crf",
+    "difference": 0.007875540023763561,
+    "ci95": [
+      0.004991175762402417,
+      0.011003959060292312
+    ]
+  },
+  {
+    "scope": "full",
+    "a": "qwen_few",
+    "b": "qwen_zero",
+    "difference": 0.2196722980108352,
+    "ci95": [
+      0.19607171305187923,
+      0.24311163011476428
+    ]
+  },
+  {
+    "scope": "full",
+    "a": "qwen_lora",
+    "b": "qwen_zero",
+    "difference": 0.6868505077666635,
+    "ci95": [
+      0.6646736979450403,
+      0.7095419398380547
+    ]
+  },
+  {
+    "scope": "full",
+    "a": "qwen_lora",
+    "b": "roberta_crf_constrained",
+    "difference": -0.02224120783236283,
+    "ci95": [
+      -0.03467048963094724,
+      -0.00925867522972296
+    ]
+  },
+  {
+    "scope": "subset",
+    "a": "deepseek_few",
+    "b": "deepseek_zero",
+    "difference": 0.03241325001789708,
+    "ci95": [
+      0.00551403022398757,
+      0.06119883536776314
+    ]
+  },
+  {
+    "scope": "subset",
+    "a": "deepseek_zero",
+    "b": "qwen_zero",
+    "difference": 0.582817095075429,
+    "ci95": [
+      0.5225967130930571,
+      0.6412715755779134
+    ]
+  },
+  {
+    "scope": "subset",
+    "a": "deepseek_few",
+    "b": "qwen_few",
+    "difference": 0.405599351654019,
+    "ci95": [
+      0.35599227060481353,
+      0.4556039953421965
+    ]
+  },
+  {
+    "scope": "subset",
+    "a": "qwen_lora",
+    "b": "deepseek_few",
+    "difference": 0.03911186616644258,
+    "ci95": [
+      0.005356685752099655,
+      0.07418042330766113
+    ]
+  },
+  {
+    "scope": "subset",
+    "a": "roberta_crf_constrained",
+    "b": "deepseek_few",
+    "difference": 0.06270504327468418,
+    "ci95": [
+      0.029016551518441756,
+      0.09649956062045664
+    ]
+  }
+]
