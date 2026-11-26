@@ -1,6 +1,6 @@
-# week07 作业：金融公告事件抽取
+# week07：换模型做事件抽取对比
 
-对照课件收口页「课后作业」五件事；并按「换不同模型做抽取」加了一组 **BERT vs RoBERTa** 对照。
+同一设置下对比 `bert-base-chinese` 与 `chinese-roberta-wwm-ext`。
 
 ## 目录
 
@@ -10,23 +10,13 @@ week07/
 ├── 作业报告.md
 ├── scripts/run_exp_models.py
 └── outputs/
-    ├── badcases_10.json
-    ├── loss_curve_bert_crf_256.png
-    └── *.log
+    ├── hw_bert_linear_256.json
+    ├── hw_roberta_linear_256.json
+    ├── 02_bert_linear_train.log
+    └── 03_roberta_linear_train.log
 ```
 
-## 作业对应
-
-| # | 课件要求 | 本包 |
-|---|----------|------|
-| 1 | 四路（规则/BERT/两段式/LLM）同口径对比表 | `作业报告.md` §2 |
-| 2 | 10 条 badcase 归类 | `outputs/badcases_10.json` + 报告 §3 |
-| 3 | extract_event 跑通公告→事件列表 | `outputs/05_demo.log` |
-| 4 | 简历口径四个数 | 报告 §5 |
-| 5 | steps.jsonl 画 loss 曲线 | `outputs/loss_curve_bert_crf_256.png` |
-| + | 换预训练：bert-base vs chinese-roberta-wwm-ext | 报告 §2.2 |
-
-## 复现（换模型）
+## 复现
 
 ```powershell
 cd "…\week7-信息抽取\code"
