@@ -1,0 +1,97 @@
+{
+  "model": "glm-5.2",
+  "n_samples": 3,
+  "zero_shot": {
+    "precision": 0.25,
+    "recall": 0.25,
+    "f1": 0.25,
+    "tp": 1,
+    "pred_total": 4,
+    "gold_total": 4
+  },
+  "few_shot": {
+    "precision": 0.25,
+    "recall": 0.25,
+    "f1": 0.25,
+    "tp": 1,
+    "pred_total": 4,
+    "gold_total": 4
+  },
+  "detail": [
+    {
+      "text": "当地时间周三花园球馆的发言人称他们得到了相关专业人员的保证，目前球馆已经没有什么问题。",
+      "gold": [
+        {
+          "text": "花园球馆",
+          "type": "address"
+        }
+      ],
+      "zero_shot": [
+        {
+          "text": "花园球馆",
+          "type": "scene"
+        },
+        {
+          "text": "发言人",
+          "type": "position"
+        }
+      ],
+      "few_shot": [
+        {
+          "text": "花园球馆",
+          "type": "scene"
+        },
+        {
+          "text": "发言人",
+          "type": "position"
+        }
+      ]
+    },
+    {
+      "text": "大众软件：古墓谜题游戏《球》的乐趣",
+      "gold": [
+        {
+          "text": "大众软件",
+          "type": "book"
+        },
+        {
+          "text": "《球》",
+          "type": "game"
+        }
+      ],
+      "zero_shot": [
+        {
+          "text": "球",
+          "type": "game"
+        }
+      ],
+      "few_shot": [
+        {
+          "text": "球",
+          "type": "game"
+        }
+      ]
+    },
+    {
+      "text": "首例外资行理财亏损案开庭渣打银行成被告",
+      "gold": [
+        {
+          "text": "渣打银行",
+          "type": "company"
+        }
+      ],
+      "zero_shot": [
+        {
+          "text": "渣打银行",
+          "type": "company"
+        }
+      ],
+      "few_shot": [
+        {
+          "text": "渣打银行",
+          "type": "company"
+        }
+      ]
+    }
+  ]
+}
