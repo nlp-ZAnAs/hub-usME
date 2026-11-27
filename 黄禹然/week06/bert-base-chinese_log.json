@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "base": "bert-base-chinese",
+    "n_train": 53360,
+    "n_clean_val": 1000,
+    "params_M": 102.3,
+    "epochs": 3,
+    "batch_size": 64,
+    "lr": 2e-05,
+    "head_lr_mult": 5.0,
+    "max_length": 64,
+    "pool": "cls",
+    "seed": 42,
+    "device": "cpu",
+    "model_dir": "E:\\AI_ProjectDemo\\week06\\week6-数据接入与分流\\code\\pretrain_models\\bert-base-chinese"
+  },
+  "best_epoch": 3,
+  "best_acc": 0.519,
+  "best_macro_f1": 0.5135,
+  "per_class_f1": {
+    "故事": 0.4043,
+    "文化": 0.5278,
+    "娱乐": 0.5227,
+    "体育": 0.7603,
+    "财经": 0.3179,
+    "房产": 0.6019,
+    "汽车": 0.7159,
+    "教育": 0.5528,
+    "科技": 0.4167,
+    "军事": 0.4762,
+    "旅游": 0.4962,
+    "国际": 0.3333,
+    "证券": 0.3333,
+    "农业": 0.592,
+    "电竞": 0.6515
+  },
+  "epochs_log": [
+    {
+      "epoch": 1,
+      "train_loss": 2.0293,
+      "val_acc": 0.477,
+      "val_macro_f1": 0.4704,
+      "elapsed_s": 817.2
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.3472,
+      "val_acc": 0.499,
+      "val_macro_f1": 0.4933,
+      "elapsed_s": 881.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.2721,
+      "val_acc": 0.519,
+      "val_macro_f1": 0.5135,
+      "elapsed_s": 890.4
+    }
+  ]
+}

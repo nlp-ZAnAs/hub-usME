@@ -1,0 +1,29 @@
+E:\AI_ProjectDemo\week5-大模型初探\30-week05-作业答案\week5\sft.py:290: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  tot += float(loss) * nt
+模板 = <|user|>问题<|assistant|>回答<|end|>   loss mask = 开
+参数量 2.60M   字表 4136（其中 3 个特殊标记）
+训练样本 3000（丢弃 0）  验证样本 200（丢弃 0）
+
+ Epoch  TrainLoss   ValLoss     ValPPL(回答段)
+----------------------------------------------
+     1     4.0972    3.4585           31.77 *
+     2     3.3790    3.2272           25.21 *
+     3     3.0689    3.0957           22.10 *
+     4     2.8463    3.0286           20.67 *
+     5     2.6599    2.9577           19.25 *
+     6     2.5059    2.9430           18.97 *
+     7     2.3687    2.9077           18.31 *
+     8     2.2430    2.9026           18.22 *
+     9     2.1280    2.9084           18.33
+    10     2.0272    2.9114           18.38
+
+最佳回答段 PPL: 18.22（epoch 8）已保存 E:\AI_ProjectDemo\week5-大模型初探\30-week05-作业答案\week5\sft_mask.pt
+
+生成示例：
+  问: 提供一个分类任务，让GPT确定一个人是否已经完成大学教育。 年龄：28 学位：硕士 工作：没有
+  答: ，155 不同，3 人工作者。
+  问: 将以下句子转换为被动语态。 句子： Tom 发现了一份工作。
+  答: 句子：我推荐您观看电影推荐这本书。
+  问: 创建一个简单的待办事项清单。 1. 水果店购买水果。 2. 向朋友回复电子邮件。 3. 洗衣服
+  答: 洗衣服，3. 洗衣服，4. 洗衣服，5. 洗碗，5. 洗衣服，5. 洗衣服

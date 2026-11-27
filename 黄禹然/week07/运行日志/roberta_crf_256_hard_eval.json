@@ -1,0 +1,41 @@
+{
+  "method": "roberta_crf_256_hard",
+  "argv": [
+    "bert/evaluate_hard_constraint.py",
+    "--ckpt",
+    "outputs/checkpoints/roberta_crf_256.pt",
+    "--run_name",
+    "roberta_crf_256_hard",
+    "--soft_json",
+    "roberta_crf_256",
+    "--device",
+    "cpu"
+  ],
+  "args": "Namespace(ckpt='outputs/checkpoints/roberta_crf_256.pt', run_name='roberta_crf_256_hard', soft_json='roberta_crf_256', device='cpu')",
+  "env": {
+    "python": "3.13.14",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "time": "2026-11-27 16:25:44",
+    "torch": "2.15.0+cpu",
+    "cuda_available": false,
+    "transformers": "5.24.0"
+  },
+  "runtime_s": 116.76,
+  "metrics": {
+    "trigger": 0.8294,
+    "argument": 0.6666,
+    "event_exact": 0.237
+  },
+  "illegal_dev": {
+    "illegal_start": 0,
+    "illegal_transition": 181,
+    "total_seqs": 930,
+    "illegal_seqs": 75,
+    "total_illegal": 181,
+    "illegal_seq_rate": 0.0806,
+    "illegal_per_seq": 0.195
+  },
+  "ckpt": "outputs\\checkpoints\\roberta_crf_256.pt",
+  "constraint_note": "解码期硬约束（token 级非法归零）",
+  "notes": "纯评测：从 checkpoint 复评 dev（不训练）"
+}

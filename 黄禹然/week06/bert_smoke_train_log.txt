@@ -1,0 +1,25 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 24730.86it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: E:\AI_ProjectDemo\week06\week6-数据接入与分流\code\pretrain_models\bert-base-chinese
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[cfg] base=bert-base-chinese params=102.3M pool=cls epochs=3 bs=64 lr=2e-05 seed=42 train=53360 clean_val=1000(去重 1099) steps/epoch=100 save=off
+  epoch 1 step 0/100 loss=2.8940
+epoch 1: val_acc=0.4770 val_macro_f1=0.4704 (817.2s)
+  epoch 2 step 0/100 loss=1.4761
+epoch 2: val_acc=0.4990 val_macro_f1=0.4933 (881.0s)
+  epoch 3 step 0/100 loss=1.0590
+epoch 3: val_acc=0.5190 val_macro_f1=0.5135 (890.4s)
+
+[bert-base-chinese] 最优 epoch=3 acc=0.5190 macro_f1=0.5135
+产物 → E:\AI_ProjectDemo\week06\week6-数据接入与分流\code\outputs\base_models\bert-base-chinese_log.json
